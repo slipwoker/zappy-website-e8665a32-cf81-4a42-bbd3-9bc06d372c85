@@ -8491,6 +8491,16 @@ body.accessibility-widget-visible ._access-menu {
 body, html {
   font-family: 'Heebo', sans-serif;
 }
+
+.nav-brand a {
+  align-items: center !important;
+}
+
+.nav-brand a span {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
