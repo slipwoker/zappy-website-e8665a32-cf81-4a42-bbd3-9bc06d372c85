@@ -8476,6 +8476,10 @@ body.accessibility-widget-visible ._access-menu {
 }
 /* /Zappy custom logo size */
 
+
+.nav-brand a {
+  align-items: flex-start !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
