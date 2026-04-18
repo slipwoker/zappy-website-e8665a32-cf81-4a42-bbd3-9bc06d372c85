@@ -3100,7 +3100,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 480px;
+  grid-template-columns: 480px 1fr;
   gap: 72px;
   align-items: center;
   direction: rtl;
