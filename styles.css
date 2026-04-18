@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+
 
 
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
@@ -8479,6 +8481,15 @@ body.accessibility-widget-visible ._access-menu {
 
 .nav-brand a {
   align-items: flex-start !important;
+}
+
+:root {
+  --font-heading: 'Heebo', sans-serif;
+  --font-body: 'Heebo', sans-serif;
+}
+
+body, html {
+  font-family: 'Heebo', sans-serif;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
