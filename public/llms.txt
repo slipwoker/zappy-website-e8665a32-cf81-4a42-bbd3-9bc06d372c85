@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+מרפאת Life Inside ברעננה מציעה סקירת מערכות פרטית ברמה עולמית, בדיקת שקיפות עורפית ואבחון עוברי מתקדם. ד״ר רון הארק לצדכם בכל שלב — קבעו תור עוד היום.
+
+### שירותים
+https://example.com/services
+סקירה שלישית ברעננה, בדיקת שקיפות עורפית פרטית ואקו לב עוברי — כל שירותי רפואת העובר המתקדמים במקום אחד. גלו את מגוון הבדיקות שמעניקות שקט נפשי אמיתי.
+
+### אודות ד״ר רון הארק
+https://example.com/about
+ד״ר רון הארק, ראש יחידת נוירולוגיה עוברית בבילינסון ובוגר BCNatal ברצלונה, מוביל את מרפאת Life Inside. היכירו את המומחה שמשלב ידע עולמי עם גישה אישית וחמה לכל מטופלת.
+
+### צור קשר
+https://example.com/contact
+רוצים לקבוע סקירת מערכות פרטית ברעננה או בדיקת שקיפות עורפית? צרו קשר עם מרפאת Life Inside עוד היום ותיהנו מטיפול מהיר, אישי ומקצועי לאורך כל ההריון.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
