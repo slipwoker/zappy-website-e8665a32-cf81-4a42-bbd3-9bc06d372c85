@@ -8501,6 +8501,88 @@ body, html {
   display: block !important;
   width: 100% !important;
 }
+
+@media (max-width: 768px) {
+.index-journey-section .journey-grid {
+  grid-template-columns: 1fr !important;
+  gap: 20px !important;
+}
+
+.index-journey-section .journey-card--tall,
+  .index-journey-section .journey-card--featured,
+  .index-journey-section .journey-card--short {
+  margin-top: 0 !important;
+}
+
+.index-journey-section .journey-card-image-wrap img {
+  height: 200px !important;
+}
+
+.index-journey-section .journey-card--featured .journey-card-image-wrap img {
+  height: 220px !important;
+}
+
+.index-journey-section .journey-card-body {
+  padding: 24px 20px !important;
+}
+
+.index-journey-section .journey-header {
+  margin-bottom: 36px !important;
+}
+
+.index-credentials-section .index-credentials-container {
+  grid-template-columns: 1fr !important;
+  gap: 40px !important;
+}
+
+.index-credentials-section .index-credentials-image-col {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.index-credentials-section .index-credentials-image-frame {
+  width: 100% !important;
+}
+
+.index-credentials-section .index-credentials-image-frame img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px !important;
+  object-fit: cover !important;
+}
+
+.index-philosophy-section .index-philosophy-container {
+  grid-template-columns: 1fr !important;
+  gap: 32px !important;
+}
+
+.index-philosophy-section .index-philosophy-card-image-wrap {
+  height: 160px !important;
+  width: 100% !important;
+}
+
+.index-philosophy-section .index-philosophy-panel {
+  padding: 24px 16px !important;
+}
+
+.index-hero-section .index-hero-card {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 24px 16px !important;
+}
+
+.index-hero-section .index-hero-ctas {
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.index-hero-section .index-hero-btn-primary,
+  .index-hero-section .index-hero-btn-secondary {
+  width: 100% !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
