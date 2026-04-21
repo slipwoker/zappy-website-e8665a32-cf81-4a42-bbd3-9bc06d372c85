@@ -8603,6 +8603,11 @@ body, html {
   padding: 24px 20px !important;
 }
 }
+
+.index-hero-section .index-hero-bg-img {
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
