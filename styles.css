@@ -2430,11 +2430,10 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li {
 html[dir="rtl"] .footer-contact .contact-icon { order: 0 !important; }
 html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
 html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
-/* index-hero */
 .index-hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -2442,6 +2441,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   background-color: #332B28;
   padding-bottom: 80px;
   direction: rtl;
+  max-height: 70vh;
 }
 
 /* Background Image */
@@ -2478,7 +2478,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
     );
 }
 
-/* Container */
 .index-hero-section .index-hero-container {
   position: relative;
   z-index: 10;
@@ -2489,7 +2488,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
   padding-top: 80px;
   padding-bottom: 80px;
   box-sizing: border-box;
