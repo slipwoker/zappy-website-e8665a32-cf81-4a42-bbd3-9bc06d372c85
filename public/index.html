@@ -246,8 +246,6 @@
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
 
-
-
 <style data-zappy-section-v2-css="true">
 /* V2 Regenerated Section CSS */
 .index-hero-section {
@@ -255,173 +253,177 @@
   width: 100%;
   min-height: 100vh;
   overflow: visible;
-  background-color: #3D2B24;
+  background: #3D2B24;
   color: var(--text-light);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  direction: rtl;
   padding-bottom: 80px;
 }
 
-/* Background Image */
-.index-hero-section .index-hero-bg {
+.index-hero-section .index-hero-bg-layer {
   position: absolute;
   inset: 0;
   z-index: 0;
-  overflow: hidden;
-}
-
-.index-hero-section .index-hero-img {
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  border-radius: 0;
-  box-shadow: none;
 }
 
-/* Scrim Overlay */
+.index-hero-section .index-hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+
 .index-hero-section .index-hero-scrim {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
   background-image:
-    linear-gradient(135deg,
-      rgba(61, 43, 36, 0.82) 0%,
-      rgba(61, 43, 36, 0.60) 40%,
-      rgba(61, 43, 36, 0.25) 70%,
-      rgba(61, 43, 36, 0.10) 100%
-    );
+    linear-gradient(to left, rgba(61,43,36,0.82) 0%, rgba(61,43,36,0.60) 50%, rgba(61,43,36,0.25) 100%),
+    linear-gradient(to top, rgba(61,43,36,0.70) 0%, rgba(61,43,36,0.10) 60%);
 }
 
-/* Hero Content */
-.index-hero-section .index-hero-content {
+.index-hero-section .index-hero-content-wrap {
   position: relative;
   z-index: 10;
-  max-width: 1200px;
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 160px 48px 60px;
+  padding: 140px 48px 60px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: start;
-  gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* Label / Eyebrow */
-.index-hero-section .index-hero-label {
-  font-family: 'Assistant', 'Avenir Next', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-light);
-  opacity: 0.80;
-  background: rgba(201, 123, 99, 0.30);
-  border: 1px solid rgba(201, 123, 99, 0.45);
-  border-radius: 999px;
-  padding: 6px 16px;
+.index-hero-section .index-hero-inner {
+  max-width: 640px;
+  text-align: right;
+}
+
+.index-hero-section .index-hero-label-row {
+  margin-bottom: 20px;
+}
+
+.index-hero-section .index-hero-clinic-tag {
   display: inline-block;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: none;
+  color: var(--text-light);
+  background: rgba(201,123,99,0.22);
+  border: 1px solid rgba(201,123,99,0.45);
+  border-radius: 999px;
+  padding: 6px 18px;
+  backdrop-filter: blur(4px);
 }
 
-/* H1 */
 .index-hero-section .index-hero-h1 {
   font-family: 'Assistant', 'Avenir Next', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--text-light);
-  margin: 0;
-  max-width: 680px;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.45), 0 1px 4px rgba(0,0,0,0.30);
+  margin: 0 0 12px;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.45);
 }
 
-.index-hero-section .index-hero-h1 em {
-  font-style: normal;
-  color: #EAB99A;
-  -webkit-text-fill-color: #EAB99A;
+.index-hero-section .index-hero-h1-sub {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #EDD5C5;
+  letter-spacing: -0.01em;
+  margin-top: 4px;
 }
 
-/* Subtitle H3 */
-.index-hero-section .index-hero-subtitle {
+.index-hero-section .index-hero-h3 {
   font-family: 'Assistant', 'Avenir Next', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.65;
-  color: var(--text-light);
-  opacity: 0.90;
-  margin: 0;
-  max-width: 580px;
-  text-shadow: 0 1px 8px rgba(0,0,0,0.40);
+  line-height: 1.7;
+  color: rgba(253,246,242,0.88);
+  margin: 0 0 18px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.30);
 }
 
-/* CTA Row */
-.index-hero-section .index-hero-ctas {
+.index-hero-section .index-hero-credit {
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(253,246,242,0.65);
+  margin: 0 0 36px;
+  border-inline-start: 3px solid rgba(201,123,99,0.55);
+  padding-inline-start: 14px;
+}
+
+.index-hero-section .index-hero-cta-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 16px;
-  margin-top: 8px;
   flex-wrap: wrap;
 }
 
-/* Primary Button */
 .index-hero-section .index-hero-btn-primary {
-  font-family: 'Assistant', 'Avenir Next', sans-serif;
-  background: #D46B43;
-  color: #FFF9F5;
-  padding: 15px 34px;
-  border-radius: 999px;
-  border: none;
-  font-weight: 600;
-  font-size: 0.9375rem;
-  line-height: 1;
-  text-decoration: none;
   display: inline-block;
-  box-shadow: 0 4px 18px rgba(212, 107, 67, 0.38);
-  transition: all 0.3s ease;
-  white-space: nowrap;
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #FFF9F5;
+  background: #C97B63;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(201,123,99,0.38);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  cursor: pointer;
+  line-height: 1;
 }
 
 .index-hero-section .index-hero-btn-primary:hover {
-  background: #C05A32;
-  box-shadow: 0 8px 28px rgba(212, 107, 67, 0.50);
-  transform: translateY(-2px);
-  color: #FFF9F5;
+  background: #b5644c;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(201,123,99,0.48);
 }
 
-/* Ghost Button */
 .index-hero-section .index-hero-btn-ghost {
-  font-family: 'Assistant', 'Avenir Next', sans-serif;
-  background: rgba(255, 249, 245, 0.12);
-  color: var(--text-light);
-  padding: 14px 30px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 249, 245, 0.45);
-  font-weight: 400;
-  font-size: 0.9375rem;
-  line-height: 1;
-  text-decoration: none;
   display: inline-block;
-  transition: all 0.3s ease;
-  white-space: nowrap;
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-light);
+  background: rgba(255,249,245,0.10);
+  border: 1.5px solid rgba(253,246,242,0.45);
+  border-radius: 999px;
+  padding: 13px 30px;
+  text-decoration: none;
   backdrop-filter: blur(4px);
-  text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+  line-height: 1;
 }
 
 .index-hero-section .index-hero-btn-ghost:hover {
-  background: rgba(255, 249, 245, 0.22);
-  border-color: rgba(255, 249, 245, 0.70);
+  background: rgba(255,249,245,0.18);
+  border-color: rgba(253,246,242,0.70);
   transform: translateY(-2px);
-  color: var(--text-light);
 }
 
-/* Bottom Divider */
+.index-hero-section .index-hero-br {
+  display: inline;
+}
+
 .index-hero-section .index-hero-divider-wrapper {
   position: absolute;
   bottom: 0;
@@ -438,70 +440,71 @@
   height: 100%;
 }
 
-/* ─── RESPONSIVE ─── */
-
-@media (max-width: 1024px) {
-  .index-hero-section .index-hero-content {
-    padding: 140px 40px 60px;
-  }
-
-  .index-hero-section .index-hero-h1 {
-    font-size: 2.8rem;
-  }
-}
-
 @media (max-width: 768px) {
   .index-hero-section {
     min-height: 100svh;
-    align-items: flex-start;
+    padding-bottom: 60px;
+    align-items: flex-end;
   }
 
   .index-hero-section .index-hero-scrim {
-    background-image: linear-gradient(
-      160deg,
-      rgba(61, 43, 36, 0.90) 0%,
-      rgba(61, 43, 36, 0.72) 50%,
-      rgba(61, 43, 36, 0.30) 100%
-    );
+    background-image:
+      linear-gradient(to top, rgba(61,43,36,0.90) 0%, rgba(61,43,36,0.55) 55%, rgba(61,43,36,0.18) 100%);
   }
 
-  .index-hero-section .index-hero-content {
-    padding: 110px 20px 60px;
-    gap: 18px;
-    align-items: flex-start;
+  .index-hero-section .index-hero-content-wrap {
+    padding: 100px 20px 40px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .index-hero-section .index-hero-inner {
+    max-width: 100%;
+    width: 100%;
   }
 
   .index-hero-section .index-hero-h1 {
-    font-size: 2.1rem;
-    max-width: 100%;
+    font-size: 2rem;
   }
 
-  .index-hero-section .index-hero-subtitle {
+  .index-hero-section .index-hero-h1-sub {
+    font-size: 1.65rem;
+  }
+
+  .index-hero-section .index-hero-h3 {
     font-size: 1rem;
-    max-width: 100%;
-    opacity: 0.92;
   }
 
-  .index-hero-section .index-hero-ctas {
-    flex-direction: column;
-    align-items: flex-start;
+  .index-hero-section .index-hero-br {
+    display: none;
+  }
+
+  .index-hero-section .index-hero-cta-row {
     gap: 12px;
-    width: 100%;
   }
 
   .index-hero-section .index-hero-btn-primary,
   .index-hero-section .index-hero-btn-ghost {
-    width: 100%;
-    text-align: center;
-    padding: 15px 24px;
+    font-size: 0.875rem;
+    padding: 12px 24px;
   }
 
   .index-hero-section .index-hero-divider-wrapper {
-    height: 50px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-hero-section .index-hero-content-wrap {
+    padding: 130px 36px 60px;
   }
 
-  .index-hero-section {
-    padding-bottom: 50px;
+  .index-hero-section .index-hero-h1 {
+    font-size: 2.5rem;
+  }
+
+  .index-hero-section .index-hero-h1-sub {
+    font-size: 2rem;
   }
 }
 </style>
@@ -1054,30 +1057,36 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" id="zappy-section-0">
-  <!-- Background Image Layer -->
-  <div class="index-hero-bg">
-    <img data-hero-bg="true" data-context="A serene, emotionally warm prenatal ultrasound clinic scene. A pregnant woman in soft, neutral clothing resting her hands on her belly, surrounded by gentle warm light. The atmosphere is calm, intimate, and medically professional — think soft bokeh, warm beige and terracotta tones, a modern clinical setting with emotional warmth. No harsh medical equipment visible. The image should convey safety, care, and the miracle of life inside the womb." width="1400" height="900" src="/assets/life-inside-section-%D7%91%D7%99%D7%AA-hero-index-hero-image-1-1776842933518-vtqfzd.webp?v=1776842935381" alt="אישה בהריון בקליניקה חמה ומקצועית של Life Inside" class="index-hero-img" data-hero-background="true" data-element-type="image" data-element-id="img-1776842899456-00ms67pbm" style="object-position: 50% 50% !important; object-fit: cover; width: 100%; height: 100%" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
+    <section class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" data-zappy-section="true" id="zappy-section-0">
+  <div class="index-hero-bg-layer">
+    <div class="index-hero-bg-img" style="background-image: url('assets/site-index-hero-image-1-1776773314760-n18j2e.webp?v=1776773316690'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+    <div class="index-hero-scrim"></div>
   </div>
 
-  <!-- Scrim Overlay -->
-  <div class="index-hero-scrim" aria-hidden="true"></div>
+  <div class="index-hero-content-wrap">
+    <div class="index-hero-inner">
 
-  <!-- Text Content -->
-  <div class="index-hero-content">
-    <div class="index-hero-label">רפואת עובר ואולטרסאונד מיילדותי</div>
-    <h1 class="index-hero-h1">החיים שבפנים<br><em>בידיים הטובות ביותר</em></h1>
-    <h3 class="index-hero-subtitle">מרפאה פרטית לרפואת עובר ברעננה, בהנהלת ד"ר רון הרק — מומחה בנוירולוגיה עוברית ואבחון טרום-לידתי מתקדם</h3>
-    <div class="index-hero-ctas">
-      <a href="/contact" class="btn-primary index-hero-btn-primary" data-element-type="button" data-element-id="btn-1776842899453-7lj7zfpvx" data-native-element="true">קבעו פגישת ייעוץ</a>
-      <a href="/about" class="btn-ghost index-hero-btn-ghost" data-element-type="button" data-element-id="btn-1776842899453-hdc1k8ffp" data-native-element="true">היכרות עם ד"ר הרק</a>
+      <div class="index-hero-label-row">
+        <span class="index-hero-clinic-tag">מרפאה פרטית לרפואת עובר ואולטרסאונד מיילדותי · רעננה</span>
+      </div>
+
+      <h1 class="index-hero-h1">ד"ר רון חר"ך<br><span class="index-hero-h1-sub">ליווי מקצועי מהפעימה הראשונה</span></h1>
+
+      <h3 class="index-hero-h3">מומחיות בינלאומית ברפואת עובר, אבחון טרום לידתי מתקדם<br class="index-hero-br"> בגישה אישית ואנושית, לאורך כל ההריון.</h3>
+
+      <p class="index-hero-credit">בהנהלת ד"ר רון חר"ך, מנהל המרפאה לנוירולוגיה של העובר, מרכז רבין–בילינסון</p>
+
+      <div class="index-hero-cta-row">
+        <a href="/services" class="index-hero-btn-primary">השירותים שלנו</a>
+        <a href="/contact" class="index-hero-btn-ghost">צרו קשר</a>
+      </div>
+
     </div>
   </div>
 
-  <!-- Bottom Divider -->
-  <div class="index-hero-divider-wrapper">
+  <div class="index-hero-divider-wrapper" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,48 Q120,32 240,44 T480,36 Q600,44 720,32 T960,40 Q1080,36 1200,44 T1440,38 L1440,80 Z" fill="#F5EFE6"></path>
+      <path d="M0,80 L0,44 Q120,28 240,40 T480,32 Q600,38 720,26 T960,36 Q1080,42 1200,30 T1440,40 L1440,80 Z" fill="#F5EFE6"></path>
     </svg>
   </div>
 </section>

@@ -2433,7 +2433,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 .index-hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -8602,11 +8602,6 @@ body, html {
 #zappy-auto-grid-1776772351002-bk46n4 .journey-card-body {
   padding: 24px 20px !important;
 }
-}
-
-.index-hero-section .index-hero-bg-img {
-  background-size: contain !important;
-  background-repeat: no-repeat;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
