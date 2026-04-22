@@ -8583,6 +8583,27 @@ body, html {
   justify-content: center !important;
 }
 }
+
+@media (max-width: 768px) {
+#zappy-auto-grid-1776772351002-bk46n4 .journey-card--tall,
+  #zappy-auto-grid-1776772351002-bk46n4 .journey-card--featured,
+  #zappy-auto-grid-1776772351002-bk46n4 .journey-card--short {
+  margin-top: 0 !important;
+  width: 100% !important;
+}
+
+#zappy-auto-grid-1776772351002-bk46n4 .journey-card-image-wrap img {
+  height: 200px !important;
+}
+
+#zappy-auto-grid-1776772351002-bk46n4 .journey-card--featured .journey-card-image-wrap img {
+  height: 220px !important;
+}
+
+#zappy-auto-grid-1776772351002-bk46n4 .journey-card-body {
+  padding: 24px 20px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
