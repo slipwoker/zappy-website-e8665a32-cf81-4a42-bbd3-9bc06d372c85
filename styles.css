@@ -3096,7 +3096,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 55% 45%;
   gap: 48px;
   align-items: center;
   direction: rtl;
