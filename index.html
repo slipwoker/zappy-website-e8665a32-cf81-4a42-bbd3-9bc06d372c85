@@ -544,6 +544,316 @@
   }
 }
 </style>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-credentials-section {
+  position: relative;
+  overflow: visible;
+  background-color: #3D2B24;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(201,123,99,0.18) 0%, transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(127,156,179,0.12) 0%, transparent 40%),
+    linear-gradient(160deg, #5A3A2E 0%, #3D2B24 55%, #2E1F1A 100%);
+  color: var(--text-light);
+  padding: 100px 24px 80px;
+  direction: rtl;
+}
+
+.index-credentials-section .cred-bg-layer {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 60% 0%, rgba(255,255,255,0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.index-credentials-section .cred-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* ── Portrait Column ── */
+.index-credentials-section .cred-portrait-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.index-credentials-section .cred-portrait-wrapper {
+  position: relative;
+}
+
+.index-credentials-section .cred-portrait-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 22px 48px rgba(0,0,0,0.35), 0 0 0 1px rgba(201,123,99,0.25);
+  aspect-ratio: 4/5;
+  background: rgba(255,255,255,0.06);
+}
+
+.index-credentials-section .cred-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.index-credentials-section .cred-portrait-badge {
+  position: absolute;
+  bottom: -16px;
+  inset-inline-start: 24px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 6px 18px rgba(201,123,99,0.4);
+  white-space: nowrap;
+}
+
+.index-credentials-section .cred-badge-label {
+  color: #fff;
+}
+
+.index-credentials-section .cred-intro-card {
+  background: rgba(255,250,245,0.07);
+  border: 1px solid rgba(201,123,99,0.2);
+  border-radius: 18px;
+  padding: 28px 28px 24px;
+  margin-top: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.index-credentials-section .cred-main-title {
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text-light);
+  margin: 0 0 16px;
+  text-align: right;
+}
+
+.index-credentials-section .cred-title-accent {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.index-credentials-section .cred-intro-text {
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(253,246,242,0.82);
+  margin: 0;
+  text-align: right;
+}
+
+/* ── Cards Column ── */
+.index-credentials-section .cred-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.index-credentials-section .cred-card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+  align-items: start;
+  background: rgba(255,250,245,0.06);
+  border: 1px solid rgba(201,123,99,0.18);
+  border-radius: 18px;
+  padding: 24px 24px 22px;
+  backdrop-filter: blur(3px);
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
+  cursor: default;
+}
+
+.index-credentials-section .cred-card:hover {
+  background: rgba(255,250,245,0.10);
+  border-color: rgba(201,123,99,0.38);
+  transform: translateY(-2px);
+}
+
+.index-credentials-section .cred-card-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(201,123,99,0.15);
+  border: 1px solid rgba(201,123,99,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--primary);
+  margin-top: 2px;
+}
+
+.index-credentials-section .cred-card-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--primary);
+}
+
+.index-credentials-section .cred-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+}
+
+.index-credentials-section .cred-card-title {
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.index-credentials-section .cred-card-text {
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(253,246,242,0.78);
+  margin: 0;
+}
+
+.index-credentials-section .cred-card-tag {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(127,156,179,0.18);
+  border: 1px solid rgba(127,156,179,0.3);
+  color: rgba(253,246,242,0.75);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
+
+/* ── Divider ── */
+.index-credentials-section .cred-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.index-credentials-section .cred-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .index-credentials-section .cred-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .index-credentials-section .cred-portrait-col {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .index-credentials-section .cred-portrait-wrapper {
+    flex: 0 0 200px;
+  }
+
+  .index-credentials-section .cred-portrait-frame {
+    aspect-ratio: 3/4;
+  }
+
+  .index-credentials-section .cred-intro-card {
+    flex: 1;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .index-credentials-section {
+    padding: 100px 16px 70px;
+  }
+
+  .index-credentials-section .cred-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .index-credentials-section .cred-portrait-col {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .index-credentials-section .cred-portrait-wrapper {
+    flex: unset;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .index-credentials-section .cred-portrait-frame {
+    aspect-ratio: 4/5;
+  }
+
+  .index-credentials-section .cred-portrait-badge {
+    bottom: -14px;
+    inset-inline-start: 16px;
+    font-size: 0.75rem;
+    padding: 6px 16px;
+  }
+
+  .index-credentials-section .cred-intro-card {
+    margin-top: 8px;
+    padding: 20px 18px;
+  }
+
+  .index-credentials-section .cred-main-title {
+    font-size: 1.6rem;
+  }
+
+  .index-credentials-section .cred-card {
+    grid-template-columns: 44px 1fr;
+    gap: 14px;
+    padding: 18px 16px;
+  }
+
+  .index-credentials-section .cred-card-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .index-credentials-section .cred-card-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .index-credentials-section .cred-card-title {
+    font-size: 1rem;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -1279,63 +1589,85 @@
   </div>
 </section>
 
-<section class="index-credentials-section" data-layout-spec="בית-credentials" dir="rtl" id="index-credentials-section">
-  <div class="index-credentials-container">
-    <!-- Content Column -->
-    <div class="index-credentials-content">
-      <p><span class="index-credentials-eyebrow">הכירו את הרופא</span>
-      </p><h2 class="index-credentials-heading">ד"ר רון חר"ך —<br><em>מומחיות עולמית,<br>ליווי אישי</em></h2>
-      <p class="index-credentials-intro">רופא בכיר ומנהל המרפאה לנוירולוגיה של העובר במרכז הרפואי רבין–בילינסון, ד"ר חר"ך משלב הכשרה בינלאומית ברמה הגבוהה ביותר עם גישה אנושית וחמה לכל מטופלת — מתחילת ההריון ועד הלידה.</p>
-
-      <div class="index-credentials-blocks">
-        <!-- Block 1 -->
-        <div class="index-credentials-block zappy-grid-item-nested-grid zappy-preserve-css-grid" data-grid-item-index="0" data-zappy-grid-align="start" data-original-gap="20px" style="align-items: stretch !important; display: grid;">
-          <div class="index-credentials-block-icon" data-grid-item-index="0">
-            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          </div>
-          <div class="index-credentials-block-body" data-grid-item-index="1">
-            <h3>הכשרה בינלאומית — BCNatal ברצלונה</h3>
-            <p >בשנים 2021–2023 ביצע ד"ר חר"ך תת-התמחות קלינית ב-BCNatal Fetal Medicine בברצלונה — אחד ממרכזי רפואת העובר המובילים בעולם. ניסיון זה הקנה לו טכניקות אבחון מתקדמות.</p>
-          </div>
+<section class="index-credentials-section" data-layout-spec="בית-credentials" dir="rtl" data-zappy-section="true" id="index-credentials-section">
+  <div class="cred-bg-layer" aria-hidden="true"></div>
+  
+  <div class="cred-container">
+    
+    <!-- Right column: doctor image + intro -->
+    <div class="cred-portrait-col">
+      <div class="cred-portrait-wrapper">
+        <div class="cred-portrait-frame">
+          <img alt="ד&quot;ר רון חר&quot;ך — מומחה ברפואת עובר ואולטרסאונד מיילדותי" class="cred-portrait-img" src="/assets/site-index-credentials-image-1-1776771501645-tc3bqz.webp?v=1776771503615" data-placeholder="index-credentials-image-1" data-context="Professional editorial portrait of a senior male Israeli physician in his 40s, Dr. Ron Hark, wearing a white medical coat, standing in a modern fetal medicine clinic with ultrasound equipment in the background. Warm, calm lighting with dusty blue and cream tones. The doctor has a warm, confident, and approachable expression. The setting conveys world-class medical expertise combined with personal care. Soft bokeh background, high-end clinical environment, premium prenatal clinic aesthetic." style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
         </div>
-
-        <!-- Block 2 -->
-        <div class="index-credentials-block zappy-grid-item-nested-grid zappy-preserve-css-grid" data-grid-item-index="1" data-zappy-grid-align="start" data-original-gap="20px" style=" align-items: stretch !important;">
-          <div class="index-credentials-block-icon" data-grid-item-index="0">
-            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path></svg>
-          </div>
-          <div class="index-credentials-block-body" data-grid-item-index="1">
-            <h3>מנהל תחום נוירולוגיית העובר — בילינסון</h3>
-            <p>ד"ר חר"ך מוביל את תחום נוירולוגיית העובר במרכז הרפואי רבין–בילינסון, ומתמחה בסקירות מכוונות למוח העובר ובמחקר מומים עובריים עם דגש על מערכת העצבים המרכזית.</p>
-          </div>
+        <div class="cred-portrait-badge">
+          <span class="cred-badge-label">הכירו את הרופא</span>
         </div>
-
-        <!-- Block 3 -->
-        <div class="index-credentials-block zappy-grid-item-nested-grid zappy-preserve-css-grid" data-grid-item-index="2" data-zappy-grid-align="start" data-original-gap="20px" style=" align-items: stretch !important;">
-          <div class="index-credentials-block-icon" data-grid-item-index="0">
-            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
-          </div>
-          <div class="index-credentials-block-body" data-grid-item-index="1">
-            <h3>אבחון טרום-לידתי מתקדם — הריון בסיכון גבוה</h3>
-            <p>המרפאה מציעה סקירת מערכות פרטית ברעננה, בדיקות שקיפות עורפית, וליווי מקיף להריונות בסיכון גבוה — בשילוב הטכנולוגיה המתקדמת ביותר וגישה אישית ואמפתית לכל זוג.</p>
-          </div>
-        </div>
+      </div>
+      <div class="cred-intro-card">
+        <h2 class="cred-main-title">ד"ר רון חר"ך —<br><span class="cred-title-accent">מומחיות עולמית,</span><br>ליווי אישי</h2>
+        <p class="cred-intro-text">רופא בכיר ומנהל המרפאה לנוירולוגיה של העובר במרכז הרפואי רבין–בילינסון, ד"ר חר"ך משלב הכשרה בינלאומית ברמה הגבוהה ביותר עם גישה אנושית וחמה לכל מטופלת — מתחילת ההריון ועד הלידה.</p>
       </div>
     </div>
 
-    <!-- Image Column -->
-    <div class="index-credentials-image-col">
-      <div class="index-credentials-image-backplate"></div>
-      <div class="index-credentials-image-frame">
-        <div data-zappy-zoom-wrapper="true" data-element-id="img-1776545318761-2u4ulgj2d" data-element-type="image" data-zappy-zoom-wrapper-width="448px" data-zappy-zoom-wrapper-height="560px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" style="position: relative !important; overflow: hidden !important; width: 448px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 560px !important; display: block !important;"><img data-placeholder="index-credentials-image-1" data-context="Professional editorial portrait of a senior male Israeli physician in his 40s, Dr. Ron Hark, wearing a white medical coat, standing in a modern fetal medicine clinic with ultrasound equipment in the background. Warm, calm lighting with dusty blue and cream tones. The doctor has a warm, confident, and approachable expression. The setting conveys world-class medical expertise combined with personal care. Soft bokeh background, high-end clinical environment, premium prenatal clinic aesthetic." width="520" height="660" src="/assets/site-index-credentials-image-1-1776771501645-tc3bqz.webp?v=1776771503615" alt="ד&quot;ר רון חר&quot;ך — מומחה ברפואת עובר ואולטרסאונד מיילדותי" data-element-type="image" data-element-id="img-1776545318761-2u4ulgj2d" style="border-radius: 8px; display: block !important; object-position: 50% 50% !important; object-fit: cover !important; width: 100% !important; height: 100% !important; max-width: none !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="447.9977111816406" data-zappy-original-height="559.9884643554688"></div>
-      </div>
+    <!-- Left column: credentials cards -->
+    <div class="cred-cards-col">
+
+      <article class="cred-card">
+        <div class="cred-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" class="cred-card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.25"></circle>
+            <path d="M14 24 C14 18 19 14 24 14 C29 14 34 18 34 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+            <path d="M24 14 L24 10 M18 16 L15 13 M30 16 L33 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+            <path d="M16 30 L20 26 L24 29 L28 23 L32 27" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+            <rect x="14" y="30" width="20" height="8" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
+          </svg>
+        </div>
+        <div class="cred-card-content">
+          <h3 class="cred-card-title">הכשרה בינלאומית — BCNatal ברצלונה</h3>
+          <p class="cred-card-text">בשנים 2021–2023 ביצע ד"ר חר"ך תת-התמחות קלינית ב-BCNatal Fetal Medicine בברצלונה — אחד ממרכזי רפואת העובר המובילים בעולם. ניסיון זה הקנה לו טכניקות אבחון מתקדמות.</p>
+          <div class="cred-card-tag">ברצלונה, ספרד</div>
+        </div>
+      </article>
+
+      <article class="cred-card">
+        <div class="cred-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" class="cred-card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.25"></circle>
+            <path d="M24 12 L27 20 L36 20 L29 25 L32 34 L24 29 L16 34 L19 25 L12 20 L21 20 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"></path>
+            <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+          </svg>
+        </div>
+        <div class="cred-card-content">
+          <h3 class="cred-card-title">מנהל תחום נוירולוגיית העובר — בילינסון</h3>
+          <p class="cred-card-text">ד"ר חר"ך מוביל את תחום נוירולוגיית העובר במרכז הרפואי רבין–בילינסון, ומתמחה בסקירות מכוונות למוח העובר ובמחקר מומים עובריים עם דגש על מערכת העצבים המרכזית.</p>
+          <div class="cred-card-tag">מרכז רפואי רבין–בילינסון</div>
+        </div>
+      </article>
+
+      <article class="cred-card">
+        <div class="cred-card-icon-wrap">
+          <svg data-element-type="icon" data-icon-type="svg" class="cred-card-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.25"></circle>
+            <rect x="12" y="14" width="24" height="20" rx="3" stroke="currentColor" stroke-width="1.8" fill="none"></rect>
+            <path d="M18 24 L22 28 L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M16 10 L16 16 M32 10 L32 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <div class="cred-card-content">
+          <h3 class="cred-card-title">אבחון טרום-לידתי מתקדם — הריון בסיכון גבוה</h3>
+          <p class="cred-card-text">המרפאה מציעה סקירת מערכות פרטית ברעננה, בדיקות שקיפות עורפית, וליווי מקיף להריונות בסיכון גבוה — בשילוב הטכנולוגיה המתקדמת ביותר וגישה אישית ואמפתית לכל זוג.</p>
+          <div class="cred-card-tag">רעננה, ישראל</div>
+        </div>
+      </article>
+
     </div>
   </div>
 
-  <!-- Bottom Diagonal Divider -->
-  <div class="index-credentials-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,60 L1440,10 L1440,80 Z" fill="#F8F2EB"></path>
+  <!-- Decorative bottom divider -->
+  <div class="cred-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 L0,28 Q150,10 300,25 T600,18 Q750,8 900,22 T1200,15 L1200,60 Z" fill="#F8F2EB"></path>
     </svg>
   </div>
 </section>
