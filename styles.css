@@ -9358,6 +9358,14 @@ body, html {
     padding: 3px 9px;
   }
 }
+
+#zappy-auto-grid-1777037503514-2txavh .rev-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-self: stretch !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
