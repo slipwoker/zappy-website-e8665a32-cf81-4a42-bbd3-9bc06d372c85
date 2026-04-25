@@ -3724,8 +3724,8 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 }
 
 .index-cta-section .index-cta-image-tile {
-  flex: 0 0 380px;
-  width: 380px;
+  flex: 0 0 240px;
+  width: 240px;
   position: relative;
   align-self: stretch;
   min-height: 320px;
