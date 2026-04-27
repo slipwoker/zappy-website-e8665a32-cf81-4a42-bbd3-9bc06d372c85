@@ -9396,6 +9396,14 @@ body, html {
   background-color: #5A8FA8 !important;
   color: #fff !important;
 }
+
+.index-credentials-section .index-credentials-card-icon-wrap {
+  display: none !important;
+}
+
+.index-credentials-section .index-credentials-card {
+  grid-template-columns: 1fr !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
