@@ -8460,20 +8460,7 @@ body.accessibility-widget-visible ._access-menu {
 
 
 
-/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
-@media (min-width: 769px) {
-  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
-    max-height: none !important;
-    height: 48px !important;
-    max-width: 192px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
-  .nav-container {
-    min-height: 78px !important;
-  }
-}
-/* /Zappy custom logo size */
+
 
 
 .nav-brand a {
@@ -9404,6 +9391,21 @@ body, html {
 .index-credentials-section .index-credentials-card {
   grid-template-columns: 1fr !important;
 }
+/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
+@media (min-width: 769px) {
+  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
+    max-height: none !important;
+    height: 56px !important;
+    max-width: 224px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+  .nav-container {
+    min-height: 86px !important;
+  }
+}
+/* /Zappy custom logo size */
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
