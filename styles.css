@@ -5203,9 +5203,9 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 .about-profile-section .about-profile-grid {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: 1fr 520px;
   gap: 72px;
-  align-items: center;
+  align-items: flex-start;
   direction: rtl;
 }
 
@@ -5368,7 +5368,6 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   text-decoration-color: var(--accent);
 }
 
-/* ── Portrait Column ── */
 .about-profile-section .about-profile-portrait-col {
   position: relative;
   display: flex;
@@ -5378,21 +5377,21 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 .about-profile-section .portrait-mat {
   position: relative;
-  background: linear-gradient(135deg, #F3E6D7 0%, #C7775F 100%);
-  border-radius: 24px;
-  padding: 20px;
-  box-shadow: 0 22px 48px rgba(130, 92, 70, 0.18);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
   width: 100%;
-  max-width: 420px;
+  max-width: 520px;
 }
 
 .about-profile-section .portrait-frame {
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
   width: 100%;
   aspect-ratio: 4/5;
   position: relative;
-  box-shadow: 0 10px 24px rgba(130, 92, 70, 0.10);
+  box-shadow: 0 22px 48px rgba(130, 92, 70, 0.18);
 }
 
 .about-profile-section .portrait-frame img {
@@ -9668,6 +9667,20 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.about-profile-section .portrait-frame {
+  aspect-ratio: unset !important;
+  height: 700px !important;
+}
+
+.about-profile-section [data-zappy-zoom-wrapper="true"] {
+  width: 100% !important;
+  height: 700px !important;
+}
+
+.about-profile-section .about-profile-section .portrait-mat {
+  max-width: 520px !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
