@@ -327,7 +327,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link" style="display:flex; flex-direction:column; align-items:center; gap:2px; text-decoration:none;">
-        <img src="/assets/life-inside-logo-1776542712289-hkl01l.webp?v=1776542713125-e1gzxv" alt="Life Inside" class="logo" data-image-type="logo" >
+        <img src="/assets/life-inside-logo-1776542712289-hkl01l.webp?v=1776542713125-e1gzxv" alt="Life Inside" class="logo" data-image-type="logo" style="">
         <span style="font-size: 23.4px; color: #C97B63; font-family: inherit; white-space: nowrap; line-height: 1; text-align: center; display: block; width: 100%; margin: 0 auto;">ד"ר רון חר"ך</span>
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about-dr-ron">אודות ד״ר רון חר"ך</a></li></ul></div>
@@ -837,21 +837,43 @@
   </div>
 </section>
 
-<section class="services-screenings-section" data-layout-spec="שירותים-screenings" dir="rtl">
+<section class="services-screenings-section" data-layout-spec="שירותים-screenings" dir="rtl" id="services-screenings-section">
   <div class="services-screenings-container">
 
     <!-- Content Column -->
     <div class="services-screenings-content">
       <div class="services-screenings-header">
-        <span class="services-screenings-label">בדיקות שגרה וסינון</span>
-        <h2 class="services-screenings-title">סקירות מוקדמות להריון בטוח</h2>
-        <p class="services-screenings-intro">בשלבים הראשונים של ההריון, שתי בדיקות מרכזיות מספקות מידע חיוני על התפתחות העובר ומאפשרות לנו להעניק לכם שקט נפשי מוקדם ככל האפשר. הבדיקות מתבצעות במרפאת Life Inside ברעננה בתנאי הדמיה מתקדמים ובליווי אישי חם.</p>
+        <p><span class="services-screenings-label">בדיקות שגרה וסינון</span>
+        </p><h2 class="services-screenings-title">סקירות מוקדמות להריון בטוח</h2>
+        <p class="services-screenings-intro" style="">בשלבים הראשונים של ההריון, שתי בדיקות מרכזיות מספקות מידע חיוני על התפתחות העובר ומאפשרות לנו להעניק לכם שקט נפשי מוקדם ככל האפשר. הבדיקות מתבצעות במרפאת Life Inside ברעננה בתנאי הדמיה מתקדמים ובליווי אישי חם של ד"ר חר"ך.</p>
       </div>
 
       <div class="services-screenings-cards">
 
         <!-- Card 1: Heartbeat Scan -->
-        <article class="screening-card">
+        <article class="screening-card" style="background-color: rgba(255, 250, 245, 0.9) !important; padding: 36px 40px !important; box-sizing: border-box;" data-grid-item-index="0">
+          <div class="screening-card-top">
+            <div class="screening-icon-wrap">
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-element-id="icon-1777641026039-ctoid0m2s">
+                <path d="M24 42s-16-10-16-22a10 10 0 0 1 16-8 10 10 0 0 1 16 8c0 12-16 22-16 22z"></path>
+                <polyline points="14 24 18 20 22 28 26 18 30 24 34 24"></polyline>
+              </svg>
+            </div>
+            <div class="screening-card-heading">
+              <h3 class="screening-card-title" style="cursor: text;">כותרת משנה</h3>
+              <p class="zappy-editable"><span class="screening-timing" style="cursor: text;">טקסט כאן</span>
+            </p></div>
+          </div>
+          <div class="screening-card-body">
+            <p style="cursor: text;">טקסט כאן</p>
+            <ul class="screening-details-list">
+              <li style="cursor: text;">פריט ברשימה</li>
+              <li style="cursor: text;">פריט ברשימה</li>
+              <li style="cursor: text;">פריט ברשימה</li>
+              <li style="cursor: text;">פריט ברשימה</li>
+            </ul>
+          </div>
+        </article><article class="screening-card" data-grid-item-index="1">
           <div class="screening-card-top">
             <div class="screening-icon-wrap">
               <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -861,8 +883,8 @@
             </div>
             <div class="screening-card-heading">
               <h3 class="screening-card-title">בדיקת דופק עוברי</h3>
-              <span class="screening-timing">שבועות 6–10 להריון</span>
-            </div>
+              <p class="zappy-editable"><span class="screening-timing">שבועות 6–10 להריון</span>
+            </p></div>
           </div>
           <div class="screening-card-body">
             <p>הבדיקה הראשונה שמאשרת שהכול מתחיל כשורה. באמצעות אולטרסאונד נרתיקי עדין, ד"ר חרך מאתר את שק ההריון, מאמת את מיקומו ברחם, ומאזין לדופק העוברי הראשון — אותה פעימה קטנה שמשנה הכול.</p>
@@ -888,7 +910,7 @@
         </article>
 
         <!-- Card 2: Nuchal Translucency -->
-        <article class="screening-card">
+        <article class="screening-card" data-grid-item-index="2">
           <div class="screening-card-top">
             <div class="screening-icon-wrap">
               <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -901,8 +923,8 @@
             </div>
             <div class="screening-card-heading">
               <h3 class="screening-card-title">בדיקת שקיפות עורפית</h3>
-              <span class="screening-timing">שבועות 11–14 להריון</span>
-            </div>
+              <p class="zappy-editable"><span class="screening-timing">שבועות 11–14 להריון</span>
+            </p></div>
           </div>
           <div class="screening-card-body">
             <p>בדיקת הסינון המשמעותית ביותר בשליש הראשון. ד"ר חרך מודד את עובי הנוזל בעורף העובר ומשלב ממצאים עם בדיקות דם ופרמטרים נוספים — כדי לספק הערכה מדויקת ככל האפשר לסיכון לתסמונת דאון ומצבים כרומוזומליים נוספים.</p>
@@ -933,9 +955,9 @@
     <!-- Image Column -->
     <div class="services-screenings-image-col">
       <div class="services-screenings-image-frame">
-        <img data-placeholder="services-screenings-image-1" data-context="A serene, softly lit private obstetric ultrasound room in Ra" anana,="" israel.="" a="" calm="" pregnant="" woman="" lies="" on="" an="" examination="" table="" while="" physician="" performs="" ultrasound="" scan.="" the="" room="" features="" modern="" medical="" equipment,="" warm="" ambient="" lighting,="" and="" clean,="" reassuring="" aesthetic.="" atmosphere="" is="" professional="" yet="" —="" emphasizing="" compassionate="" prenatal="" care.'="" width="560" height="720" src="/assets/site-services-screenings-image-1.webp" alt="חדר אולטרסאונד מיילדותי פרטי — מרפאת Life Inside ברעננה">
+        <img data-placeholder="services-screenings-image-1" data-context="A serene, softly lit private obstetric ultrasound room in Ra" anana,="" israel.="" a="" calm="" pregnant="" woman="" lies="" on="" an="" examination="" table="" while="" physician="" performs="" ultrasound="" scan.="" the="" room="" features="" modern="" medical="" equipment,="" warm="" ambient="" lighting,="" and="" clean,="" reassuring="" aesthetic.="" atmosphere="" is="" professional="" yet="" —="" emphasizing="" compassionate="" prenatal="" care.'="" width="560" height="720" src="/assets/site-services-screenings-image-1.webp" alt="חדר אולטרסאונד מיילדותי פרטי — מרפאת Life Inside ברעננה" data-element-type="image" data-element-id="img-1777640960949-1hubh4rk4" style="">
         <div class="services-screenings-image-badge">
-          <span class="badge-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span>
+          <span class="badge-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true" data-element-type="icon" data-element-id="icon-1777640960947-v83v81lo6" data-icon-type="fontawesome"></i></span>
           <span class="badge-text">בדיקה פרטית ואישית</span>
         </div>
       </div>
@@ -1129,7 +1151,7 @@
       <!-- Column 1: Company Info -->
       <div class="footer-col footer-brand">
         <div data-zappy-zoom-wrapper="true" data-element-id="img-1776974483874-dgwignotk" data-element-type="image" data-zappy-zoom-wrapper-width="224px" data-zappy-zoom-wrapper-height="70px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 224px !important; max-width: 100% !important; margin-left: auto !important; margin-right: 0px !important; height: 70px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/life-inside-logo-1776542712289-hkl01l.webp?v=1776542713125-e1gzxv" alt="Life Inside" class="logo" data-element-type="image" data-element-id="img-1776974483874-dgwignotk" data-zappy-footer-image="true" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-original-width="106.9907455444336" data-zappy-original-height="55.9953727722168" data-zappy-object-position="50% 50%"></div>
-        <p class="footer-tagline" >ד"ר רון חר"ך | החיים שלפני החיים</p>
+        <p class="footer-tagline" style="">ד"ר רון חר"ך | החיים שלפני החיים</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/profile.php?id=61583458506656" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/dr_roncharach/" aria-label="Instagram" data-zappy-original-link="true" data-zappy-orig-href="[instagram_handle]" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1776974483872-hxisipcrm" data-icon-type="fontawesome" style="font-size: 13px !important; color: rgb(253, 246, 242); cursor: pointer;" data-zappy-click-action="link"></i></a>
@@ -1150,8 +1172,8 @@
       <!-- Column 3: Contact Info -->
       <div class="footer-col">
         <h3 class="footer-heading">יצירת קשר</h3>
-        <ul class="footer-contact" ><li>
-            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776974483872-uke5tee4q" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><span class="contact-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f39781dd819c9d909b928192909bb3949e929a9fdd909c9e" >dr.roncharach@gmail.com</a><a href="/cdn-cgi/l/email-protection#cc97aeb9bfa5a2a9bfbf93a9a1ada5a091" ></a></span>
+        <ul class="footer-contact" style=""><li>
+            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776974483872-uke5tee4q" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><span class="contact-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f39781dd819c9d909b928192909bb3949e929a9fdd909c9e" style="">dr.roncharach@gmail.com</a><a href="/cdn-cgi/l/email-protection#cc97aeb9bfa5a2a9bfbf93a9a1ada5a091" style=""></a></span>
           </li><li>
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776974483872-4wbjjlu6i" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text">055-3111246</span>
