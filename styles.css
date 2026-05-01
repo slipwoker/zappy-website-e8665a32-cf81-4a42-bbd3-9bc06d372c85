@@ -4834,12 +4834,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 }
 
 
-/* services-process */
 .services-process-section {
   direction: rtl;
-  background-color: #FCF8F3;
-  background-image: linear-gradient(180deg, #FCF8F3 0%, #F3E7DA 100%);
-  color: var(--text-dark);
+  background-color: var(--bg-dark);
+  background-image: none;
+  color: var(--text-light);
   padding: 96px 24px;
   position: relative;
   overflow: visible;
