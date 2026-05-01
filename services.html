@@ -245,6 +245,320 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.services-screenings-section {
+  position: relative;
+  overflow: visible;
+  background-color: #F8F2EB;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,0.65) 0, rgba(255,255,255,0) 22%),
+    radial-gradient(circle at 80% 30%, rgba(230,202,180,0.28) 0, rgba(230,202,180,0) 20%),
+    radial-gradient(circle at 10% 90%, rgba(240,220,205,0.36) 0, rgba(240,220,205,0) 22%);
+  color: var(--text-dark);
+  padding: 80px 24px 80px;
+  direction: rtl;
+  font-family: 'Assistant', 'Avenir Next', sans-serif;
+}
+
+/* Decorative blobs */
+.services-screenings-section .ss-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(60px);
+}
+.services-screenings-section .ss-blob--warm {
+  width: 320px;
+  height: 320px;
+  background: rgba(201,123,99,0.12);
+  top: -60px;
+  inset-inline-end: -60px;
+}
+.services-screenings-section .ss-blob--peach {
+  width: 260px;
+  height: 260px;
+  background: rgba(230,202,180,0.22);
+  bottom: 40px;
+  inset-inline-start: -40px;
+}
+
+/* Container */
+.services-screenings-section .ss-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section header */
+.services-screenings-section .ss-header {
+  text-align: center;
+  margin-bottom: 56px;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: 56px;
+}
+.services-screenings-section .ss-label {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(201,123,99,0.1);
+  border-radius: 999px;
+  padding: 5px 16px;
+  margin-bottom: 16px;
+}
+.services-screenings-section .ss-title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: #5A3A32;
+  margin: 0 0 20px;
+}
+.services-screenings-section .ss-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6A4636;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main layout */
+.services-screenings-section .ss-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 48px;
+  align-items: start;
+  direction: rtl;
+}
+
+/* Cards column */
+.services-screenings-section .ss-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Individual card */
+.services-screenings-section .ss-card {
+  background: rgba(255,250,245,0.88);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(130,92,70,0.12);
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(201,177,157,0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.services-screenings-section .ss-card:hover {
+  box-shadow: 0 18px 40px rgba(130,92,70,0.18);
+  transform: translateY(-3px);
+}
+.services-screenings-section .ss-card--accent {
+  background: rgba(255,248,242,0.95);
+  border-color: rgba(201,123,99,0.25);
+  border-inline-start: 3px solid var(--primary);
+}
+
+/* Card header */
+.services-screenings-section .ss-card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.services-screenings-section .ss-card__icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, rgba(201,123,99,0.15) 0%, rgba(201,123,99,0.08) 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+.services-screenings-section .ss-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 4px;
+}
+.services-screenings-section .ss-card__title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #5A3A32;
+  margin: 0;
+}
+.services-screenings-section .ss-card__weeks {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(201,123,99,0.1);
+  border-radius: 999px;
+  padding: 3px 12px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* Card description */
+.services-screenings-section .ss-card__desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6A4636;
+  margin: 0 0 20px;
+  text-align: right;
+}
+
+/* Card list */
+.services-screenings-section .ss-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services-screenings-section .ss-card__list li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #5A3A32;
+  text-align: right;
+}
+.services-screenings-section .ss-check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, rgba(201,123,99,0.18) 0%, rgba(201,123,99,0.08) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-top: 1px;
+}
+
+/* Footer note */
+.services-screenings-section .ss-footer-note {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(127,156,179,0.1);
+  border-radius: 14px;
+  padding: 16px 20px;
+  border: 1px solid rgba(127,156,179,0.2);
+}
+.services-screenings-section .ss-footer-note__icon {
+  flex-shrink: 0;
+  color: var(--secondary);
+  margin-top: 1px;
+}
+.services-screenings-section .ss-footer-note p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #6A4636;
+  margin: 0;
+  text-align: right;
+}
+
+/* Visual column */
+.services-screenings-section .ss-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-screenings-section .ss-visual__frame {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 22px 48px rgba(130,92,70,0.18);
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+.services-screenings-section .ss-visual__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px;
+}
+.services-screenings-section .ss-visual__badge {
+  position: absolute;
+  bottom: 24px;
+  inset-inline-start: 24px;
+  background: rgba(255,250,245,0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 999px;
+  padding: 10px 22px;
+  box-shadow: 0 8px 24px rgba(130,92,70,0.18);
+  border: 1px solid rgba(201,177,157,0.4);
+}
+.services-screenings-section .ss-visual__badge-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #5A3A32;
+  white-space: nowrap;
+}
+
+/* Wave decoration */
+.services-screenings-section .ss-wave-deco {
+  position: absolute;
+  bottom: -20px;
+  inset-inline-start: -20px;
+  width: 180px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-screenings-section .ss-layout {
+    grid-template-columns: 1fr 360px;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-screenings-section {
+    padding: 60px 16px 60px;
+  }
+  .services-screenings-section .ss-layout {
+    grid-template-columns: 1fr !important;
+    gap: 32px;
+  }
+  .services-screenings-section .ss-visual {
+    order: -1;
+  }
+  .services-screenings-section .ss-visual__frame {
+    aspect-ratio: 4/3;
+  }
+  .services-screenings-section .ss-title {
+    font-size: 1.75rem;
+  }
+  .services-screenings-section .ss-header {
+    margin-bottom: 36px;
+  }
+  .services-screenings-section .ss-card {
+    padding: 1.5rem;
+  }
+  .services-screenings-section .ss-blob {
+    display: none;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -837,111 +1151,131 @@
   </div>
 </section>
 
-<section class="services-screenings-section" data-layout-spec="שירותים-screenings" dir="rtl" id="services-screenings-section">
-  <div class="services-screenings-container">
+<section class="services-screenings-section" data-layout-spec="שירותים-screenings" dir="rtl" data-zappy-section="true" id="services-screenings-section">
 
-    <!-- Content Column -->
-    <div class="services-screenings-content">
-      <div class="services-screenings-header">
-        <p><span class="services-screenings-label" >בדיקות שגרה&nbsp;</span>
-        </p><h2 class="services-screenings-title" >בדיקות מוקדמות להריון בטוח</h2>
-        <p class="services-screenings-intro" >בשלבים הראשונים של ההריון, שתי בדיקות מרכזיות מספקות מידע חיוני על התפתחות העובר ומאפשרות לנו להעניק לכם שקט נפשי מוקדם ככל האפשר. הבדיקות מתבצעות במרפאת Life Inside ברעננה בתנאי הדמיה מתקדמים ובליווי אישי חם של ד"ר חר"ך.</p>
-      </div>
+  <!-- Decorative blobs -->
+  <div class="ss-blob ss-blob--warm" aria-hidden="true"></div>
+  <div class="ss-blob ss-blob--peach" aria-hidden="true"></div>
 
-      <div class="services-screenings-cards" style="display: grid; --zappy-grid-cols: repeat(2, minmax(0, 1fr)); grid-template-columns: repeat(2, minmax(0, 1fr));" data-zappy-explicit-columns="true">
+  <div class="ss-container">
 
-        <!-- Card 1: Heartbeat Scan -->
-        <article class="screening-card" data-grid-item-index="0">
-          <div class="screening-card-top">
-            <div class="screening-icon-wrap">
-              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 12h2l2-5 3 10 2-7 2 4 1-2h4"/>
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-width="1.4"/>
-              </svg>
-            </div>
-            <div class="screening-card-heading">
-              <h3 class="screening-card-title">בדיקת דופק עוברי</h3>
-              <p class="zappy-editable"><span class="screening-timing">שבועות 6–10 להריון</span>
-            </p></div>
-          </div>
-          <div class="screening-card-body">
-            <p >הבדיקה הראשונה שמאשרת שהכול מתחיל כשורה. באמצעות אולטרסאונד נרתיקי עדין, ד"ר חרך מאתר את שק ההריון, מאמת את מיקומו ברחם ומאמת קיום דופק עוברי.</p>
-            <ul class="screening-details-list">
-              <li>
-                <span class="detail-dot"></span>
-                <span>אישור הריון תוך-רחמי ושלילת הריון חוץ-רחמי</span>
-              </li>
-              <li>
-                <span class="detail-dot"></span>
-                <span>זיהוי דופק עוברי ואישור חיות</span>
-              </li>
-              <li>
-                <span class="detail-dot"></span>
-                <span>קביעת גיל ההריון המדויק ותאריך לידה צפוי</span>
-              </li>
-              <li>
-                <span class="detail-dot"></span>
-                <span>גילוי מוקדם של הריון מרובה עוברים</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Card 2: Nuchal Translucency -->
-        <article class="screening-card" data-grid-item-index="1">
-          <div class="screening-card-top">
-            <div class="screening-icon-wrap">
-              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="6" r="2.5"/>
-                <path d="M12 9c-3 0-5 2-5 4.5 0 1.5.8 2.8 2 3.5l.5 4h5l.5-4c1.2-.7 2-2 2-3.5C17 11 15 9 12 9z"/>
-                <path d="M9.5 13.5c0 0 .5 1 2.5 1s2.5-1 2.5-1"/>
-              </svg>
-            </div>
-            <div class="screening-card-heading">
-              <h3 class="screening-card-title">בדיקת שקיפות עורפית</h3>
-              <p class="zappy-editable"><span class="screening-timing">שבועות 11–14 להריון</span>
-            </p></div>
-          </div>
-          <div class="screening-card-body">
-            <p>בדיקת הסינון המשמעותית ביותר בשליש הראשון. ד"ר חרך מודד את עובי הנוזל בעורף העובר ומשלב ממצאים עם בדיקות דם ופרמטרים נוספים — כדי לספק הערכה מדויקת ככל האפשר לסיכון לתסמונת דאון ומצבים כרומוזומליים נוספים.</p>
-            <ul class="screening-details-list">
-              <li>
-                <span class="detail-dot"></span>
-                <span>מדידת שקיפות עורפית לפי תקני FMF בינלאומיים</span>
-              </li>
-              <li>
-                <span class="detail-dot"></span>
-                <span>הערכת סיכון לתסמונת דאון וטריזומיות נוספות</span>
-              </li>
-              <li>
-                <span class="detail-dot"></span>
-                <span>בדיקת מבנה העובר המוקדמת — לב, מוח, גפיים</span>
-              </li>
-              <li>
-                <span class="detail-dot"></span>
-                <span>הנחיה לגבי הצורך בבדיקות גנטיות המשך</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-      </div>
+    <!-- Section header -->
+    <div class="ss-header">
+      <span class="ss-label">בדיקות שגרה</span>
+      <h2 class="ss-title">בדיקות מוקדמות להריון בטוח</h2>
+      <p class="ss-intro">בשלבים הראשונים של ההריון, שתי בדיקות מרכזיות מספקות מידע חיוני על התפתחות העובר ומאפשרות לנו להעניק לכם שקט נפשי מוקדם ככל האפשר. הבדיקות מתבצעות במרפאת Life Inside ברעננה בתנאי הדמיה מתקדמים ובליווי אישי חם של ד"ר חר"ך.</p>
     </div>
 
-    <!-- Image Column -->
-    <div class="services-screenings-image-col">
-      <div class="services-screenings-image-frame">
-        <img data-placeholder="services-screenings-image-1" data-context="A serene, softly lit private obstetric ultrasound room in Ra" anana,="" israel.="" a="" calm="" pregnant="" woman="" lies="" on="" an="" examination="" table="" while="" physician="" performs="" ultrasound="" scan.="" the="" room="" features="" modern="" medical="" equipment,="" warm="" ambient="" lighting,="" and="" clean,="" reassuring="" aesthetic.="" atmosphere="" is="" professional="" yet="" —="" emphasizing="" compassionate="" prenatal="" care.'="" width="560" height="720" src="/assets/site-services-screenings-image-1.webp" alt="חדר אולטרסאונד מיילדותי פרטי — מרפאת Life Inside ברעננה" data-element-type="image" data-element-id="img-1777640960949-1hubh4rk4" >
-        <div class="services-screenings-image-badge">
-          <span class="badge-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true" data-element-type="icon" data-element-id="icon-1777640960947-v83v81lo6" data-icon-type="fontawesome"></i></span>
-          <span class="badge-text">בדיקה פרטית ואישית</span>
+    <!-- Main layout: cards + image -->
+    <div class="ss-layout">
+
+      <!-- Left column: screening cards -->
+      <div class="ss-cards">
+
+        <!-- Card 1 -->
+        <article class="ss-card">
+          <div class="ss-card__header">
+            <div class="ss-card__icon" aria-hidden="true">
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"></path></svg>
+            </div>
+            <div class="ss-card__meta">
+              <h3 class="ss-card__title">בדיקת דופק עוברי</h3>
+              <span class="ss-card__weeks">שבועות 6–10 להריון</span>
+            </div>
+          </div>
+          <p class="ss-card__desc">הבדיקה הראשונה שמאשרת שהכול מתחיל כשורה. באמצעות אולטרסאונד נרתיקי עדין, ד"ר חרך מאתר את שק ההריון, מאמת את מיקומו ברחם ומאמת קיום דופק עוברי.</p>
+          <ul class="ss-card__list">
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>אישור הריון תוך-רחמי ושלילת הריון חוץ-רחמי</span>
+            </li>
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>זיהוי דופק עוברי ואישור חיות</span>
+            </li>
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>קביעת גיל ההריון המדויק ותאריך לידה צפוי</span>
+            </li>
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>גילוי מוקדם של הריון מרובה עוברים</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="ss-card ss-card--accent">
+          <div class="ss-card__header">
+            <div class="ss-card__icon" aria-hidden="true">
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line></svg>
+            </div>
+            <div class="ss-card__meta">
+              <h3 class="ss-card__title">בדיקת שקיפות עורפית</h3>
+              <span class="ss-card__weeks">שבועות 11–14 להריון</span>
+            </div>
+          </div>
+          <p class="ss-card__desc">בדיקת הסינון המשמעותית ביותר בשליש הראשון. ד"ר חרך מודד את עובי הנוזל בעורף העובר ומשלב ממצאים עם בדיקות דם ופרמטרים נוספים — כדי לספק הערכה מדויקת ככל האפשר לסיכון לתסמונת דאון ומצבים כרומוזומליים נוספים.</p>
+          <ul class="ss-card__list">
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>מדידת שקיפות עורפית לפי תקני FMF בינלאומיים</span>
+            </li>
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>הערכת סיכון לתסמונת דאון וטריזומיות נוספות</span>
+            </li>
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>בדיקת מבנה העובר המוקדמת — לב, מוח, גפיים</span>
+            </li>
+            <li>
+              <span class="ss-check" aria-hidden="true">
+                <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>הנחיה לגבי הצורך בבדיקות גנטיות המשך</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Footer note -->
+        <div class="ss-footer-note">
+          <span class="ss-footer-note__icon" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </span>
+          <p>כל בדיקה מתבצעת בנוכחות מלאה של ד"ר חרך, עם הסבר מפורט ותשובות לכל שאלה.</p>
         </div>
       </div>
-      <div class="services-screenings-image-note">
-        <p>כל בדיקה מתבצעת בנוכחות מלאה של ד"ר חרך, עם הסבר מפורט ותשובות לכל שאלה.</p>
-      </div>
-    </div>
 
+      <!-- Right column: image + badge -->
+      <div class="ss-visual">
+        <div class="ss-visual__frame">
+          <img alt="חדר אולטרסאונד מיילדותי פרטי — מרפאת Life Inside ברעננה" class="ss-visual__img" src="/assets/site-services-screenings-image-1.webp" data-placeholder="services-screenings-image-1" data-context="A serene, softly lit private obstetric ultrasound room in Ra" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          <div class="ss-visual__badge">
+            <span class="ss-visual__badge-text">בדיקה פרטית ואישית</span>
+          </div>
+        </div>
+        <!-- Decorative soft wave -->
+        <svg class="ss-wave-deco" aria-hidden="true" data-no-icon-edit="true" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,30 Q30,10 60,30 T120,30 T180,30 T220,30 L220,60 L0,60 Z" fill="var(--primary)" opacity="0.08"></path>
+        </svg>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -1010,11 +1344,11 @@
       <article class="services-diagnostics-card">
         <div class="services-diagnostics-card-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <ellipse cx="12" cy="14" rx="5" ry="6"/>
-            <circle cx="12" cy="5.5" r="2"/>
-            <path d="M9 14c0-1.7.9-3.2 2.2-4"/>
-            <path d="M7 20c0 0 1.5 2 5 2s5-2 5-2"/>
-            <path d="M8.5 10.5c-.8-.5-1.5-1.2-1.5-2.5"/>
+            <ellipse cx="12" cy="14" rx="5" ry="6"></ellipse>
+            <circle cx="12" cy="5.5" r="2"></circle>
+            <path d="M9 14c0-1.7.9-3.2 2.2-4"></path>
+            <path d="M7 20c0 0 1.5 2 5 2s5-2 5-2"></path>
+            <path d="M8.5 10.5c-.8-.5-1.5-1.2-1.5-2.5"></path>
           </svg>
         </div>
         <div class="services-diagnostics-card-content">
@@ -1037,10 +1371,10 @@
       <article class="services-diagnostics-card services-diagnostics-card--brain">
         <div class="services-diagnostics-card-icon services-diagnostics-card-icon--accent">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 5C9.8 5 8 6.6 8 8.5c0 .6.2 1.2.5 1.7C7 10.8 6 12.2 6 13.8 6 16.1 7.8 18 10 18h.5l.5 2h2l.5-2H14c2.2 0 4-1.9 4-4.2 0-1.6-1-3-2.5-3.6.3-.5.5-1.1.5-1.7C16 6.6 14.2 5 12 5z"/>
-            <path d="M12 5v2"/>
-            <path d="M9.5 10.5c0 0 .8 1 2.5 1s2.5-1 2.5-1"/>
-            <path d="M10 14h4"/>
+            <path d="M12 5C9.8 5 8 6.6 8 8.5c0 .6.2 1.2.5 1.7C7 10.8 6 12.2 6 13.8 6 16.1 7.8 18 10 18h.5l.5 2h2l.5-2H14c2.2 0 4-1.9 4-4.2 0-1.6-1-3-2.5-3.6.3-.5.5-1.1.5-1.7C16 6.6 14.2 5 12 5z"></path>
+            <path d="M12 5v2"></path>
+            <path d="M9.5 10.5c0 0 .8 1 2.5 1s2.5-1 2.5-1"></path>
+            <path d="M10 14h4"></path>
           </svg>
         </div>
         <div class="services-diagnostics-card-content">
