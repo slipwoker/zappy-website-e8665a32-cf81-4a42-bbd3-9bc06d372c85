@@ -9774,6 +9774,21 @@ body, html {
   background-color: rgba(201,123,99,0.25) !important;
   color: var(--primary) !important;
 }
+
+.services-intro-section ~ section,
+.services-intro-section,
+.services-screenings-section,
+.services-anatomy-section,
+.services-diagnostics-section,
+.services-process-section,
+.services-cta-section {
+  background-color: var(--text-color) !important;
+}
+
+html:has(.services-intro-section),
+html:has(.services-intro-section) body {
+  background-color: var(--text-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
