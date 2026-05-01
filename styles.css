@@ -9713,6 +9713,67 @@ body, html {
   margin: 12px auto !important;
 }
 }
+
+.services-intro-section,
+.services-screenings-section,
+.services-anatomy-section,
+.services-diagnostics-section,
+.services-process-section,
+.services-cta-section {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-light) !important;
+}
+
+.services-intro-section *,
+.services-screenings-section *,
+.services-anatomy-section *,
+.services-diagnostics-section *,
+.services-process-section *,
+.services-cta-section * {
+  color: var(--text-light) !important;
+}
+
+.services-intro-section .services-intro-eyebrow,
+.services-screenings-section .services-screenings-label,
+.services-diagnostics-section .services-diagnostics-label,
+.services-process-section .services-process-label,
+.services-cta-section .services-cta-eyebrow,
+.services-anatomy-section .anatomy-panel-badge,
+.services-diagnostics-section .services-diagnostics-card-tag,
+.services-process-section .services-process-step-badge,
+.services-intro-section .services-mini-card-number {
+  color: var(--primary) !important;
+}
+
+.services-intro-section .services-mini-card,
+.services-screenings-section .screening-card,
+.services-anatomy-section .anatomy-panel,
+.services-diagnostics-section .services-diagnostics-card,
+.services-process-section .services-process-card {
+  background-color: rgba(255,255,255,0.06) !important;
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+.services-cta-section .services-cta-panel {
+  background-color: rgba(255,255,255,0.07) !important;
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+.services-anatomy-section .services-anatomy-divider-line,
+.services-diagnostics-section .services-diagnostics-divider,
+.services-process-section .services-process-divider-line {
+  border-color: rgba(255,255,255,0.15) !important;
+  background-color: rgba(255,255,255,0.15) !important;
+}
+
+.services-screenings-section .screening-icon-wrap {
+  background-color: var(--primary) !important;
+}
+
+.services-anatomy-section .anatomy-panel-badge {
+  background-color: rgba(201,123,99,0.25) !important;
+  color: var(--primary) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
