@@ -1,6 +1,4 @@
-# Life Inside — Generative Engine Optimization Map
-
-> Life Inside is a private fetal medicine and obstetric ultrasound clinic located in Ra'anana, Israel, led by Dr. Ron Hark — a senior physician and head of the fetal neurology unit at Rabin Medical Center (Beilinson). Dr. Hark brings world-class expertise gained through a clinical sub-specialization at BCNatal Fetal Medicine in Barcelona (2021–2023), one of the world's leading fetal medicine centers. The clinic combines cutting-edge medical technology with a personal, empathetic approach, offering comprehensive care for pregnant women from early pregnancy through birth, with special emphasis on fetal neurology, high-risk pregnancies, and advanced prenatal diagnostics.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,25 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Life Inside
-Life Inside is a private fetal medicine and obstetric ultrasound clinic located in Ra'anana, Israel, led by Dr. Ron Hark — a senior physician and head of the fetal neurology unit at Rabin Medical Center (Beilinson). Dr. Hark brings world-class expertise gained through a clinical sub-specialization at BCNatal Fetal Medicine in Barcelona (2021–2023), one of the world's leading fetal medicine centers. The clinic combines cutting-edge medical technology with a personal, empathetic approach, offering comprehensive care for pregnant women from early pregnancy through birth, with special emphasis on fetal neurology, high-risk pregnancies, and advanced prenatal diagnostics.
-
-## Services/Products
-- בדיקת דופק
-- שקיפות עורפית
-- סקירה מוקדמת
-- סקירה מאוחרת
-- סקירה שלישית להערכת התפתחות העובר
-- סקירות מכוונות למוח העובר
-- טיפול בהריונות בסיכון גבוה
-- אבחון טרום לידתי
-
-## Target Audience
-נשים בהריון, זוגות המצפים לילד, הריונות בסיכון גבוה
-
-## Industry
-רפואה ובריאות - רפואת עובר
-
+## About Business
 ---
 
 # Additional Resources
