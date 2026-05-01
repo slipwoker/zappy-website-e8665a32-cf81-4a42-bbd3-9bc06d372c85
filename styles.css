@@ -4076,11 +4076,11 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   max-width: 600px;
 }
 
-/* ── CARDS STACK ────────────────────────────────────────────── */
 .services-screenings-section .services-screenings-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 24px;
+  align-items: stretch;
 }
 
 .services-screenings-section .screening-card {
@@ -4093,6 +4093,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 1;
 }
 
 .services-screenings-section .screening-card:hover {
