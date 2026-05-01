@@ -9683,6 +9683,35 @@ body, html {
 .about-profile-section .about-profile-section .portrait-mat {
   max-width: 520px !important;
 }
+
+@media (max-width: 768px) {
+#ai-section-1777034325432-qmavxzt .rev-testimonials__grid {
+  grid-template-columns: 1fr !important;
+  gap: 16px !important;
+}
+
+#ai-section-1777034325432-qmavxzt .rev-card {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 16px !important;
+}
+
+#ai-section-1777034325432-qmavxzt .rev-testimonials__container {
+  padding-inline: 16px !important;
+}
+
+#ai-section-1777034325432-qmavxzt .rev-testimonials__title {
+  font-size: 1.6rem !important;
+}
+
+#ai-section-1777034325432-qmavxzt .rev-testimonials__header {
+  padding-inline: 0 !important;
+}
+
+#ai-section-1777034325432-qmavxzt .zappy-inserted-element {
+  margin: 12px auto !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
