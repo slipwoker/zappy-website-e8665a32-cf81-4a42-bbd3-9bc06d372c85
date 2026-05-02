@@ -12385,6 +12385,68 @@ nav.navbar .sub-menu li a {
 .navbar .nav-menu .sub-menu .nav-link {
   color: var(--background-color) !important;
 }
+
+body, html {
+  background-color: #2C1F18 !important;
+}
+
+.navbar {
+  background: linear-gradient(180deg, #1E140F 0%, #241810 100%) !important;
+  background-image: linear-gradient(180deg, #1E140F 0%, #241810 100%) !important;
+  border-bottom: 1px solid rgba(201,123,99,0.15) !important;
+}
+
+#pulse-page .pulse-hero {
+  background: linear-gradient(160deg, #2C1F18 0%, #1E140F 100%) !important;
+}
+
+#pulse-page .pulse-included {
+  background: linear-gradient(180deg, #261A13 0%, #2C1F18 100%) !important;
+}
+
+#pulse-page .pulse-card {
+  background: linear-gradient(145deg, #352318 0%, #2A1B13 100%) !important;
+  border: 1px solid rgba(201,123,99,0.18) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
+
+#pulse-page .pulse-timing {
+  background: linear-gradient(180deg, #2C1F18 0%, #221710 100%) !important;
+}
+
+#pulse-page .pulse-timeline__item {
+  background: linear-gradient(135deg, #352318 0%, #2A1B13 100%) !important;
+  border: 1px solid rgba(201,123,99,0.2) !important;
+}
+
+#pulse-page .pulse-faq {
+  background: linear-gradient(180deg, #221710 0%, #2C1F18 100%) !important;
+}
+
+#pulse-page .pulse-faq__item {
+  background: linear-gradient(145deg, #352318 0%, #2A1B13 100%) !important;
+  border: 1px solid rgba(201,123,99,0.18) !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25) !important;
+}
+
+#pulse-page .pulse-faq__question {
+  background: transparent !important;
+}
+
+#pulse-page .pulse-faq__answer,
+#pulse-page .pulse-faq__answer-inner {
+  background: rgba(30,20,15,0.6) !important;
+}
+
+#pulse-page .pulse-cta {
+  background: linear-gradient(180deg, #2C1F18 0%, #1E140F 100%) !important;
+}
+
+#pulse-page .pulse-cta__box {
+  background: linear-gradient(145deg, #3A2518 0%, #2C1B10 100%) !important;
+  border: 1px solid rgba(201,123,99,0.25) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
