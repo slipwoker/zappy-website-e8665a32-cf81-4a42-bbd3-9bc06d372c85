@@ -467,8 +467,8 @@
             }
             
             /* Menu Group styling (non-clickable parent) - TOP LEVEL ONLY with ultra-specific selector */
-            .nav-menu &gt; li &gt; .menu-group-title,
-            #navMenu &gt; li &gt; .menu-group-title {
+            .nav-menu > li > .menu-group-title,
+            #navMenu > li > .menu-group-title {
               display: inline-block !important;
               padding: 0.5rem 1rem !important;
               color: var(--nav-color) !important;
@@ -482,13 +482,13 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu &gt; li &gt; .menu-group-title:hover,
-            #navMenu &gt; li &gt; .menu-group-title:hover {
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
               color: var(--nav-hover-color) !important;
             }
             
             /* Desktop: show submenu on Menu Group hover */
-            li:has(.menu-group-title):hover &gt; .sub-menu {
+            li:has(.menu-group-title):hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -497,7 +497,7 @@
             
             /* Hide menu items marked as hidden (overrides hover states) */
             .zappy-hidden-menu-item,
-            li:has(.menu-group-title):hover &gt; .sub-menu .zappy-hidden-menu-item {
+            li:has(.menu-group-title):hover > .sub-menu .zappy-hidden-menu-item {
               display: none !important;
               opacity: 0 !important;
               visibility: hidden !important;
@@ -550,9 +550,9 @@
             }
             
             /* Show submenu on parent hover - more specific selectors */
-            .nav-menu li:hover &gt; .sub-menu,
-            nav li:hover &gt; .sub-menu,
-            .navbar li:hover &gt; .sub-menu {
+            .nav-menu li:hover > .sub-menu,
+            nav li:hover > .sub-menu,
+            .navbar li:hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -590,8 +590,8 @@
             }
             
             /* CRITICAL: Override submenu styles for TOP-LEVEL Menu Groups only - must come AFTER submenu styles */
-            .nav-menu &gt; li &gt; .menu-group-title,
-            #navMenu &gt; li &gt; .menu-group-title {
+            .nav-menu > li > .menu-group-title,
+            #navMenu > li > .menu-group-title {
               display: inline-block !important;
               padding: 0.5rem 1rem !important;
               color: var(--nav-color) !important;
@@ -605,8 +605,8 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu &gt; li &gt; .menu-group-title:hover,
-            #navMenu &gt; li &gt; .menu-group-title:hover {
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
               color: var(--nav-hover-color) !important;
               background-color: transparent !important;
             }
@@ -648,18 +648,18 @@
               }
               
               /* Disable hover behavior on mobile */
-              .nav-menu li:hover &gt; .sub-menu,
-              nav li:hover &gt; .sub-menu,
-              .navbar li:hover &gt; .sub-menu {
+              .nav-menu li:hover > .sub-menu,
+              nav li:hover > .sub-menu,
+              .navbar li:hover > .sub-menu {
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
               }
               
               /* Enable visibility for expanded submenus */
-              .nav-menu li &gt; .sub-menu.mobile-expanded,
-              nav li &gt; .sub-menu.mobile-expanded,
-              .navbar li &gt; .sub-menu.mobile-expanded {
+              .nav-menu li > .sub-menu.mobile-expanded,
+              nav li > .sub-menu.mobile-expanded,
+              .navbar li > .sub-menu.mobile-expanded {
                 opacity: 1 !important;
                 visibility: visible !important;
                 pointer-events: auto !important;
@@ -688,39 +688,39 @@
               }
               
               /* Parent link - takes full width since toggle is absolute (not a flex child) */
-              .nav-menu li:has(.sub-menu) &gt; a,
-              nav li:has(.sub-menu) &gt; a,
-              .navbar li:has(.sub-menu) &gt; a,
-              .nav-menu &gt; li &gt; .menu-group-title,
-              #navMenu &gt; li &gt; .menu-group-title {
+              .nav-menu li:has(.sub-menu) > a,
+              nav li:has(.sub-menu) > a,
+              .navbar li:has(.sub-menu) > a,
+              .nav-menu > li > .menu-group-title,
+              #navMenu > li > .menu-group-title {
                 flex: 1 !important;
                 min-width: 0 !important;
               }
               
               /* Normalize menu-group-title in mobile nav to match link alignment */
-              .nav-menu &gt; li &gt; .menu-group-title,
-              #navMenu &gt; li &gt; .menu-group-title {
+              .nav-menu > li > .menu-group-title,
+              #navMenu > li > .menu-group-title {
                 padding: 0 !important;
                 line-height: inherit !important;
               }
               
               /* Submenu takes full width below parent */
-              .nav-menu li:has(.sub-menu) &gt; .sub-menu,
-              nav li:has(.sub-menu) &gt; .sub-menu,
-              .navbar li:has(.sub-menu) &gt; .sub-menu {
+              .nav-menu li:has(.sub-menu) > .sub-menu,
+              nav li:has(.sub-menu) > .sub-menu,
+              .navbar li:has(.sub-menu) > .sub-menu {
                 flex-basis: 100% !important;
                 width: 100% !important;
               }
               
               /* HIDE EXISTING CHEVRONS/ARROWS from cloned sites to prevent duplicates */
-              .nav-menu li:has(.sub-menu) &gt; a .fa-chevron-down,
-              .nav-menu li:has(.sub-menu) &gt; a .fa-angle-down,
-              .nav-menu li:has(.sub-menu) &gt; a [class*="chevron"],
-              .nav-menu li:has(.sub-menu) &gt; a [class*="arrow"],
-              nav li:has(.sub-menu) &gt; a [class*="chevron"],
-              nav li:has(.sub-menu) &gt; a [class*="arrow"],
-              #navMenu li:has(.sub-menu) &gt; a [class*="chevron"],
-              #navMenu li:has(.sub-menu) &gt; a [class*="arrow"] {
+              .nav-menu li:has(.sub-menu) > a .fa-chevron-down,
+              .nav-menu li:has(.sub-menu) > a .fa-angle-down,
+              .nav-menu li:has(.sub-menu) > a [class*="chevron"],
+              .nav-menu li:has(.sub-menu) > a [class*="arrow"],
+              nav li:has(.sub-menu) > a [class*="chevron"],
+              nav li:has(.sub-menu) > a [class*="arrow"],
+              #navMenu li:has(.sub-menu) > a [class*="chevron"],
+              #navMenu li:has(.sub-menu) > a [class*="arrow"] {
                 display: none !important;
                 visibility: hidden !important;
               }
@@ -775,10 +775,10 @@
             (function() {
               function initMobileMenuToggles() {
                 // Only run on mobile
-                if (window.innerWidth &gt; 768) {
+                if (window.innerWidth > 768) {
                   // Remove any toggle buttons on desktop
-                  document.querySelectorAll('.mobile-submenu-toggle').forEach(btn =&gt; btn.remove());
-                  document.querySelectorAll('.sub-menu.mobile-expanded').forEach(menu =&gt; {
+                  document.querySelectorAll('.mobile-submenu-toggle').forEach(btn => btn.remove());
+                  document.querySelectorAll('.sub-menu.mobile-expanded').forEach(menu => {
                     menu.classList.remove('mobile-expanded');
                   });
                   console.log('[MOBILE MENU] Desktop mode - cleanup done');
@@ -801,7 +801,7 @@
                   }
                   
                   const submenu = li.querySelector('.sub-menu');
-                  const parentLink = li.querySelector(':scope &gt; a') || li.querySelector(':scope &gt; .menu-group-title');
+                  const parentLink = li.querySelector(':scope > a') || li.querySelector(':scope > .menu-group-title');
                   
                   if (!submenu || !parentLink) return;
                   
@@ -861,7 +861,7 @@
               // This handles cases where the mobile menu is hidden initially
               const observer = new MutationObserver(function(mutations) {
                 mutations.forEach(function(mutation) {
-                  if (mutation.type === 'attributes' &amp;&amp; mutation.attributeName === 'class') {
+                  if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                     const target = mutation.target;
                     if (target.classList.contains('active') || target.style.display !== 'none') {
                       console.log('[MOBILE MENU] Mobile menu became visible, re-initializing...');
@@ -905,9 +905,9 @@
         list-style: none;
         pointer-events: none;
       }
-      .nav-menu li:hover &gt; .sub-menu,
-      nav li:hover &gt; .sub-menu,
-      .navbar li:hover &gt; .sub-menu {
+      .nav-menu li:hover > .sub-menu,
+      nav li:hover > .sub-menu,
+      .navbar li:hover > .sub-menu {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
@@ -955,26 +955,26 @@
 <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-element-type="button" data-element-id="btn-1776866322410-druj85opj" data-native-element="true">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
     <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="0553111246" aria-label="Call" data-element-type="button" data-element-id="btn-1776866322410-mduslyw4b" data-native-element="true">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
 
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link" style="display:flex; flex-direction:column; align-items:center; gap:2px; text-decoration:none;">
-        <img src="/assets/life-inside-logo-1777645382900-oo5nes.webp?v=1777645383114-cildo9" alt="Life Inside" class="logo" data-image-type="logo" style>
+        <img src="/assets/life-inside-logo-1777645382900-oo5nes.webp?v=1777645383114-cildo9" alt="Life Inside" class="logo" data-image-type="logo" >
         <span style="font-size: 23.4px; color: #C97B63; font-family: inherit; white-space: nowrap; line-height: 1; text-align: center; display: block; width: 100%; margin: 0 auto;">ד"ר רון חר"ך</span>
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/clinic-services">שירותי המרפאה</a><ul class="sub-menu"><li><a href="/first-pregnancy-ultrasound" class>בדיקת דופק ראשונה בהריון</a></li><li><a href="/rear-transparency" class="nav-link">שקיפות עורפית</a></li><li><a href="/late-review" class="nav-link">סקירה מאוחרת</a></li><li><a href="/third-trimester-ultrasound" class="nav-link">סקירה שלישית להערכת התפתחות העובר</a></li><li><a href="/targeted-review" class="nav-link">סקירה מכוונת</a></li></ul></li><li><a href="/about-dr-ron">אודות ד״ר רון חר"ך</a></li><li><a href="/contact">צור קשר</a></li><li><a href="/preliminary-review" class>סקירה מוקדמת</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/clinic-services">שירותי המרפאה</a><ul class="sub-menu"><li><a href="/first-pregnancy-ultrasound" class="">בדיקת דופק ראשונה בהריון</a></li><li><a href="/rear-transparency" class="nav-link">שקיפות עורפית</a></li><li><a href="/preliminary-review" class="nav-link">סקירה מוקדמת</a></li><li><a href="/late-review" class="nav-link">סקירה מאוחרת</a></li><li><a href="/third-trimester-ultrasound" class="nav-link">סקירה שלישית להערכת התפתחות העובר</a></li><li><a href="/targeted-review" class="nav-link">סקירה מכוונת</a></li></ul></li><li><a href="/about-dr-ron">אודות ד״ר רון חר"ך</a></li><li><a href="/contact">צור קשר</a></li></ul></div>
 
     
 
@@ -1019,12 +1019,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -1037,7 +1037,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -1173,7 +1173,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -1364,7 +1364,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '055-3111246';
         
@@ -1381,7 +1381,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -1428,11 +1428,11 @@
       <!-- Column 1: Company Info -->
       <div class="footer-col footer-brand">
         <div data-zappy-zoom-wrapper="true" data-element-id="img-1776974483874-dgwignotk" data-element-type="image" data-zappy-zoom-wrapper-width="224px" data-zappy-zoom-wrapper-height="70px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 224px !important; max-width: 100% !important; margin-left: auto !important; margin-right: 0px !important; height: 70px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/life-inside-logo-1777645382900-oo5nes.webp?v=1777645383114-cildo9" alt="Life Inside" class="logo" data-element-type="image" data-element-id="img-1776974483874-dgwignotk" data-zappy-footer-image="true" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-original-width="106.9907455444336" data-zappy-original-height="55.9953727722168" data-zappy-object-position="50% 50%"></div>
-        <p class="footer-tagline" style>ד"ר רון חר"ך | החיים שלפני החיים</p>
+        <p class="footer-tagline" >ד"ר רון חר"ך | החיים שלפני החיים</p>
         <div class="footer-social">
           <a href="https://facebook.com/profile.php?id=61583458506656" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com/dr_roncharach" aria-label="Instagram" data-zappy-original-link="true" data-zappy-orig-href="https://instagram.com/dr_roncharach" data-zappy-orig-target data-zappy-orig-rel data-zappy-click-action="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1776974483872-hxisipcrm" data-icon-type="fontawesome" style="font-size: 13px !important; color: rgb(253, 246, 242); cursor: pointer;" data-zappy-click-action="link"></i></a>
-          <a href="https://wa.me/" aria-label="WhatsApp" data-zappy-original-link="true" data-zappy-orig-href="https://wa.me/" data-zappy-orig-target data-zappy-orig-rel data-zappy-click-action="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1776974483872-1cgxipwf6" data-icon-type="fontawesome" style="font-size: 13px !important; color: rgb(255, 255, 255); cursor: pointer;" data-zappy-click-action="link"></i></a>
+          <a href="https://instagram.com/dr_roncharach" aria-label="Instagram" data-zappy-original-link="true" data-zappy-orig-href="https://instagram.com/dr_roncharach" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1776974483872-hxisipcrm" data-icon-type="fontawesome" style="font-size: 13px !important; color: rgb(253, 246, 242); cursor: pointer;" data-zappy-click-action="link"></i></a>
+          <a href="https://wa.me/" aria-label="WhatsApp" data-zappy-original-link="true" data-zappy-orig-href="https://wa.me/" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1776974483872-1cgxipwf6" data-icon-type="fontawesome" style="font-size: 13px !important; color: rgb(255, 255, 255); cursor: pointer;" data-zappy-click-action="link"></i></a>
         </div>
       </div>
 
@@ -1449,8 +1449,8 @@
       <!-- Column 3: Contact Info -->
       <div class="footer-col">
         <h3 class="footer-heading">יצירת קשר</h3>
-        <ul class="footer-contact" style><li>
-            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776974483872-uke5tee4q" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><span class="contact-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f39781dd819c9d909b928192909bb3949e929a9fdd909c9e" style>dr.roncharach@gmail.com</a><a href="/cdn-cgi/l/email-protection#cc97aeb9bfa5a2a9bfbf93a9a1ada5a091" style></a></span>
+        <ul class="footer-contact" ><li>
+            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776974483872-uke5tee4q" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><span class="contact-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f39781dd819c9d909b928192909bb3949e929a9fdd909c9e" >dr.roncharach@gmail.com</a><a href="/cdn-cgi/l/email-protection#cc97aeb9bfa5a2a9bfbf93a9a1ada5a091" ></a></span>
           </li><li>
             <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776974483872-4wbjjlu6i" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text">055-3111246</span>
