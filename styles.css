@@ -12409,6 +12409,30 @@ nav.navbar .sub-menu li a {
   cursor: pointer !important;
 }
 }
+
+.ps-about-cards-section .ps-about-card {
+  color: var(--text-light) !important;
+}
+
+.ps-about-cards-section .ps-about-card-title {
+  color: var(--text-light) !important;
+}
+
+.ps-about-cards-section .ps-about-card-desc {
+  color: rgba(253, 246, 242, 0.7) !important;
+}
+
+.ps-about-cards-section .ps-about-card-icon svg path,
+.ps-about-cards-section .ps-about-card-icon svg circle,
+.ps-about-cards-section .ps-about-card-icon svg rect {
+  stroke: var(--accent-color) !important;
+  fill: none !important;
+}
+
+.ps-about-cards-section .ps-about-card-icon svg circle[fill="var(--accent-color)"] {
+  fill: var(--accent-color) !important;
+  stroke: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
