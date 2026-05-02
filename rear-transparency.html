@@ -457,45 +457,43 @@
             }
           </style>
         
-          <style id="zappy-nested-menu-style">
-            /* Desktop only: vertically center nav items */
+          <style id="zappy-nested-menu-style">/* Desktop only: vertically center nav items */
             @media (min-width: 769px) {
               .nav-menu,
               #navMenu {
                 align-items: center !important;
               }
             }
-            
-            /* Menu Group styling (non-clickable parent) - TOP LEVEL ONLY with ultra-specific selector */
-            .nav-menu > li > .menu-group-title,
+
+.nav-menu > li > .menu-group-title,
             #navMenu > li > .menu-group-title {
-              display: inline-block !important;
-              padding: 0.5rem 1rem !important;
-              color: var(--nav-color) !important;
-              font-weight: 500 !important;
-              line-height: 1.7 !important;
-              cursor: default !important;
-              user-select: none !important;
-              vertical-align: middle !important;
-              text-decoration: none !important;
-              margin: 0 !important;
-              transition: color 0.3s ease !important;
-            }
-            
-            .nav-menu > li > .menu-group-title:hover,
+  display: inline-block !important;
+  padding: 0.5rem 1rem !important;
+  color: var(--background-color) !important;
+  font-weight: 500 !important;
+  line-height: 1.7 !important;
+  cursor: default !important;
+  user-select: none !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+  transition: color 0.3s ease !important;
+}
+
+.nav-menu > li > .menu-group-title:hover,
             #navMenu > li > .menu-group-title:hover {
               color: var(--nav-hover-color) !important;
             }
-            
-            /* Desktop: show submenu on Menu Group hover */
+
+/* Desktop: show submenu on Menu Group hover */
             li:has(.menu-group-title):hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
               pointer-events: auto !important; /* Enable interaction when hovering */
             }
-            
-            /* Hide menu items marked as hidden (overrides hover states) */
+
+/* Hide menu items marked as hidden (overrides hover states) */
             .zappy-hidden-menu-item,
             li:has(.menu-group-title):hover > .sub-menu .zappy-hidden-menu-item {
               display: none !important;
@@ -503,15 +501,15 @@
               visibility: hidden !important;
               pointer-events: none !important;
             }
-            
-            /* Keep submenu visible when hovering over the submenu itself */
+
+/* Keep submenu visible when hovering over the submenu itself */
             .sub-menu:hover {
               opacity: 1 !important;
               visibility: visible !important;
               pointer-events: auto !important;
             }
-            
-            /* Nested dropdown menu styles - using more specific selectors */
+
+/* Nested dropdown menu styles - using more specific selectors */
             .nav-menu .sub-menu,
             nav .sub-menu,
             .navbar .sub-menu {
@@ -534,8 +532,8 @@
               list-style: none;
               pointer-events: none; /* Prevent interaction when hidden */
             }
-            
-            /* RTL (Hebrew/Arabic) submenu positioning - align to right instead of left */
+
+/* RTL (Hebrew/Arabic) submenu positioning - align to right instead of left */
             [dir="rtl"] .nav-menu .sub-menu,
             [dir="rtl"] nav .sub-menu,
             [dir="rtl"] .navbar .sub-menu,
@@ -548,8 +546,8 @@
               left: auto;
               right: 0;
             }
-            
-            /* Show submenu on parent hover - more specific selectors */
+
+/* Show submenu on parent hover - more specific selectors */
             .nav-menu li:hover > .sub-menu,
             nav li:hover > .sub-menu,
             .navbar li:hover > .sub-menu {
@@ -558,22 +556,22 @@
               transform: translateY(0) !important;
               pointer-events: auto !important; /* Enable interaction when visible */
             }
-            
-            /* Parent item must be relatively positioned */
+
+/* Parent item must be relatively positioned */
             .nav-menu li:has(.sub-menu),
             nav li:has(.sub-menu),
             .navbar li:has(.sub-menu) {
               position: relative;
             }
-            
-            /* Style for submenu items */
+
+/* Style for submenu items */
             .sub-menu li {
               list-style: none;
               margin: 0;
               padding: 0;
             }
-            
-            .sub-menu a,
+
+.sub-menu a,
             .sub-menu .menu-group-title {
               display: block !important;
               padding: 10px 12px !important;
@@ -584,34 +582,33 @@
               white-space: nowrap;
               cursor: default;
             }
-            
-            .sub-menu a:hover {
+
+.sub-menu a:hover {
               background-color: #f5f5f5;
             }
-            
-            /* CRITICAL: Override submenu styles for TOP-LEVEL Menu Groups only - must come AFTER submenu styles */
-            .nav-menu > li > .menu-group-title,
+
+.nav-menu > li > .menu-group-title,
             #navMenu > li > .menu-group-title {
-              display: inline-block !important;
-              padding: 0.5rem 1rem !important;
-              color: var(--nav-color) !important;
-              font-weight: 500 !important;
-              line-height: 1.7 !important;
-              cursor: default !important;
-              user-select: none !important;
-              vertical-align: middle !important;
-              text-decoration: none !important;
-              margin: 0 !important;
-              transition: color 0.3s ease !important;
-            }
-            
-            .nav-menu > li > .menu-group-title:hover,
+  display: inline-block !important;
+  padding: 0.5rem 1rem !important;
+  color: var(--background-color) !important;
+  font-weight: 500 !important;
+  line-height: 1.7 !important;
+  cursor: default !important;
+  user-select: none !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+  margin: 0 !important;
+  transition: color 0.3s ease !important;
+}
+
+.nav-menu > li > .menu-group-title:hover,
             #navMenu > li > .menu-group-title:hover {
               color: var(--nav-hover-color) !important;
               background-color: transparent !important;
             }
-            
-            /* On mobile, show nested menus as expandable accordion */
+
+/* On mobile, show nested menus as expandable accordion */
             @media (max-width: 768px) {
               /* Mobile submenu styling */
               .nav-menu .sub-menu,
@@ -760,14 +757,13 @@
                 transform: rotate(180deg) !important;
               }
             }
-            
-            /* Hide toggle button on desktop */
+
+/* Hide toggle button on desktop */
             @media (min-width: 769px) {
               .mobile-submenu-toggle {
                 display: none !important;
               }
-            }
-          </style>
+            }</style>
           
           <script id="zappy-mobile-menu-script">
             // Mobile menu toggle for nested submenus (including Menu Groups)

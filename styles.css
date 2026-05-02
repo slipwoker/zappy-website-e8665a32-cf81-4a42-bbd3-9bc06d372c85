@@ -11718,6 +11718,110 @@ nav.navbar ul.nav-menu li:hover > .sub-menu {
   pointer-events: auto !important;
   transform: translateY(0) !important;
 }
+
+.nav-menu .sub-menu {
+  background: var(--text-color) !important;
+  border: 1px solid rgba(201, 123, 99, 0.3) !important;
+}
+
+.nav-menu .sub-menu a,
+.nav-menu .sub-menu .nav-link {
+  color: var(--background-color) !important;
+}
+
+.nav-menu .sub-menu a:hover,
+.nav-menu .sub-menu .nav-link:hover {
+  background-color: rgba(201, 123, 99, 0.15) !important;
+  color: var(--accent-color) !important;
+}
+
+.nav-menu > .nav-item > a {
+  color: var(--background-color) !important;
+}
+
+.navbar .nav-menu .sub-menu,
+html .navbar .sub-menu {
+  background: var(--text-color) !important;
+  background-color: var(--text-color) !important;
+  border: 1px solid rgba(201, 123, 99, 0.3) !important;
+}
+
+.navbar .nav-menu .sub-menu a,
+.navbar .nav-menu .sub-menu .nav-link,
+html .navbar .sub-menu a,
+html .navbar .sub-menu li a {
+  color: var(--background-color) !important;
+}
+
+.navbar .nav-menu .sub-menu a:hover,
+.navbar .nav-menu .sub-menu .nav-link:hover {
+  background-color: rgba(201, 123, 99, 0.2) !important;
+  color: var(--accent-color) !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: var(--background-color) !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: var(--background-color) !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: var(--background-color) !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: var(--background-color) !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: var(--background-color) !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
