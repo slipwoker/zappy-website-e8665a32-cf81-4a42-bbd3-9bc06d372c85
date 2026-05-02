@@ -11694,6 +11694,14 @@ html:has(.services-intro-section) body {
   overflow: visible !important;
   position: relative;
 }
+/* Batch: Fix navbar submenu visibility - remove overflow:hidden from navbar chain */
+nav.navbar { overflow: visible !important; }
+nav.navbar .nav-container { overflow: visible !important; }
+nav.navbar .nav-right-group { overflow: visible !important; }
+nav.navbar .nav-menu { overflow: visible !important; }
+nav.navbar ul.nav-menu li { position: relative !important; overflow: visible !important; }
+nav.navbar ul.nav-menu li .sub-menu { overflow: visible !important; z-index: 99999 !important; position: absolute !important; opacity: 0 !important; visibility: hidden !important; transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease !important; }
+nav.navbar ul.nav-menu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
