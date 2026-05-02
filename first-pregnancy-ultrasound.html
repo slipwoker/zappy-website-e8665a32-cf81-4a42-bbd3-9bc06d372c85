@@ -1825,49 +1825,182 @@
 
 
 <!-- ABOUT - SPLIT LAYOUT -->
-<div class="ps-about">
-  <div class="ps-about-text-col">
-      
-      <h2 class="ps-about-h2" >על הבדיקה</h2>
-      <h3 >הבדיקה הראשונה שמאשרת שהכול מתחיל כשורה.&nbsp;<br>באמצעות אולטרסאונד נרתיקי עדין, מאתרים את שק ההריון, מאמתים את מיקומו ברחם ומאמתים קיום דופק עוברי תקין.</h3>
-      <div class="ps-timeline">
-        <div class="ps-timeline-item">
-          <div class="ps-timeline-dot"></div>
-          <div class="ps-timeline-text">
-            <span class="ps-timeline-main" ><h3>שבועות 6–10</h3></span>
-            <span class="ps-timeline-sub" ><h3 ><p>מועד ביצוע הבדיקה</p></h3></span>
-          </div>
-        </div>
-        <div class="ps-timeline-item">
-          <div class="ps-timeline-dot"></div>
-          <div class="ps-timeline-text">
-            <span class="ps-timeline-main" ><h3>אישור הריון תוך-רחמי</h3></span>
-            <span class="ps-timeline-sub" ><h3 ><p>ושלילת הריון חוץ-רחמי</p></h3></span>
-          </div>
-        </div>
-        <div class="ps-timeline-item">
-          <div class="ps-timeline-dot"></div>
-          <div class="ps-timeline-text">
-            <span class="ps-timeline-main" ><h3>זיהוי דופק עוברי</h3></span>
-            <span class="ps-timeline-sub" ><h3 ><p>ואישור חיות</p></h3></span>
-          </div>
-        </div>
-        <div class="ps-timeline-item">
-          <div class="ps-timeline-dot"></div>
-          <div class="ps-timeline-text">
-            <span class="ps-timeline-main" ><h3>קביעת גיל ההריון</h3></span>
-            <span class="ps-timeline-sub" ><h3 ><p>המדויק ותאריך לידה צפוי</p></h3></span>
-          </div>
-        </div>
-        <div class="ps-timeline-item">
-          <div class="ps-timeline-dot"></div>
-          <div class="ps-timeline-text">
-            <span class="ps-timeline-main" ><h3>גילוי מוקדם</h3></span>
-            <span class="ps-timeline-sub" ><p>של הריון מרובה עוברים</p></span>
-          </div>
-        </div>
-      </div>
+<div class="ps-about ps-about-cards-section">
+  <style>
+    .ps-about-cards-section {
+      background: var(--bg-dark);
+      padding: 96px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ps-about-cards-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 80% 20%, rgba(201,123,99,0.12) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(127,156,179,0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .ps-about-cards-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .ps-about-cards-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .ps-about-cards-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .ps-about-cards-h2 {
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 800;
+      color: var(--text-light);
+      margin: 0 0 16px;
+      line-height: 1.15;
+    }
+    .ps-about-cards-sub {
+      color: rgba(253,246,242,0.65);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .ps-about-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .ps-about-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(201,123,99,0.2);
+      border-radius: var(--radius-card);
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition-default);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
+    .ps-about-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(201,123,99,0.10) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    .ps-about-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(201,123,99,0.5);
+      background: rgba(255,255,255,0.10);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+    }
+    .ps-about-card:hover::before {
+      opacity: 1;
+    }
+    .ps-about-card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(201,123,99,0.18);
+      border: 1px solid rgba(201,123,99,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 1.4rem;
+    }
+    .ps-about-card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-light);
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+    .ps-about-card-desc {
+      font-size: 0.875rem;
+      color: rgba(253,246,242,0.58);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .ps-about-card-badge {
+      display: inline-block;
+      background: rgba(201,123,99,0.2);
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 3px 12px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(201,123,99,0.3);
+    }
+    @media (max-width: 768px) {
+      .ps-about-cards-section { padding: 64px 20px; }
+      .ps-about-cards-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+      .ps-about-card { padding: 24px 16px; }
+    }
+    @media (max-width: 480px) {
+      .ps-about-cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <div class="ps-about-cards-inner">
+    <div class="ps-about-cards-header">
+      <div class="ps-about-cards-label">מה בודקים</div>
+      <h2 class="ps-about-cards-h2">על הבדיקה</h2>
+      <p class="ps-about-cards-sub">הבדיקה הראשונה שמאשרת שהכול מתחיל כשורה. באמצעות אולטרסאונד נרתיקי עדין, מאתרים את שק ההריון ומאמתים קיום דופק עוברי תקין.</p>
     </div>
+
+    <div class="ps-about-cards-grid">
+
+      <div class="ps-about-card">
+        <div class="ps-about-card-badge">מועד הבדיקה</div>
+        <div class="ps-about-card-icon">🗓️</div>
+        <div class="ps-about-card-title">שבועות 6–10</div>
+        <p class="ps-about-card-desc">מועד ביצוע הבדיקה המומלץ להריון מוקדם</p>
+      </div>
+
+      <div class="ps-about-card">
+        <div class="ps-about-card-badge">אישור הריון</div>
+        <div class="ps-about-card-icon">🏥</div>
+        <div class="ps-about-card-title">הריון תוך-רחמי</div>
+        <p class="ps-about-card-desc">אישור מיקום ברחם ושלילת הריון חוץ-רחמי</p>
+      </div>
+
+      <div class="ps-about-card">
+        <div class="ps-about-card-badge">חיות עוברית</div>
+        <div class="ps-about-card-icon">💓</div>
+        <div class="ps-about-card-title">זיהוי דופק עוברי</div>
+        <p class="ps-about-card-desc">אימות דופק תקין ואישור חיות העובר</p>
+      </div>
+
+      <div class="ps-about-card">
+        <div class="ps-about-card-badge">גיל ההריון</div>
+        <div class="ps-about-card-icon">📅</div>
+        <div class="ps-about-card-title">קביעת גיל מדויק</div>
+        <p class="ps-about-card-desc">חישוב גיל ההריון המדויק ותאריך לידה צפוי</p>
+      </div>
+
+      <div class="ps-about-card">
+        <div class="ps-about-card-badge">גילוי מוקדם</div>
+        <div class="ps-about-card-icon">👶</div>
+        <div class="ps-about-card-title">הריון מרובה עוברים</div>
+        <p class="ps-about-card-desc">זיהוי מוקדם של הריון תאומים ומעלה</p>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
