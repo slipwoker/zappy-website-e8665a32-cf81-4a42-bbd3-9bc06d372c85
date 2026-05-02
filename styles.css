@@ -11822,6 +11822,23 @@ html .navbar .sub-menu li a {
 .navbar.scrolled .login-link.nav-login {
   color: var(--background-color) !important;
 }
+
+.nav-menu .sub-menu,
+nav .sub-menu,
+.navbar .sub-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+}
+
+.nav-menu li:hover > .sub-menu,
+nav li:hover > .sub-menu,
+.navbar li:hover > .sub-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
