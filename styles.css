@@ -11681,6 +11681,19 @@ html:has(.services-intro-section) body {
   color: var(--primary) !important;
 }
 }
+
+.navbar {
+  overflow: visible !important;
+}
+
+.nav-container {
+  overflow: visible !important;
+}
+
+.nav-right-group {
+  overflow: visible !important;
+  position: relative;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
