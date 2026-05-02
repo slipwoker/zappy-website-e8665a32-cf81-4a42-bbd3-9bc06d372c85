@@ -1305,7 +1305,7 @@ textarea::placeholder {
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   padding: 0.5rem 0.65rem;
   white-space: nowrap;
   color: var(--nav-text, var(--text-dark)) !important;
