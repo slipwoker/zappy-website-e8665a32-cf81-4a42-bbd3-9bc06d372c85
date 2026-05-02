@@ -12397,6 +12397,18 @@ nav.navbar .sub-menu li a {
 #pulse-page .ps-card .ps-card-num {
   color: rgba(201,123,99,0.15) !important;
 }
+
+.navbar .nav-menu li:has(.sub-menu) > a {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+@media (min-width: 769px) {
+.navbar .nav-menu li:has(.sub-menu) > a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
