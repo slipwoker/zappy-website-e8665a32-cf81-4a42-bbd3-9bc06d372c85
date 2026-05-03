@@ -12445,6 +12445,33 @@ nav.navbar .sub-menu li a {
   cursor: pointer !important;
 }
 }
+
+#pulse-page .ps-about-card-badge {
+  background: rgba(255,255,255,0.15) !important;
+  color: var(--background-color) !important;
+  border-color: rgba(255,255,255,0.35) !important;
+}
+
+#pulse-page .ps-about-cards-label {
+  color: var(--background-color) !important;
+  opacity: 0.9;
+}
+
+#pulse-page .ps-about-card-icon {
+  background: rgba(255,255,255,0.12) !important;
+  border-color: rgba(255,255,255,0.25) !important;
+}
+
+#pulse-page .ps-about-card-icon svg path,
+#pulse-page .ps-about-card-icon svg circle,
+#pulse-page .ps-about-card-icon svg rect {
+  stroke: var(--background-color) !important;
+}
+
+#pulse-page .ps-about-card-icon svg circle[fill="var(--accent-color)"],
+#pulse-page .ps-about-card-icon svg path[fill="var(--accent-color)"] {
+  fill: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
