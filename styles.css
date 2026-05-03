@@ -12433,6 +12433,18 @@ nav.navbar .sub-menu li a {
   fill: var(--accent-color) !important;
   stroke: none !important;
 }
+
+.navbar .nav-menu li:has(.sub-menu) > a.has-submenu-link {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+@media (min-width: 769px) {
+.navbar .nav-menu li:has(.sub-menu) > a.has-submenu-link {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
