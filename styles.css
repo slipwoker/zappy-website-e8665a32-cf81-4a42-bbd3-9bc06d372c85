@@ -12472,6 +12472,16 @@ nav.navbar .sub-menu li a {
 #pulse-page .ps-about-card-icon svg path[fill="var(--accent-color)"] {
   fill: var(--background-color) !important;
 }
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-name,
+  .index-hero-section .index-hero-tagline,
+  .index-hero-section .index-hero-sub,
+  .index-hero-section .index-hero-clinic-label {
+  color: var(--text-light) !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5) !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
