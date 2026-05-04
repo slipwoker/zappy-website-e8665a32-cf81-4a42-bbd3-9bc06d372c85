@@ -12390,6 +12390,14 @@ nav.navbar .sub-menu li a {
   text-shadow: 0 2px 12px rgba(0,0,0,0.5) !important;
 }
 }
+
+#nt-page .nt-importance__list .nt-importance__item {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+#nt-page .nt-importance__list .nt-importance__check {
+  color: var(--accent-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
