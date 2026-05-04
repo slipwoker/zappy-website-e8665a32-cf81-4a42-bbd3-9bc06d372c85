@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# Life Inside — Generative Engine Optimization Map
+
+> Life Inside is a private fetal medicine and obstetric ultrasound clinic located in Ra'anana, Israel, led by Dr. Ron Hark — a senior physician and head of the fetal neurology unit at Rabin Medical Center (Beilinson). Dr. Hark brings world-class expertise gained through a clinical sub-specialization at BCNatal Fetal Medicine in Barcelona (2021–2023), one of the world's leading fetal medicine centers. The clinic combines cutting-edge medical technology with a personal, empathetic approach, offering comprehensive care for pregnant women from early pregnancy through birth, with special emphasis on fetal neurology, high-risk pregnancies, and advanced prenatal diagnostics.
 
 ---
 
@@ -54,12 +56,52 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: dr.roncharach@gmail.com
+- Phone: 055-3111246
+- Phone (tel): tel:0553111246
+- Address: בית מנצור 1, הנופר 2, רעננה, ישראל
+
+### Contact form
+- URL: https://life-inside.zappy5.app/contact
+- Endpoint: https://life-inside.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://life-inside.zappy5.app/sitemap.xml
-- **Robots.txt**: https://life-inside.zappy5.app/robots.txt
+## About Life Inside
+Life Inside is a private fetal medicine and obstetric ultrasound clinic located in Ra'anana, Israel, led by Dr. Ron Hark — a senior physician and head of the fetal neurology unit at Rabin Medical Center (Beilinson). Dr. Hark brings world-class expertise gained through a clinical sub-specialization at BCNatal Fetal Medicine in Barcelona (2021–2023), one of the world's leading fetal medicine centers. The clinic combines cutting-edge medical technology with a personal, empathetic approach, offering comprehensive care for pregnant women from early pregnancy through birth, with special emphasis on fetal neurology, high-risk pregnancies, and advanced prenatal diagnostics.
+
+## Services/Products
+- בדיקת דופק
+- שקיפות עורפית
+- סקירה מוקדמת
+- סקירה מאוחרת
+- סקירה שלישית להערכת התפתחות העובר
+- סקירות מכוונות למוח העובר
+- טיפול בהריונות בסיכון גבוה
+- אבחון טרום לידתי
+
+## Target Audience
+נשים בהריון, זוגות המצפים לילד, הריונות בסיכון גבוה
+
+## Industry
+רפואה ובריאות - רפואת עובר
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://life-inside.zappy5.app/sitemap.xml
+- Robots: https://life-inside.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://life-inside.zappy5.app/llms-full.txt
