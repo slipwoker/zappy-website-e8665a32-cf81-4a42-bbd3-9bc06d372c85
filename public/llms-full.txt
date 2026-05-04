@@ -626,7 +626,12 @@ mako | בריאות
 
 
 
-Click to add embed URL
+
+
+
+
+
+
 
 
 
@@ -1198,7 +1203,7 @@ Description: סקירה שלישית ברעננה, בדיקת שקיפות עו�
 
 
 
-Click to add embed URL
+
 
 
 
@@ -1474,7 +1479,7 @@ URL: https://life-inside.zappy5.app/first-pregnancy-ultrasound
 
 
 
-Click to add embed URL
+
 
 
 
@@ -1835,7 +1840,7 @@ BCNatal Fetal Medicine, ברצלונה, ספרד
 
 
 
-Click to add embed URL
+
 
 
 
@@ -2089,7 +2094,7 @@ Life Inside ("החברה", "אנו", "שלנו") מחויבת להגן על פר
 
 
 
-Click to add embed URL
+
 
 
 
@@ -2352,7 +2357,7 @@ Life Inside מחויבת להנגיש את השירותים לכלל הציבו�
 
 
 
-Click to add embed URL
+
 
 
 
@@ -2634,7 +2639,7 @@ Life Inside מספקת רפואה ובריאות - רפואת עובר דרך ה
 
 
 
-Click to add embed URL
+
 
 
 
@@ -3053,7 +3058,7 @@ Description: רוצים לקבוע סקירת מערכות פרטית ברעננ
 
 
 
-Click to add embed URL
+
 
 
 
@@ -3376,7 +3381,7 @@ URL: https://life-inside.zappy5.app/rear-transparency
 
 
 
-Click to add embed URL
+
 
 
 
@@ -3700,7 +3705,7 @@ This page is ready for your content.
 
 
 
-Click to add embed URL
+
 
 
 
@@ -4049,7 +4054,7 @@ This page is ready for your content.
 
 
 
-Click to add embed URL
+
 
 
 
@@ -4494,7 +4499,7 @@ IUGR (Intrauterine Growth Restriction)  – עיכוב גדילה תוך-רחמ�
 
 
 
-Click to add embed URL
+
 
 
 
@@ -4841,7 +4846,7 @@ Life Inside · ד"ר רון חר"ך
 
 
 
-Click to add embed URL
+
 
 
 

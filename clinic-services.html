@@ -743,17 +743,37 @@
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-widget-visibility">
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
       @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
-      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: none !important; } }
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
       @media (min-width: 769px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
@@ -1612,7 +1632,7 @@
       <!-- Column 4: Decorative / Tagline -->
       <div class="footer-col footer-extra">
         
-      </div><div class="zappy-inserted-element" id="zappy-element-1777922818290-cu2h0ykzi" data-element-id="zappy-element-1777922818290-cu2h0ykzi" data-element-type="iframe" data-zappy-newly-inserted="true" data-zappy-media-cell="true" style="max-width: 1440px; margin: 20px auto; display: flex; justify-content: center;"><div style="width: 100%; max-width: 600px; display: block;" data-full-width="" data-custom-width=""><div style="position: relative; width: 100%; height: 0px; padding-bottom: 56.25%; background: rgb(249, 250, 251); border: 2px dashed rgb(209, 213, 219); border-radius: 8px; overflow: hidden;" data-element-type="iframe" data-element-id="zappy-element-1777922818290-cu2h0ykzi" id="zappy-element-1777922818290-cu2h0ykzi"><div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #6b7280;"><svg style="width: 48px; height: 48px; margin-bottom: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg><span style="font-size: 14px;">Click to add embed URL</span></div></div></div></div>
+      </div><div class="zappy-inserted-element" id="zappy-element-1777922978556-dhjvii7rm" data-element-id="zappy-element-1777922978556-dhjvii7rm" data-element-type="iframe" data-zappy-media-cell="true" style="max-width: 600px; margin: 20px auto; display: flex; justify-content: center;"><div style="width: 100%; max-width: 600px; display: block;" data-full-width=""><div style="position: relative; width: 100%; height: 0px; padding-bottom: 56.25%; background: rgb(243, 244, 246); border-radius: 8px; overflow: hidden;" data-element-type="iframe" data-element-id="zappy-element-1777922978556-dhjvii7rm" id="zappy-element-1777922978556-dhjvii7rm"><iframe src="https://maps.app.goo.gl/szNXxMASaqCjrWqZ6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen="" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></div></div></div><div class="zappy-inserted-element" id="zappy-element-1777922818290-cu2h0ykzi" data-element-id="zappy-element-1777922818290-cu2h0ykzi" data-element-type="iframe" data-zappy-media-cell="true" style="max-width: 600px; margin: 20px auto; display: flex; justify-content: center;"><div style="width: 100%; max-width: 600px; display: block;" data-full-width=""><div style="position: relative; width: 100%; height: 0px; padding-bottom: 56.25%; background: rgb(243, 244, 246); border-radius: 8px; overflow: hidden;" data-element-type="iframe" data-element-id="zappy-element-1777922818290-cu2h0ykzi" id="zappy-element-1777922818290-cu2h0ykzi"><iframe src="https://maps.app.goo.gl/szNXxMASaqCjrWqZ6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen="" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe></div></div></div>
 
     </div>
 
