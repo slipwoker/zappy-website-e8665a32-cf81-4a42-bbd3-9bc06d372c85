@@ -61,7 +61,7 @@ Information about WCAG compliance and accessibility features.
 - Email: dr.roncharach@gmail.com
 - Phone: 055-3111246
 - Phone (tel): tel:0553111246
-- Address: בית מנצור 1, הנופר 2, רעננה, ישראל
+- Address: רחוב הנופר 2, רעננה, ישראל
 
 ### Contact form
 - URL: https://life-inside.zappy5.app/contact
@@ -72,7 +72,7 @@ Information about WCAG compliance and accessibility features.
   - `name` (text, required)
   - `email` (email, required)
   - `phone` (tel)
-  - `message` (textarea)
+  - `cf-message` (textarea)
   - `privacy_consent` (checkbox, required)
 
 ---
