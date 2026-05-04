@@ -634,7 +634,7 @@ mako | בריאות
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -1217,7 +1217,7 @@ Description: סקירה שלישית ברעננה, בדיקת שקיפות עו�
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -1504,7 +1504,7 @@ URL: https://life-inside.zappy5.app/first-pregnancy-ultrasound
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -1876,7 +1876,7 @@ BCNatal Fetal Medicine, ברצלונה, ספרד
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -2141,7 +2141,7 @@ Life Inside ("החברה", "אנו", "שלנו") מחויבת להגן על פר
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -2415,7 +2415,7 @@ Life Inside מחויבת להנגיש את השירותים לכלל הציבו�
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -2708,7 +2708,7 @@ Life Inside מספקת רפואה ובריאות - רפואת עובר דרך ה
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -3138,7 +3138,7 @@ Description: רוצים לקבוע סקירת מערכות פרטית ברעננ
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -3472,7 +3472,7 @@ URL: https://life-inside.zappy5.app/rear-transparency
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -3807,7 +3807,7 @@ This page is ready for your content.
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -4167,7 +4167,7 @@ This page is ready for your content.
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -4623,7 +4623,7 @@ IUGR (Intrauterine Growth Restriction)  – עיכוב גדילה תוך-רחמ�
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
@@ -4981,7 +4981,7 @@ Life Inside · ד"ר רון חר"ך
 
 
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true">
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: auto; object-fit: cover; display: block; border-radius: 12px; object-position: 50% 50% !important; max-width: 100%; margin: 0px !important;" data-element-type="image" data-element-id="img-1777924347153-5xx68s77a" data-zappy-footer-image="true" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
 
 
 
