@@ -72,7 +72,7 @@ Information about WCAG compliance and accessibility features.
   - `name` (text, required)
   - `email` (email, required)
   - `phone` (tel)
-  - `cf-message` (textarea)
+  - `message` (textarea)
   - `privacy_consent` (checkbox, required)
 
 ---
