@@ -13010,6 +13010,344 @@ nav.navbar .sub-menu li a {
   margin-inline-start: 0 !important;
   margin-inline-end: auto !important;
 }
+
+/* AI-generated section */
+/* =============================================
+   HERO – Life Inside Clinic | Dr. Ron Harakh
+   ============================================= */
+
+.hero-lifeinsidedr {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+}
+
+/* --- Background Image --- */
+.hero-lifeinsidedr__bg-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-lifeinsidedr__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* --- Dark Scrim Overlay --- */
+.hero-lifeinsidedr__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(30, 15, 10, 0.72) 0%,
+    rgba(61, 43, 36, 0.60) 40%,
+    rgba(20, 10, 6, 0.78) 100%
+  );
+  z-index: 1;
+}
+
+/* --- Content Wrapper --- */
+.hero-lifeinsidedr__content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px 120px 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* --- Content Block (bottom-right in RTL = bottom-start) --- */
+.hero-lifeinsidedr__content {
+  max-width: 620px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+/* --- Clinic Label --- */
+.hero-lifeinsidedr__clinic-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201, 123, 99, 0.20);
+  border: 1px solid rgba(201, 123, 99, 0.55);
+  border-radius: 50px;
+  padding: 8px 18px;
+  color: #f5d9ce;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.hero-lifeinsidedr__clinic-icon {
+  color: var(--primary-color, #C97B63);
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* --- Main Headline --- */
+.hero-lifeinsidedr__headline {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: -0.01em;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Subtitle --- */
+.hero-lifeinsidedr__subtitle {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+  font-weight: 500;
+  color: var(--primary-color, #C97B63);
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.hero-lifeinsidedr__subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 3px;
+  background: var(--gradient-primary, linear-gradient(180deg, #C8785F 0%, #BD5F42 100%));
+  border-radius: 2px;
+}
+
+/* --- Description --- */
+.hero-lifeinsidedr__description {
+  margin: 0;
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-weight: 400;
+  line-height: 1.75;
+  color: rgba(255, 245, 240, 0.88);
+  max-width: 500px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* --- CTA Group --- */
+.hero-lifeinsidedr__cta-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+/* --- Buttons Base --- */
+.hero-lifeinsidedr__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 32px;
+  border-radius: 50px;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.hero-lifeinsidedr__btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* --- Primary Button --- */
+.hero-lifeinsidedr__btn--primary {
+  background: var(--gradient-primary, linear-gradient(180deg, #C8785F 0%, #BD5F42 100%));
+  color: #fff;
+  box-shadow: 0 6px 28px rgba(189, 95, 66, 0.45);
+  border: 2px solid transparent;
+}
+
+.hero-lifeinsidedr__btn--primary:hover,
+.hero-lifeinsidedr__btn--primary:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(189, 95, 66, 0.60);
+  background: linear-gradient(180deg, #d4896f 0%, #c96845 100%);
+}
+
+.hero-lifeinsidedr__btn--primary:active {
+  transform: translateY(-1px);
+}
+
+/* --- Secondary Button --- */
+.hero-lifeinsidedr__btn--secondary {
+  background: rgba(255, 255, 255, 0.10);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.hero-lifeinsidedr__btn--secondary:hover,
+.hero-lifeinsidedr__btn--secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.90);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero-lifeinsidedr__btn--secondary:active {
+  transform: translateY(-1px);
+}
+
+/* --- Button Icon --- */
+.hero-lifeinsidedr__btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* --- Wave Divider --- */
+.hero-lifeinsidedr__wave-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+  line-height: 0;
+}
+
+.hero-lifeinsidedr__wave-svg {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
+/* --- Desktop line break helper --- */
+.hero-lifeinsidedr__br-desktop {
+  display: inline;
+}
+
+/* =============================================
+   RESPONSIVE – Tablet
+   ============================================= */
+@media (max-width: 900px) {
+  .hero-lifeinsidedr__content-wrapper {
+    padding: 0 32px 110px 32px;
+    justify-content: flex-end;
+  }
+
+  .hero-lifeinsidedr__content {
+    max-width: 100%;
+    align-items: flex-end;
+  }
+}
+
+/* =============================================
+   RESPONSIVE – Mobile
+   ============================================= */
+@media (max-width: 640px) {
+  .hero-lifeinsidedr {
+    min-height: 100svh;
+    align-items: flex-end;
+  }
+
+  .hero-lifeinsidedr__overlay {
+    background: linear-gradient(
+      160deg,
+      rgba(20, 10, 6, 0.65) 0%,
+      rgba(30, 15, 10, 0.82) 100%
+    );
+  }
+
+  .hero-lifeinsidedr__content-wrapper {
+    padding: 0 20px 100px 20px;
+    justify-content: center;
+  }
+
+  .hero-lifeinsidedr__content {
+    max-width: 100%;
+    align-items: flex-end;
+    text-align: right;
+    gap: 16px;
+  }
+
+  .hero-lifeinsidedr__clinic-label {
+    font-size: 12.5px;
+    padding: 7px 14px;
+  }
+
+  .hero-lifeinsidedr__headline {
+    font-size: clamp(2.6rem, 11vw, 3.4rem);
+  }
+
+  .hero-lifeinsidedr__subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-lifeinsidedr__description {
+    font-size: 0.97rem;
+  }
+
+  .hero-lifeinsidedr__cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-lifeinsidedr__btn {
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 0.97rem;
+    width: 100%;
+  }
+
+  .hero-lifeinsidedr__br-desktop {
+    display: none;
+  }
+
+  .hero-lifeinsidedr__wave-svg {
+    height: 60px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE – Small Mobile
+   ============================================= */
+@media (max-width: 380px) {
+  .hero-lifeinsidedr__content-wrapper {
+    padding: 0 16px 90px 16px;
+  }
+
+  .hero-lifeinsidedr__headline {
+    font-size: 2.4rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
