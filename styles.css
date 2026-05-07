@@ -12564,6 +12564,407 @@ nav.navbar .sub-menu li a {
   overflow: visible !important;
   opacity: 1 !important;
 }
+
+/* AI-generated section */
+/* =============================================
+   LIFE INSIDE HERO SECTION
+   ============================================= */
+
+.li-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  background-color: #2a1a14;
+}
+
+/* --- Background Image --- */
+.li-hero__bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  z-index: 0;
+  transition: transform 8s ease;
+}
+
+.li-hero:hover .li-hero__bg-img {
+  transform: scale(1.04);
+}
+
+/* --- Dark Scrim Overlay --- */
+.li-hero__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(20, 10, 6, 0.25) 0%,
+    rgba(20, 10, 6, 0.45) 40%,
+    rgba(20, 10, 6, 0.82) 100%
+  );
+}
+
+/* Bottom vignette for content legibility */
+.li-hero__scrim::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 7, 4, 0.90) 0%,
+    rgba(15, 7, 4, 0.55) 35%,
+    transparent 70%
+  );
+}
+
+/* --- Inner Layout --- */
+.li-hero__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px 80px 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* --- Content Block (bottom-right aligned) --- */
+.li-hero__content {
+  max-width: 600px;
+  text-align: right;
+}
+
+/* --- Badge --- */
+.li-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201, 123, 99, 0.18);
+  border: 1px solid rgba(201, 123, 99, 0.45);
+  border-radius: 40px;
+  padding: 7px 18px;
+  margin-bottom: 28px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.li-hero__badge-icon {
+  color: var(--primary-color, #C97B63);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.li-hero__badge-text {
+  color: rgba(255, 220, 205, 0.92);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* --- Doctor Name Headline --- */
+.li-hero__name {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 16px 0;
+  color: #fff;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Warm accent on part of the name via pseudo — decorative underline */
+.li-hero__name::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: var(--gradient-primary, linear-gradient(180deg, #C8785F 0%, #BD5F42 100%));
+  border-radius: 2px;
+  margin-top: 14px;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* --- Subtitle --- */
+.li-hero__subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  color: rgba(255, 210, 195, 0.92);
+  margin: 0 0 28px 0;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+/* --- Divider --- */
+.li-hero__divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, rgba(201, 123, 99, 0.6), transparent);
+  margin-bottom: 24px;
+  border: none;
+}
+
+/* --- Tagline --- */
+.li-hero__tagline {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: rgba(255, 240, 235, 0.78);
+  line-height: 1.75;
+  margin: 0 0 40px 0;
+  font-weight: 300;
+}
+
+.li-hero__br-desktop {
+  display: block;
+}
+
+/* --- CTA Wrapper --- */
+.li-hero__cta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+/* --- CTA Button --- */
+.li-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient-primary, linear-gradient(180deg, #C8785F 0%, #BD5F42 100%));
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  letter-spacing: 0.03em;
+  box-shadow:
+    0 4px 24px rgba(189, 95, 66, 0.45),
+    0 1px 4px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.li-hero__cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.22s ease;
+  border-radius: inherit;
+}
+
+.li-hero__cta:hover,
+.li-hero__cta:focus-visible {
+  transform: translateY(-3px);
+  box-shadow:
+    0 8px 36px rgba(189, 95, 66, 0.6),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.li-hero__cta:hover::before {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.li-hero__cta:active {
+  transform: translateY(0);
+}
+
+.li-hero__cta:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 3px;
+}
+
+/* --- CTA WhatsApp Icon --- */
+.li-hero__cta-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* --- Location Note --- */
+.li-hero__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 220, 205, 0.65);
+  font-size: 0.88rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.li-hero__loc-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  fill: var(--primary-color, #C97B63);
+  opacity: 0.75;
+}
+
+/* --- Scroll Indicator --- */
+.li-hero__scroll {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li-hero__scroll-line {
+  display: block;
+  width: 1px;
+  height: 52px;
+  background: linear-gradient(to bottom, rgba(201, 123, 99, 0.8), transparent);
+  animation: li-hero-scroll-pulse 2s ease-in-out infinite;
+}
+
+@keyframes li-hero-scroll-pulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.15); }
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+@media (max-width: 900px) {
+  .li-hero__inner {
+    padding: 0 36px 64px 36px;
+    justify-content: flex-end;
+  }
+
+  .li-hero__content {
+    max-width: 520px;
+  }
+
+  .li-hero__name {
+    font-size: clamp(2.6rem, 8vw, 4rem);
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+@media (max-width: 600px) {
+  .li-hero {
+    align-items: flex-end;
+  }
+
+  .li-hero__scrim {
+    background: linear-gradient(
+      160deg,
+      rgba(20, 10, 6, 0.30) 0%,
+      rgba(20, 10, 6, 0.60) 50%,
+      rgba(20, 10, 6, 0.88) 100%
+    );
+  }
+
+  .li-hero__inner {
+    padding: 0 24px 56px 24px;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100svh;
+  }
+
+  .li-hero__content {
+    max-width: 100%;
+    text-align: right;
+  }
+
+  .li-hero__badge {
+    margin-bottom: 20px;
+  }
+
+  .li-hero__badge-text {
+    font-size: 12px;
+  }
+
+  .li-hero__name {
+    font-size: clamp(2.4rem, 12vw, 3.2rem);
+    margin-bottom: 12px;
+  }
+
+  .li-hero__name::after {
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+  }
+
+  .li-hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .li-hero__divider {
+    margin-bottom: 18px;
+  }
+
+  .li-hero__tagline {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+
+  .li-hero__br-desktop {
+    display: none;
+  }
+
+  .li-hero__cta {
+    font-size: 1rem;
+    padding: 14px 28px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .li-hero__cta-wrap {
+    align-items: center;
+    width: 100%;
+  }
+
+  .li-hero__scroll {
+    display: none;
+  }
+}
+
+/* =============================================
+   REDUCED MOTION
+   ============================================= */
+@media (prefers-reduced-motion: reduce) {
+  .li-hero__bg-img,
+  .li-hero:hover .li-hero__bg-img {
+    transform: none;
+    transition: none;
+  }
+
+  .li-hero__scroll-line {
+    animation: none;
+    opacity: 0.6;
+  }
+
+  .li-hero__cta {
+    transition: none;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
