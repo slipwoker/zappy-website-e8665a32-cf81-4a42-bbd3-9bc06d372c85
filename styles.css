@@ -12522,6 +12522,26 @@ nav.navbar .sub-menu li a {
   cursor: pointer !important;
   border: none !important;
 }
+
+#nt-page .faq-answer {
+  max-height: 0px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease !important;
+}
+
+#nt-page .nt-faq-item.active .faq-answer {
+  max-height: 600px !important;
+  opacity: 1 !important;
+  padding-top: 0px !important;
+  padding-bottom: 20px !important;
+}
+
+#nt-page .nt-faq-item.active .nt-faq-item__chevron {
+  transform: rotate(180deg) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
