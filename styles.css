@@ -13391,6 +13391,16 @@ nav.navbar .sub-menu li a {
   margin-inline-start: auto !important;
   margin-inline-end: 0 !important;
 }
+
+#zappy-section-0 .hero-drron__content {
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+#zappy-section-0 .hero-drron__divider-line {
+  transform-origin: left !important;
+  margin: 0 0 28px 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
