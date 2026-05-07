@@ -12965,6 +12965,15 @@ nav.navbar .sub-menu li a {
     transition: none;
   }
 }
+
+#zappy-section-0 .li-hero__inner {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+#zappy-section-0 .li-hero__content {
+  text-align: right !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
