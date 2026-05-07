@@ -12973,6 +12973,8 @@ nav.navbar .sub-menu li a {
 
 #zappy-section-0 .li-hero__content {
   text-align: right !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: auto !important;
 }
 
 #zappy-section-0 .li-hero__inner {
