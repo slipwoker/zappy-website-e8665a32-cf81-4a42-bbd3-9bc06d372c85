@@ -13348,6 +13348,17 @@ nav.navbar .sub-menu li a {
     font-size: 2.4rem;
   }
 }
+
+#zappy-section-0 .hero-lifeinsidedr__content-wrapper {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+#zappy-section-0 .hero-lifeinsidedr__content {
+  margin-inline-start: auto !important;
+  margin-inline-end: 0 !important;
+  text-align: right !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
