@@ -13359,6 +13359,11 @@ nav.navbar .sub-menu li a {
   margin-inline-end: 0 !important;
   text-align: right !important;
 }
+
+#zappy-section-0 .hero-drron__floating-card {
+  left: auto !important;
+  right: 6% !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
