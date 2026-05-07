@@ -268,17 +268,22 @@
       if (!btn) return;
       var answer = item.querySelector('.nt-faq-body');
       if (!answer) return;
-      answer.style.cssText = 'max-height:0!important;overflow:hidden!important;opacity:0!important;transition:max-height 0.35s ease,opacity 0.3s ease!important;';
+      /* measure real height before hiding */
+      answer.style.cssText = 'overflow:hidden;opacity:0;transition:max-height 0.35s ease,opacity 0.3s ease;';
+      var h = answer.scrollHeight;
+      answer.setAttribute('data-h', h);
+      answer.style.cssText = 'max-height:0;overflow:hidden;opacity:0;transition:max-height 0.35s ease,opacity 0.3s ease;';
       btn.addEventListener('click', function() {
         var isActive = item.classList.contains('nt-active');
         items.forEach(function(i) {
           i.classList.remove('nt-active');
           var a = i.querySelector('.nt-faq-body');
-          if (a) a.style.cssText = 'max-height:0!important;overflow:hidden!important;opacity:0!important;transition:max-height 0.35s ease,opacity 0.3s ease!important;';
+          if (a) a.style.cssText = 'max-height:0;overflow:hidden;opacity:0;transition:max-height 0.35s ease,opacity 0.3s ease;';
         });
         if (!isActive) {
           item.classList.add('nt-active');
-          answer.style.cssText = 'max-height:'+answer.scrollHeight+'px!important;overflow:hidden!important;opacity:1!important;transition:max-height 0.35s ease,opacity 0.3s ease!important;';
+          var savedH = answer.getAttribute('data-h') || '400';
+          answer.style.cssText = 'max-height:'+savedH+'px;overflow:hidden;opacity:1;transition:max-height 0.35s ease,opacity 0.3s ease;';
         }
       });
     });
