@@ -12398,6 +12398,20 @@ nav.navbar .sub-menu li a {
 #nt-page .nt-importance__list .nt-importance__check {
   color: var(--accent-color) !important;
 }
+
+#nt-page .nt-hero__media > div[data-zappy-zoom-wrapper] {
+  height: 420px !important;
+  max-height: 420px !important;
+  overflow: hidden !important;
+  border-radius: 16px !important;
+  width: 100% !important;
+}
+
+#nt-page .nt-hero__media > div[data-zappy-zoom-wrapper] img {
+  height: 420px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
