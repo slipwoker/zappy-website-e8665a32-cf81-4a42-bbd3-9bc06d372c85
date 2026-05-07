@@ -12445,6 +12445,25 @@ nav.navbar .sub-menu li a {
   z-index: 1 !important;
   background: transparent !important;
 }
+
+#nt-page .nt-cta__box {
+  background: #fff !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+#nt-page .nt-card {
+  background: #fff !important;
+  border: 1px solid rgba(201,123,99,0.12) !important;
+}
+
+#nt-page .nt-faq-item {
+  background: #fff !important;
+  border: 1px solid rgba(201,123,99,0.12) !important;
+}
+
+#nt-page .nt-faq-item__question, #nt-page .nt-faq-item__btn {
+  background: #fff !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
