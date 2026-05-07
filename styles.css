@@ -12998,6 +12998,18 @@ nav.navbar .sub-menu li a {
   margin-inline-start: 0 !important;
   margin-inline-end: 0 !important;
 }
+
+#zappy-section-0 .li-hero__inner {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+}
+
+#zappy-section-0 .li-hero__content {
+  text-align: right !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: auto !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
