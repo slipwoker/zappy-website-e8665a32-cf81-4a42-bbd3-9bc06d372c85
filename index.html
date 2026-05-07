@@ -1413,59 +1413,395 @@
   <main>
     
 
-<section class="li-hero" id="zappy-section-0" style="position: relative; overflow: hidden; background-image: linear-gradient(rgba(20, 10, 6, 0.82), rgba(20, 10, 6, 0.82)), url(&quot;assets/life-inside-general-hero-upload-1778147399812.webp&quot;); background-size: cover; background-position: center; background-repeat: no-repeat; --zappy-bg-overlay: rgba(20, 10, 6, 0.82); --zappy-bg-image: url(&quot;assets/life-inside-general-hero-upload-1778147399812.webp&quot;)" data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/life-inside-general-hero-upload-1778147399812.webp" data-zappy-bg-overlay-color="#140a06" data-zappy-bg-overlay-opacity="82" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-hero-type="fullscreen-scrim">
-  <!-- Background Image -->
-  <img class="li-hero__bg-img" src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E" alt="רקע מרפאת Life Inside" data-placeholder="section-hero-1" data-context="Warm professional medical clinic interior, soft terracotta and beige tones, ultrasound equipment, gentle lighting, fetal medicine specialist office, calm and trustworthy atmosphere" data-element-type="image" data-element-id="img-1778147117282-f23ek4uje" style="display: none" data-zappy-original-bg="hidden">
+<section style="width:100%;max-width:100%;box-sizing:border-box;position:relative;overflow:hidden;min-height:100vh;" id="zappy-section-0" data-zappy-section="true" class="section">
+<style>
+  #hero-lifeinside {
+    font-family: system-ui, sans-serif;
+    direction: rtl;
+  }
 
-  <!-- Dark scrim overlay -->
-  <div class="li-hero__scrim" aria-hidden="true" style="display: none" data-zappy-original-bg="hidden"></div>
+  #hero-lifeinside .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
 
-  <!-- Inner content wrapper -->
-  <div class="li-hero__inner">
-    <div class="li-hero__content">
+  #hero-lifeinside .hero-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(61,43,36,0.82) 0%,
+      rgba(61,43,36,0.55) 40%,
+      rgba(201,123,99,0.18) 100%
+    );
+    z-index: 1;
+  }
 
-      <!-- Clinic brand badge -->
-      <div class="li-hero__badge">
-        <span class="li-hero__badge-icon" aria-hidden="true">✦</span>
-        <span class="li-hero__badge-text">Life Inside — מרפאת רפואת עובר</span>
-      </div>
+  #hero-lifeinside .hero-diagonal-accent {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    pointer-events: none;
+  }
 
-      <!-- Doctor name headline -->
-      <h1 class="li-hero__name">ד״ר רון חר״ך</h1>
+  #hero-lifeinside .hero-content-wrapper {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 120px 6vw 140px 6vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 
-      <!-- Specialist subtitle -->
-      <p class="li-hero__subtitle">מומחה ברפואת עובר ואולטרסאונד מיילדותי</p>
+  #hero-lifeinside .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(201,123,99,0.18);
+    border: 1.5px solid rgba(201,123,99,0.55);
+    border-radius: 100px;
+    padding: 8px 22px;
+    margin-bottom: 32px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation: fadeSlideDown 0.7s ease both;
+  }
 
-      <!-- Divider -->
-      <div class="li-hero__divider" aria-hidden="true"></div>
+  #hero-lifeinside .hero-badge span {
+    color: #F1C463;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
 
-      <!-- Tagline -->
-      <p class="li-hero__tagline">
-        בדיקות אולטרסאונד מתקדמות ואבחון עוברי מקצועי<br class="li-hero__br-desktop">
-        במרפאה פרטית ומוביל ברעננה — עם ליווי אישי, חם ומקצועי
-      </p>
+  #hero-lifeinside .hero-badge-icon {
+    width: 18px;
+    height: 18px;
+    color: #F1C463;
+    flex-shrink: 0;
+  }
 
-      <!-- CTA Button -->
-      <div class="li-hero__cta-wrap">
-        <a href="https://wa.me/972500000000" class="li-hero__cta" target="_blank" rel="noopener noreferrer" aria-label="לתיאום בדיקה דרך וואטסאפ">
-          <svg class="li-hero__cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-element-type="icon" data-element-id="icon-1778147117282-8fm5fxwrw" data-icon-type="svg">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path>
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.845L.057 23.428a.75.75 0 0 0 .916.916l5.638-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.618-.504-5.12-1.385l-.368-.215-3.807.997.997-3.75-.232-.38A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
-          </svg>
-          לתיאום בדיקה
-        </a>
+  #hero-lifeinside .hero-divider-line {
+    width: 64px;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: 100px;
+    margin-bottom: 28px;
+    margin-right: 0;
+    animation: fadeSlideDown 0.8s 0.1s ease both;
+  }
 
-        <!-- Secondary location note -->
-        
-      </div>
+  #hero-lifeinside .hero-title {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 900;
+    color: #FDF6F2;
+    line-height: 1.05;
+    margin: 0 0 18px 0;
+    letter-spacing: -0.01em;
+    text-align: right;
+    animation: fadeSlideUp 0.8s 0.15s ease both;
+  }
 
-    </div>
+  #hero-lifeinside .hero-title span {
+    background: var(--gradient-gold-shine);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline;
+  }
+
+  #hero-lifeinside .hero-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+    color: #e8d5cd;
+    font-weight: 500;
+    margin: 0 0 14px 0;
+    text-align: right;
+    animation: fadeSlideUp 0.8s 0.25s ease both;
+    max-width: 560px;
+    line-height: 1.5;
+  }
+
+  #hero-lifeinside .hero-description {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: rgba(253,246,242,0.78);
+    margin: 0 0 48px 0;
+    text-align: right;
+    max-width: 520px;
+    line-height: 1.75;
+    animation: fadeSlideUp 0.8s 0.35s ease both;
+  }
+
+  #hero-lifeinside .hero-cta-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    animation: fadeSlideUp 0.8s 0.45s ease both;
+    flex-wrap: wrap;
+  }
+
+  #hero-lifeinside .hero-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gradient-primary);
+    color: #FDF6F2;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 14px;
+    text-decoration: none;
+    box-shadow: 0 14px 32px rgba(201,123,99,0.38);
+    transition: all 0.22s ease;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #hero-lifeinside .hero-cta-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.0);
+    transition: background 0.2s ease;
+    border-radius: inherit;
+  }
+
+  #hero-lifeinside .hero-cta-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(201,123,99,0.48);
+  }
+
+  #hero-lifeinside .hero-cta-btn:hover::after {
+    background: rgba(255,255,255,0.08);
+  }
+
+  #hero-lifeinside .hero-cta-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  #hero-lifeinside .hero-floating-card {
+    position: absolute;
+    left: 6vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(61,43,36,0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(201,123,99,0.3);
+    border-radius: 20px;
+    padding: 28px 28px;
+    max-width: 260px;
+    animation: floatCard 0.9s 0.55s ease both;
+    box-shadow: 0 24px 48px rgba(61,43,36,0.32);
+  }
+
+  #hero-lifeinside .hero-floating-card .card-clinic-name {
+    color: #F1C463;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  #hero-lifeinside .hero-floating-card .card-dot-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  #hero-lifeinside .hero-floating-card .card-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6FCF97;
+    box-shadow: 0 0 8px rgba(111,207,151,0.7);
+    animation: pulse-dot 2s infinite ease-in-out;
+    flex-shrink: 0;
+  }
+
+  #hero-lifeinside .hero-floating-card .card-dot-label {
+    color: #FDF6F2;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  #hero-lifeinside .hero-floating-card .card-location {
+    color: rgba(253,246,242,0.62);
+    font-size: 0.82rem;
+    margin-top: 14px;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  #hero-lifeinside .hero-floating-card .card-location svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--primary);
+  }
+
+  #hero-lifeinside .hero-vertical-text {
+    position: absolute;
+    left: 2vw;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    z-index: 10;
+    color: rgba(253,246,242,0.18);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: none;
+  }
+
+  @keyframes fadeSlideDown {
+    from { opacity: 0; transform: translateY(-18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes floatCard {
+    from { opacity: 0; transform: translateY(-50%) translateX(-24px); }
+    to   { opacity: 1; transform: translateY(-50%) translateX(0); }
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 6px rgba(111,207,151,0.6); transform: scale(1); }
+    50%       { box-shadow: 0 0 14px rgba(111,207,151,0.95); transform: scale(1.25); }
+  }
+
+  @media (max-width: 900px) {
+    #hero-lifeinside .hero-floating-card {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #hero-lifeinside .hero-content-wrapper {
+      padding-top: 110px;
+      padding-bottom: 120px;
+      align-items: flex-end;
+    }
+    #hero-lifeinside .hero-title {
+      font-size: clamp(2.4rem, 12vw, 3.8rem);
+    }
+    #hero-lifeinside .hero-cta-row {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hero-lifeinside .hero-vertical-text {
+      display: block;
+    }
+  }
+</style>
+
+<!-- Full-bleed background image -->
+<div class="hero-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E'); background-size: cover; background-position: center center;"></div>
+
+<!-- Dark gradient scrim for text contrast -->
+<div class="hero-scrim"></div>
+
+<!-- Floating info card (left side on large screens) -->
+<div class="hero-floating-card">
+  <span class="card-clinic-name">Life Inside</span>
+  <div class="card-dot-row">
+    <div class="card-dot"></div>
+    <span class="card-dot-label">מרפאה פרטית פעילה</span>
+  </div>
+  <div class="card-location">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z"></path>
+      <circle cx="12" cy="9" r="2.5"></circle>
+    </svg>
+    <span>רעננה, ישראל</span>
+  </div>
+</div>
+
+<!-- Decorative vertical text -->
+<div class="hero-vertical-text">Life Inside Clinic · Raanana</div>
+
+<!-- Main content -->
+<div class="hero-content-wrapper">
+
+  <!-- Badge -->
+  <div class="hero-badge">
+    <!-- Icon preserved -->
+    <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M12 8v4l3 3"></path>
+    </svg>
+    <span>Life Inside — מרפאת רפואת עובר</span>
   </div>
 
-  <!-- Scroll indicator -->
-  <div class="li-hero__scroll" aria-hidden="true">
-    <span class="li-hero__scroll-line"></span>
+  <!-- Divider line -->
+  <div class="hero-divider-line"></div>
+
+  <!-- H1 Title -->
+  <h1 class="hero-title">
+    <span>ד״ר רון חר״ך</span>
+  </h1>
+
+  <!-- Subtitle -->
+  <p class="hero-subtitle">
+    מומחה ברפואת עובר ואולטרסאונד מיילדותי
+  </p>
+
+  <!-- Description -->
+  <p class="hero-description">
+    בדיקות אולטרסאונד מתקדמות ואבחון עוברי מקצועי
+    במרפאה פרטית ומוביל ברעננה — עם ליווי אישי, חם ומקצועי
+  </p>
+
+  <!-- CTA Button -->
+  <div class="hero-cta-row">
+    <a href="https://wa.me/972500000000" class="hero-cta-btn" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.18 1.6 6L0 24l6.18-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.66-.5-5.24-1.44l-.37-.22-3.87 1.02 1.03-3.76-.24-.38A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.47-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.49-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.01-1.03 2.46s1.06 2.85 1.2 3.05c.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.7.22 1.34.19 1.84.12.56-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"></path>
+      </svg>
+      לתיאום בדיקה
+    </a>
   </div>
+
+</div>
+
+<!-- Bottom SVG wave divider -->
+<div style="position:absolute;bottom:0;left:0;width:100%;height:72px;pointer-events:none;z-index:5;">
+  <svg viewBox="0 0 1200 72" preserveAspectRatio="none" style="display:block;width:100%;height:100%;">
+    <path d="M0,72 C200,20 400,0 600,28 C800,56 1000,60 1200,28 L1200,72 L0,72 Z" fill="#FDF6F2"></path>
+  </svg>
+</div>
+
 </section><section class="index-credentials-section" data-layout-spec="בית-credentials" dir="rtl" data-zappy-section="true" id="index-credentials-section">
   <div class="index-credentials-container">
 
