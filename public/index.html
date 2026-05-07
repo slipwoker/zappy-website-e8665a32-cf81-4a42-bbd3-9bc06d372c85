@@ -1413,367 +1413,59 @@
   <main>
     
 
-<section style="position:relative;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;min-height:100vh;" id="zappy-section-0" data-zappy-section="true" class="section">
-<style>
-  #hero-section {
-    font-family: system-ui, sans-serif;
-    direction: rtl;
-  }
+<section class="li-hero" id="zappy-section-0" style="position: relative; overflow: hidden; background-image: url(&quot;assets/life-inside-general-hero-upload-1778147399812.webp&quot;); background-size: cover !important; background-position: 50% 50% !important; background-repeat: no-repeat; --zappy-bg-overlay: rgba(20, 10, 6, 0); --zappy-bg-image: url(&quot;assets/life-inside-general-hero-upload-1778147399812.webp&quot;); " data-zappy-bg-type="image" data-zappy-bg-color="" data-zappy-bg-image="assets/life-inside-general-hero-upload-1778147399812.webp" data-zappy-bg-overlay-color="#140a06" data-zappy-bg-overlay-opacity="0" data-zappy-bg-video-type="" data-zappy-bg-video-url="" data-hero-type="fullscreen-scrim" data-element-id="zappy-hero-bg-zappy-section-0" data-element-type="background-image" data-zappy-bg-position="50% 50%" data-zappy-bg-zoom="1">
+  <!-- Background Image -->
+  <img class="li-hero__bg-img" src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E" alt="רקע מרפאת Life Inside" data-placeholder="section-hero-1" data-context="Warm professional medical clinic interior, soft terracotta and beige tones, ultrasound equipment, gentle lighting, fetal medicine specialist office, calm and trustworthy atmosphere" data-element-type="image" data-element-id="img-1778147117282-f23ek4uje" style="display: none" data-zappy-original-bg="hidden">
 
-  #hero-section .hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  <!-- Dark scrim overlay -->
+  <div class="li-hero__scrim" aria-hidden="true" style="display: none" data-zappy-original-bg="hidden"></div>
 
-  #hero-section .hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: none;
-  opacity: 0;
-}
+  <!-- Inner content wrapper -->
+  <div class="li-hero__inner">
+    <div class="li-hero__content">
 
-  #hero-section .hero-accent-line {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 6px;
-    height: 100%;
-    background: var(--gradient-primary);
-    z-index: 2;
-  }
+      <!-- Clinic brand badge -->
+      <div class="li-hero__badge">
+        <p><span class="li-hero__badge-icon" aria-hidden="true">✦</span>
+        </p><p><span class="li-hero__badge-text">Life Inside — מרפאת רפואת עובר</span>
+      </p></div>
 
-  #hero-section .hero-content-wrap {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-height: 100vh;
-  padding: 120px 6vw 80px 6vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-top: 100px;
-}
+      <!-- Doctor name headline -->
+      
 
-  #hero-section .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(201,123,99,0.18);
-    border: 1.5px solid rgba(201,123,99,0.5);
-    backdrop-filter: blur(8px);
-    border-radius: var(--radius-badge);
-    padding: 8px 22px;
-    color: #f5d5c8;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    margin-bottom: 28px;
-    animation: fadeSlideDown 0.8s ease both;
-  }
+      <!-- Specialist subtitle -->
+      <p class="li-hero__subtitle">מומחה ברפואת עובר ואולטרסאונד מיילדותי</p>
 
-  #hero-section .hero-badge .badge-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--primary);
-    animation: pulse-dot 2s infinite;
-    flex-shrink: 0;
-  }
+      <!-- Divider -->
+      <div class="li-hero__divider" aria-hidden="true"></div>
 
-  #hero-section .hero-name {
-    font-size: clamp(3.2rem, 8vw, 7.5rem);
-    font-weight: 900;
-    color: #FDF6F2;
-    line-height: 1.0;
-    letter-spacing: -0.02em;
-    margin: 0 0 12px 0;
-    text-align: right;
-    animation: fadeSlideUp 0.9s ease 0.1s both;
-    text-shadow: 0 4px 32px rgba(61,43,36,0.4);
-  }
+      <!-- Tagline -->
+      <p class="li-hero__tagline">
+        בדיקות אולטרסאונד מתקדמות ואבחון עוברי מקצועי<br class="li-hero__br-desktop">
+        במרפאה פרטית ומוביל ברעננה — עם ליווי אישי, חם ומקצועי
+      </p>
 
-  #hero-section .hero-divider {
-    width: 80px;
-    height: 4px;
-    background: var(--gradient-primary);
-    border-radius: 2px;
-    margin: 18px 0 24px auto;
-    animation: expandWidth 1s ease 0.3s both;
-  }
+      <!-- CTA Button -->
+      <div class="li-hero__cta-wrap">
+        <a href="https://wa.me/972500000000" class="li-hero__cta" target="_blank" rel="noopener noreferrer" aria-label="לתיאום בדיקה דרך וואטסאפ">
+          <svg class="li-hero__cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" data-element-type="icon" data-element-id="icon-1778147117282-8fm5fxwrw" data-icon-type="svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.845L.057 23.428a.75.75 0 0 0 .916.916l5.638-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.618-.504-5.12-1.385l-.368-.215-3.807.997.997-3.75-.232-.38A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path>
+          </svg>
+          לתיאום בדיקה
+        </a>
 
-  #hero-section .hero-brand {
-    font-size: clamp(1.1rem, 2.8vw, 1.6rem);
-    font-weight: 700;
-    color: var(--primary);
-    letter-spacing: 0.01em;
-    margin-bottom: 10px;
-    text-align: right;
-    animation: fadeSlideUp 0.9s ease 0.25s both;
-  }
+        <!-- Secondary location note -->
+        
+      </div>
 
-  #hero-section .hero-subtitle {
-    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-    font-weight: 500;
-    color: rgba(253,246,242,0.85);
-    margin-bottom: 10px;
-    text-align: right;
-    animation: fadeSlideUp 0.9s ease 0.35s both;
-  }
-
-  #hero-section .hero-desc {
-    font-size: clamp(0.88rem, 1.5vw, 1.05rem);
-    color: rgba(253,246,242,0.7);
-    line-height: 1.75;
-    max-width: 520px;
-    text-align: right;
-    margin-right: 0;
-    margin-left: auto;
-    animation: fadeSlideUp 0.9s ease 0.45s both;
-    margin-bottom: 42px;
-  }
-
-  #hero-section .hero-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--gradient-primary);
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 700;
-    padding: 16px 36px;
-    border-radius: var(--radius-btn);
-    box-shadow: 0 8px 28px rgba(201,123,99,0.45);
-    transition: var(--transition-default);
-    animation: fadeSlideUp 0.9s ease 0.55s both;
-    letter-spacing: 0.02em;
-    position: relative;
-    overflow: hidden;
-  }
-
-  #hero-section .hero-cta::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.12);
-    opacity: 0;
-    transition: opacity 0.2s ease;
-  }
-
-  #hero-section .hero-cta:hover::before { opacity: 1; }
-
-  #hero-section .hero-cta:hover {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: var(--shadow-btn-hover);
-  }
-
-  #hero-section .hero-cta .cta-icon {
-    width: 22px;
-    height: 22px;
-    flex-shrink: 0;
-  }
-
-  #hero-section .hero-sparkle {
-    position: absolute;
-    bottom: 10%;
-    left: 8%;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    animation: float 4s ease-in-out infinite;
-  }
-
-  #hero-section .sparkle-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid rgba(201,123,99,0.35);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(4px);
-    background: rgba(61,43,36,0.25);
-  }
-
-  #hero-section .sparkle-inner {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(201,123,99,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(201,123,99,0.15);
-  }
-
-  #hero-section .sparkle-text {
-    font-size: 0.72rem;
-    color: rgba(253,246,242,0.65);
-    text-align: center;
-    max-width: 100px;
-    line-height: 1.4;
-  }
-
-  #hero-section .hero-scroll-indicator {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    animation: bounce 2s ease-in-out infinite;
-  }
-
-  #hero-section .scroll-line {
-    width: 1.5px;
-    height: 36px;
-    background: linear-gradient(to bottom, rgba(201,123,99,0.8), transparent);
-    border-radius: 1px;
-  }
-
-  #hero-section .scroll-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--primary);
-  }
-
-  #hero-section .corner-deco {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 3;
-    width: 60px;
-    height: 60px;
-    border-top: 2px solid rgba(201,123,99,0.4);
-    border-left: 2px solid rgba(201,123,99,0.4);
-    border-radius: 4px 0 0 0;
-  }
-
-  @keyframes fadeSlideUp {
-    from { opacity:0; transform: translateY(30px); }
-    to   { opacity:1; transform: translateY(0); }
-  }
-
-  @keyframes fadeSlideDown {
-    from { opacity:0; transform: translateY(-20px); }
-    to   { opacity:1; transform: translateY(0); }
-  }
-
-  @keyframes expandWidth {
-    from { width: 0; opacity:0; }
-    to   { width: 80px; opacity:1; }
-  }
-
-  @keyframes float {
-    0%,100% { transform: translateY(0); }
-    50%      { transform: translateY(-14px); }
-  }
-
-  @keyframes bounce {
-    0%,100% { transform: translateX(-50%) translateY(0); }
-    50%      { transform: translateX(-50%) translateY(8px); }
-  }
-
-  @keyframes pulse-dot {
-    0%,100% { opacity:1; transform: scale(1); }
-    50%      { opacity:0.5; transform: scale(0.7); }
-  }
-
-  @media (max-width: 768px) {
-    #hero-section .hero-content-wrap {
-      padding-top: 110px;
-      padding-bottom: 80px;
-      align-items: flex-end;
-    }
-    #hero-section .hero-sparkle {
-      display: none;
-    }
-    #hero-section .corner-deco {
-      top: 90px;
-      left: 20px;
-      width: 40px;
-      height: 40px;
-    }
-    #hero-section .hero-accent-line {
-      width: 4px;
-    }
-  }
-</style>
-
-<!-- Full-screen background image -->
-<div class="hero-bg" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27400%27 height=%27300%27%3E%3Cdefs%3E%3ClinearGradient id=%27grad%27 x1=%270%25%27 y1=%270%25%27 x2=%27100%25%27 y2=%27100%25%27%3E%3Cstop offset=%270%25%27 style=%27stop-color:%23FF0083;stop-opacity:1%27 /%3E%3Cstop offset=%27100%25%27 style=%27stop-color:%23FF008320;stop-opacity:1%27 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27url(%23grad)%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-family=%27Arial, sans-serif%27 font-size=%2716%27 fill=%27white%27 text-anchor=%27middle%27 dy=%27.3em%27 font-weight=%27500%27%3EClick%20to%20add%20image%3C/text%3E%3C/svg%3E');  background-size: cover; background-position: center;"></div>
-
-<!-- Cinematic overlay -->
-<div class="hero-overlay"></div>
-
-<!-- Right accent stripe -->
-<div class="hero-accent-line"></div>
-
-<!-- Corner decoration -->
-<div class="corner-deco"></div>
-
-<!-- Main content -->
-<div class="hero-content-wrap">
-
-  <div class="hero-badge">
-    <span class="badge-dot"></span>
-    ✦ Life Inside — מרפאת רפואת עובר
+    </div><h1 class="li-hero__name" data-element-id="move-1778148103590-w1zm3svx" >ד״ר רון חר״ך</h1>
   </div>
 
-  <h1 class="hero-name">ד״ר רון חר״ך</h1>
-
-  <div class="hero-divider"></div>
-
-  <p class="hero-brand">מומחה ברפואת עובר ואולטרסאונד מיילדותי</p>
-
-  <p class="hero-subtitle">בדיקות אולטרסאונד מתקדמות ואבחון עוברי מקצועי</p>
-
-  <p class="hero-desc">
-    במרפאה פרטית ומוביל ברעננה — עם ליווי אישי, חם ומקצועי
-  </p>
-
-  <a class="hero-cta" href="https://wa.me/972500000000" target="_blank" rel="noopener">
-    <!-- WhatsApp icon -->
-    <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
-    </svg>
-    לתיאום בדיקה
-  </a>
-
-</div>
-
-<!-- Floating decorative orb -->
-<div class="hero-sparkle" aria-hidden="true">
-  <div class="sparkle-circle">
-    <div class="sparkle-inner">
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="rgba(201,123,99,0.8)" stroke-width="1.5">
-        <path d="M12 2C12 2 12 7 9 10C6 13 2 12 2 12C2 12 7 12 10 15C13 18 12 22 12 22C12 22 12 17 15 14C18 11 22 12 22 12C22 12 17 12 14 9C11 6 12 2 12 2Z"></path>
-      </svg>
-    </div>
+  <!-- Scroll indicator -->
+  <div class="li-hero__scroll" aria-hidden="true">
+    <span class="li-hero__scroll-line"></span>
   </div>
-  <span class="sparkle-text">רעננה</span>
-</div>
-
-<!-- Scroll indicator -->
-<div class="hero-scroll-indicator" aria-hidden="true">
-  <div class="scroll-dot"></div>
-  <div class="scroll-line"></div>
-</div>
-
 </section><section class="index-credentials-section" data-layout-spec="בית-credentials" dir="rtl" data-zappy-section="true" id="index-credentials-section">
   <div class="index-credentials-container">
 
