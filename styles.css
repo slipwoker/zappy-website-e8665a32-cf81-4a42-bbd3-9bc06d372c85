@@ -12564,6 +12564,24 @@ nav.navbar .sub-menu li a {
   overflow: visible !important;
   opacity: 1 !important;
 }
+
+#nt-page .nt-faq-item .nt-faq-body {
+  max-height: 0px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  transition: max-height 0.35s ease, opacity 0.3s ease !important;
+}
+
+#nt-page .nt-faq-item.nt-active .nt-faq-body {
+  max-height: 600px !important;
+  overflow: hidden !important;
+  opacity: 1 !important;
+  padding-top: 0px !important;
+  padding-bottom: 16px !important;
+  transition: max-height 0.35s ease, opacity 0.3s ease !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
