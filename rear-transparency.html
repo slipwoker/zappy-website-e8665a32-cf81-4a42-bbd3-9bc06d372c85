@@ -270,19 +270,15 @@
       if (!btn) return;
       var answer = item.querySelector('.nt-faq-body');
       if (!answer) return;
-      var chevron = btn.querySelector('.nt-faq-item__chevron');
 
-      /* ── initial closed state ── */
+      /* ── reset to closed state ── */
       item.classList.remove('active', 'nt-active');
       answer.style.cssText = 'max-height:0px !important; overflow:hidden !important; opacity:0 !important; transition:max-height 0.35s ease, opacity 0.3s ease !important; padding-top:0 !important; padding-bottom:0 !important;';
+      var chevron = btn.querySelector('.nt-faq-item__chevron');
       if (chevron) chevron.style.cssText = 'transform:rotate(0deg); transition:transform 0.3s ease;';
 
-      /* ── clone to remove any stale listeners ── */
-      var newBtn = btn.cloneNode(true);
-      btn.parentNode.replaceChild(newBtn, btn);
-      var newChevron = newBtn.querySelector('.nt-faq-item__chevron');
-
-      newBtn.addEventListener('click', function() {
+      /* ── attach click directly (no clone) ── */
+      btn.addEventListener('click', function() {
         var isActive = item.classList.contains('nt-active');
 
         /* close all */
@@ -294,21 +290,21 @@
           if (c) c.style.cssText = 'transform:rotate(0deg); transition:transform 0.3s ease;';
         });
 
-        /* open if was closed */
+        /* open clicked item if it was closed */
         if (!isActive) {
           item.classList.add('nt-active');
-          answer.style.cssText = 'max-height:' + answer.scrollHeight + 'px !important; overflow:hidden !important; opacity:1 !important; transition:max-height 0.35s ease, opacity 0.3s ease !important; padding-top:0 !important; padding-bottom:16px !important;';
-          if (newChevron) newChevron.style.cssText = 'transform:rotate(180deg); transition:transform 0.3s ease;';
+          answer.style.cssText = 'max-height:600px !important; overflow:hidden !important; opacity:1 !important; transition:max-height 0.35s ease, opacity 0.3s ease !important; padding-top:0 !important; padding-bottom:16px !important;';
+          var ch = btn.querySelector('.nt-faq-item__chevron');
+          if (ch) ch.style.cssText = 'transform:rotate(180deg); transition:transform 0.3s ease;';
         }
       });
     });
   }
 
-  /* wait for DOM + all other scripts */
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { setTimeout(initNtFaq, 300); });
+    document.addEventListener('DOMContentLoaded', function() { setTimeout(initNtFaq, 200); });
   } else {
-    setTimeout(initNtFaq, 300);
+    setTimeout(initNtFaq, 200);
   }
 })();
 </script> 
