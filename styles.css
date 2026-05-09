@@ -13596,6 +13596,38 @@ nav.navbar .sub-menu li a {
   object-fit: cover !important;
   object-position: center top !important;
 }
+
+#nt-page .nt-hero__inner {
+  grid-template-columns: 1fr !important;
+  gap: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#nt-page .nt-hero__text {
+  order: 1;
+}
+
+#nt-page .nt-hero__media {
+  order: 2;
+  width: 100% !important;
+  margin-top: 28px !important;
+  display: block !important;
+}
+
+#nt-page .nt-hero__media .zappy-inserted-element {
+  width: 100% !important;
+  height: 480px !important;
+  min-height: unset !important;
+}
+
+#nt-page .nt-hero__media .zappy-inserted-element img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: unset !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
