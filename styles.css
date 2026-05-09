@@ -13503,6 +13503,43 @@ nav.navbar .sub-menu li a {
 #li-early-scan-page .li-advantages .li-adv-item__heading {
   color: #fff !important;
 }
+
+#li-early-scan-page .li-card:hover {
+  background-color: #fff !important;
+  color: var(--text-color) !important;
+}
+
+#li-early-scan-page .li-card:hover .li-card__title {
+  color: var(--text-color) !important;
+}
+
+#li-early-scan-page .li-card:hover .li-card__text {
+  color: #6d5f59 !important;
+}
+
+#li-early-scan-page .li-card:hover .li-card__icon-wrap,
+#li-early-scan-page .li-card:hover .li-card__icon {
+  color: var(--accent-color) !important;
+}
+
+#li-early-scan-page .li-card__title {
+  color: var(--text-color) !important;
+}
+
+#li-early-scan-page .li-card__text {
+  color: #6d5f59 !important;
+}
+
+#li-early-scan-page .li-card {
+  background-color: #fff !important;
+  color: var(--text-color) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+#li-early-scan-page .li-card:hover {
+  background-color: #fff !important;
+  color: var(--text-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
