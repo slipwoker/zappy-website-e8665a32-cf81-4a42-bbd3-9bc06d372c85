@@ -13710,6 +13710,12 @@ nav.navbar .sub-menu li a {
   max-width: 100% !important;
   height: 500px !important;
 }
+
+#li-late-scan #zappy-element-1778354147257-x72np4131 [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  height: 480px !important;
+  max-width: 100% !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
