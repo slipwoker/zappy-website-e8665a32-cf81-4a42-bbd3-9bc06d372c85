@@ -13638,6 +13638,18 @@ nav.navbar .sub-menu li a {
   margin-top: 0 !important;
   margin-bottom: 28px !important;
 }
+
+#nt-page .nt-faq-item:hover .nt-faq-item__answer,
+#nt-page .nt-faq-item:hover .nt-faq-body {
+  max-height: 600px !important;
+  opacity: 1 !important;
+  padding-bottom: 16px !important;
+  overflow: hidden !important;
+}
+
+#nt-page .nt-faq-item:hover .nt-faq-item__chevron {
+  transform: rotate(180deg) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
