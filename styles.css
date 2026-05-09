@@ -13628,6 +13628,16 @@ nav.navbar .sub-menu li a {
   object-fit: cover !important;
   border-radius: 20px !important;
 }
+
+#nt-page .nt-hero__text {
+  order: 2 !important;
+}
+
+#nt-page .nt-hero__media {
+  order: 1 !important;
+  margin-top: 0 !important;
+  margin-bottom: 28px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
