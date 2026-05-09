@@ -13453,6 +13453,26 @@ nav.navbar .sub-menu li a {
   min-height: 320px;
 }
 }
+
+#li-early-scan-page .li-advantages .li-adv-item__heading,
+#li-early-scan-page .li-advantages strong.li-adv-item__heading,
+#li-early-scan-page .li-advantages .li-adv-item__heading * {
+  color: #ffffff !important;
+}
+
+#li-early-scan-page .li-advantages .li-adv-item__text {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+#li-early-scan-page .li-advantages .li-adv-item p,
+#li-early-scan-page .li-advantages .li-adv-item p strong,
+#li-early-scan-page .li-advantages .li-adv-item div {
+  color: #ffffff !important;
+}
+
+#li-early-scan-page .li-advantages .li-section-title--light {
+  color: #ffffff !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
