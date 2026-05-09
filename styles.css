@@ -13549,7 +13549,7 @@ nav.navbar .sub-menu li a {
 
 #li-early-scan-page .li-card:hover .li-card__title,
 #li-early-scan-page .li-card:hover .li-card__text {
-  color: #ffffff !important;
+  color: #3d2b24 !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
