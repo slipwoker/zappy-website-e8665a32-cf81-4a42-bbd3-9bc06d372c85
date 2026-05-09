@@ -13750,6 +13750,12 @@ nav.navbar .sub-menu li a {
   max-width: none !important;
   border-radius: 24px !important;
 }
+
+#li-late-scan .li-faq__list {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
