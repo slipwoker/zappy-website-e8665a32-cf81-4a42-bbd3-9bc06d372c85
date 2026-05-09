@@ -13704,6 +13704,12 @@ nav.navbar .sub-menu li a {
   height: 480px !important;
   max-width: 100% !important;
 }
+
+#zappy-element-1778354147257-x72np4131 [data-zappy-zoom-wrapper] {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 500px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
