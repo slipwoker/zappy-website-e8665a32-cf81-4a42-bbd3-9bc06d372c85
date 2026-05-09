@@ -13551,6 +13551,29 @@ nav.navbar .sub-menu li a {
 #li-early-scan-page .li-card:hover .li-card__text {
   color: #3d2b24 !important;
 }
+
+#nt-page .nt-hero__media {
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+}
+
+#nt-page .nt-hero__media .zappy-inserted-element {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 420px !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+#nt-page .nt-hero__media .zappy-inserted-element img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 420px !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+  display: block !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
