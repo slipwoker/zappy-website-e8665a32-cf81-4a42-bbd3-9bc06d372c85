@@ -13492,6 +13492,17 @@ nav.navbar .sub-menu li a {
   object-fit: cover !important;
   border-radius: 24px !important;
 }
+
+#li-early-scan-page .li-advantages .li-adv-item,
+#li-early-scan-page .li-advantages .li-adv-item p,
+#li-early-scan-page .li-advantages .li-adv-item__text,
+#li-early-scan-page .li-advantages .li-adv-item__heading {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+#li-early-scan-page .li-advantages .li-adv-item__heading {
+  color: #fff !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
