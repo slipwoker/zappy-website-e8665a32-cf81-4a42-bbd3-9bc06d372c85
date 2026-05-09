@@ -13709,7 +13709,7 @@ nav.navbar .sub-menu li a {
   height: 100% !important;
   max-width: 100% !important;
   position: absolute !important;
-  inset: 0 !important;
+  inset: 0px !important;
 }
 
 #zappy-element-1778354147257-x72np4131 [data-zappy-zoom-wrapper] {
