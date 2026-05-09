@@ -13650,6 +13650,20 @@ nav.navbar .sub-menu li a {
 #nt-page .nt-faq-item:hover .nt-faq-item__chevron {
   transform: rotate(180deg) !important;
 }
+
+#li-late-scan .li-hero__inner {
+  grid-template-columns: 1fr 1fr !important;
+  align-items: stretch !important;
+}
+
+#li-late-scan .li-hero__image-wrap {
+  min-height: 100%;
+}
+
+#li-late-scan .li-hero__img {
+  height: 100%;
+  object-fit: cover;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
