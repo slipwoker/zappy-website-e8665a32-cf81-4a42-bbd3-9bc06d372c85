@@ -13473,6 +13473,25 @@ nav.navbar .sub-menu li a {
 #li-early-scan-page .li-advantages .li-section-title--light {
   color: #ffffff !important;
 }
+
+#li-early-scan-page .li-hero__inner {
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center !important;
+  gap: 40px !important;
+}
+
+#li-early-scan-page .li-hero__image-wrap {
+  min-height: 480px !important;
+  height: 100% !important;
+}
+
+#li-early-scan-page .li-hero__image {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 480px !important;
+  object-fit: cover !important;
+  border-radius: 24px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
