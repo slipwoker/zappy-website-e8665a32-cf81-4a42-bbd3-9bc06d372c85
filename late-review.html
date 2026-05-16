@@ -1504,192 +1504,310 @@
 
 <section class="li-late-scan" id="li-late-scan">
 
-  <!-- ===== HERO ===== -->
-  <div class="li-hero">
-    <div class="li-hero__inner">
-      <!-- עמודת טקסט — ימין -->
-      <div class="li-hero__content">
-        <p data-element-id="move-1778356588044-7pqbjyfs"><span class="li-hero__badge" style="color: rgb(61, 43, 36) !important;">מרפאת Life Inside | ד"ר רון חר"ך</span></p><h1 class="li-hero__title">סקירה מאוחרת</h1>
-        <p class="li-hero__subtitle" style="color: rgb(61, 43, 36) !important;">סקירת מערכות מאוחרת — שבועות 21–24 להריון</p>
-        <h3>
-סקירת מערכות מאוחרת היא בדיקת אולטרסאונד מקיפה, המבוצעת לרוב בין שבועות 21-24 להריון. מטרת הבדיקה היא להעריך באופן שיטתי את מבנה העובר ואת התפתחות מערכות הגוף בשלב מתקדם יותר של ההריון - כולל המוח, הלב, עמוד השדרה, הפנים, הגפיים, הכליות, מערכת העיכול ואיברים נוספים. הבדיקה מאפשרת לזהות ממצאים מבניים שעשויים להופיע או להתבהר רק בהמשך ההריון, להעריך את גדילת העובר, את כמות מי השפיר, את מיקום השליה ולעיתים גם לבצע הערכה של זרימות דם בהתאם לצורך הקליני. ד"ר חר"ך מבצע הסקירה בגישה מקצועית, יסודית ורגישה, תוך שימוש במכשור אולטרסאונד מתקדם במיוחד, המאפשר הדמיה איכותית וברורה של העובר. במהלך הבדיקה ניתן דגש על הסבר ברור, סבלני ומותאם אישית, כדי להעניק להורים תחושת ביטחון והבנה מלאה של מה שנבדק. הבדיקה מתאימה לנשים המעוניינות בהערכה מקיפה ומקצועית של מבנה העובר והתפתחותו בשליש השני של ההריון.
-        </h3>
-        <p><a href="#li-cta" class="li-btn li-btn--primary" data-element-id="btn-1778240810128-29hp6qif1" style="color: rgb(0, 0, 0) !important;" data-element-type="button">לקביעת תור</a></p>
-      </div>
+<style>
+  .li-late-scan .li-hero-fullbg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .li-late-scan .li-hero-fullbg__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/image-1778357116006-rczteu.webp?v=1778357117859');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  .li-late-scan .li-hero-fullbg__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(61,43,36,0.85) 0%, rgba(201,123,99,0.40) 60%, rgba(61,43,36,0.65) 100%);
+    z-index: 1;
+  }
+  .li-late-scan .li-hero-fullbg__content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 140px 24px 100px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .li-late-scan .li-hero-fullbg__badge {
+    display: inline-block;
+    background: rgba(201,123,99,0.25);
+    border: 1px solid rgba(201,123,99,0.6);
+    color: #FDF6F2;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    padding: 6px 20px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(6px);
+  }
+  .li-late-scan .li-hero-fullbg__h1 {
+    font-size: clamp(3.2rem, 9vw, 6.5rem);
+    font-weight: 800;
+    color: #FDF6F2;
+    line-height: 1.05;
+    margin: 0 0 28px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  }
+  .li-late-scan .li-hero-fullbg__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(180deg,#C8785F 0%,#BD5F42 100%);
+    color: #FDF6F2;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px 44px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 14px 28px rgba(201,123,99,0.28);
+    transition: all 0.25s ease;
+    letter-spacing: 0.04em;
+  }
+  .li-late-scan .li-hero-fullbg__cta:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 18px 36px rgba(201,123,99,0.38);
+  }
+  .li-late-scan .li-hero-fullbg__scroll {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .li-late-scan .li-hero-fullbg__scroll span {
+    display: block;
+    width: 2px;
+    height: 28px;
+    background: linear-gradient(to bottom, rgba(253,246,242,0.7), transparent);
+    border-radius: 2px;
+    animation: liScrollPulse 1.6s ease-in-out infinite;
+  }
+  @keyframes liScrollPulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.18); }
+  }
+  .li-late-scan .li-about-section {
+    background: var(--bg-light);
+    padding: 72px 0;
+  }
+  .li-late-scan .li-about-title {
+    text-align: right;
+    margin-bottom: 24px;
+  }
+  .li-late-scan .li-about-body {
+    color: #3d2b24;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    text-align: right;
+  }
+  .li-late-scan .li-about-body h3 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin: 0 0 16px;
+  }
+  .li-late-scan .li-cta-box-section {
+    padding: 72px 0;
+    text-align: center;
+  }
+  .li-late-scan .li-cta__box {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 42px 28px;
+    text-align: center;
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(61,43,36,0.08);
+  }
+  .li-late-scan .li-cta__title-dark {
+    font-size: clamp(1.6rem,3vw,2.4rem);
+    font-weight: 800;
+    margin: 0 0 16px;
+    color: #3d2b24;
+  }
+  .li-late-scan .li-cta__desc-dark {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    margin: 0 0 28px;
+    color: #3d2b24;
+    opacity: 0.82;
+  }
+  .li-late-scan .li-cta-btn-dark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    border-radius: 12px;
+    padding: 12px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid #c97b63;
+    color: #3d2b24;
+    background: transparent;
+    transition: all 0.2s ease;
+    font-family: inherit;
+  }
+  .li-late-scan .li-cta-btn-dark:hover {
+    background: #c97b63;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  @media (max-width: 768px) {
+    .li-late-scan .li-hero-fullbg__content { padding: 120px 20px 90px; }
+    .li-late-scan .li-hero-fullbg__h1 { font-size: 2.8rem; }
+  }
+</style>
 
-      <!-- עמודת תמונה — שמאל -->
-      <div class="li-hero__image-wrap" style="min-height: 480px; align-self: stretch;">
-        <div class="zappy-inserted-element" id="zappy-element-1778357104316-sj1lamiom" data-element-id="zappy-element-1778357104316-sj1lamiom" data-element-type="image" style="position: absolute; inset: 0; width: 100%; height: 100%;"><img src="/assets/image-1778357116006-rczteu.webp?v=1778357117859" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px; position: absolute; inset: 0;" data-element-type="image" data-element-id="zappy-element-1778357104316-sj1lamiom" class="zappy-resizable-hover"></div>
-      </div>
+<!-- ===== HERO ===== -->
+<div class="li-hero-fullbg">
+  <div class="li-hero-fullbg__bg"></div>
+  <div class="li-hero-fullbg__overlay"></div>
+  <div class="li-hero-fullbg__content">
+    <div class="li-hero-fullbg__badge">בדיקת אולטרסאונד | שבועות 21–24</div>
+    <h1 class="li-hero-fullbg__h1">סקירה מאוחרת</h1>
+    <p style="text-align: center; display: flex; justify-content: center; width: 100%;">
+      <a href="#li-cta" class="li-hero-fullbg__cta" data-element-id="btn-1778240810128-29hp6qif1">לקביעת תור ←</a>
+    </p>
+  </div>
+  <div class="li-hero-fullbg__scroll"><span></span></div>
 </div>
-  </div>
 
-  <!-- ===== מה נבדק ===== -->
-  <div class="li-what">
-    <div class="li-container">
-      <div class="li-section-header">
-        <h2 class="li-section-title">מה נבדק בסקירה?</h2>
-        <p class="li-section-desc">הסקירה המאוחרת בוחנת את כלל מערכות גוף העובר בצורה שיטתית ומקיפה</p>
-      </div>
-      <div class="li-cards-grid zappy-preserve-css-grid" id="zappy-auto-grid-1778240810179-3mdb84" data-zappy-auto-grid="true" data-original-item-width="343" data-original-gap="22px" style="display: grid; --zappy-grid-cols: 342.669px 342.669px 342.682px; grid-template-columns: 342.669px 342.669px 342.682px; align-items: stretch !important;" data-zappy-explicit-columns="true">
-
-        <article class="li-card" aria-label="ראש ומוח" data-grid-item-index="0">
-          <div class="li-card__icon" aria-hidden="true">🧠</div>
-          <h3 class="li-card__title">ראש ומוח</h3>
-          <p class="li-card__text">גולגולת, מוח, חדרי המוח, צרבלום, עמוד שדרה צווארי — בדיקה מדוקדקת של מבנה המוח והגולגולת לאיתור חריגות מבניות.</p>
-        </article>
-
-        <article class="li-card" aria-label="פנים" data-grid-item-index="1">
-          <div class="li-card__icon" aria-hidden="true">👁️</div>
-          <h3 class="li-card__title">פנים</h3>
-          <p class="li-card__text">עיניים, אף, שפה, חך (גבישה בפה), לחיות ואוזניים — בדיקת מבנה הפנים לאיתור שפה שסועה ומומים נוספים.</p>
-        </article>
-
-        <article class="li-card" aria-label="לב" data-grid-item-index="2">
-          <div class="li-card__icon" aria-hidden="true">❤️</div>
-          <h3 class="li-card__title">לב</h3>
-          <p class="li-card__text">4 חדרים, שסתומים, מוצא כלי דם, קשת אבי עורקים — בדיקה אקוקרדיוגרפית מקיפה של מבנה לב העובר.</p>
-        </article>
-
-        <article class="li-card" aria-label="בטן ואיברים" data-grid-item-index="3">
-          <div class="li-card__icon" aria-hidden="true">🫀</div>
-          <h3 class="li-card__title">בטן ואיברים</h3>
-          <p class="li-card__text">קיבה, מעיים, כבד, טחול, כליות, שלפוחית שתן ודופן הבטן — בדיקת האיברים הפנימיים ותפקודם.</p>
-        </article>
-
-        <article class="li-card" aria-label="עמוד שדרה וגפיים" data-grid-item-index="4">
-          <div class="li-card__icon" aria-hidden="true">🦴</div>
-          <h3 class="li-card__title">עמוד שדרה וגפיים</h3>
-          <p class="li-card__text">ספירת חוליות, ידיים, רגליים ואצבעות — בדיקת שלמות עמוד השדרה וספירת גפיים ואצבעות.</p>
-        </article>
-
-        <article class="li-card" aria-label="שלייה ומי שפיר" data-grid-item-index="5">
-          <div class="li-card__icon" aria-hidden="true">🌿</div>
-          <h3 class="li-card__title">שלייה ומי שפיר</h3>
-          <p class="li-card__text">מיקום ומבנה השלייה, כמות מי שפיר וחבל טבור — הערכת סביבת הגדילה ואספקת הדם לעובר.</p>
-        </article>
-
-      </div>
+<!-- ===== ABOUT SECTION ===== -->
+<div class="li-about-section">
+  <div class="li-container li-container--narrow">
+    <h2 class="li-section-title li-about-title">מהי סקירת המערכות המאוחרת?</h2>
+    <div class="li-about-body">
+      <h3>סקירת מערכות מאוחרת היא בדיקת אולטרסאונד מקיפה, המבוצעת לרוב בין שבועות 21–24 להריון. מטרת הבדיקה היא להעריך באופן שיטתי את מבנה העובר ואת התפתחות מערכות הגוף בשלב מתקדם יותר של ההריון.</h3>
+      <h3>הבדיקה כוללת הערכה של המוח, הלב, עמוד השדרה, הפנים, הגפיים, הכליות, מערכת העיכול ואיברים נוספים. הסקירה מאפשרת לזהות ממצאים מבניים שעשויים להופיע או להתבהר רק בהמשך ההריון.</h3>
+      <h3>כמו כן, ניתן להעריך את גדילת העובר, את כמות מי השפיר, את מיקום השליה ולעיתים גם לבצע הערכה של זרימות דם בהתאם לצורך הקליני.</h3>
+      <h3>ד"ר חר"ך מבצע את הסקירה בגישה מקצועית, יסודית ורגישה, תוך שימוש במכשור אולטרסאונד מתקדם המאפשר הדמיה איכותית וברורה. במהלך הבדיקה ניתן דגש על הסבר ברור, סבלני ומותאם אישית, כדי להעניק להורים תחושת ביטחון והבנה מלאה.</h3>
     </div>
   </div>
-
-  <!-- ===== בדיקת לב ===== -->
-  <div class="li-heart">
-    <div class="li-container">
-      <div class="li-heart__inner">
-        <div class="zappy-inserted-element" id="zappy-element-1778354147257-x72np4131" data-element-id="zappy-element-1778354147257-x72np4131" data-element-type="image" data-zappy-newly-inserted="true" style="max-width: 100%; margin: 0 auto; text-align: center; justify-content: center; width: 100%; height: 100%; object-fit: cover; min-height: 480px"><div data-zappy-zoom-wrapper="true" data-element-id="zappy-element-1778354147257-x72np4131" data-element-type="image" data-zappy-zoom-wrapper-width="436px" data-zappy-zoom-wrapper-height="374px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 436px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 374px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img src="/assets/image-image-1778355223832-7udmbd.webp?v=1778355225842" alt="Image" style="border-radius: 8px; object-fit: cover !important; display: block !important; width: 100% !important; height: 100% !important; max-width: none !important; margin: 0px !important; object-position: 50% 50% !important; left: 0% !important; top: 0% !important; max-height: none !important; position: absolute !important;" data-element-type="image" data-element-id="zappy-element-1778354147257-x72np4131" id="zappy-element-1778354147257-x72np4131" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-original-width="320" data-zappy-original-height="273.99737548828125"></div></div>
-        <div class="li-heart__content">
-          <h2 ><span style="font-size: 12.8px; letter-spacing: 0.768px; text-transform: uppercase; background-color: rgba(201, 123, 99, 0.12);"><b>זרקור על לב העובר</b></span></h2><h2 class="li-heart__title">בדיקת הלב של העובר</h2>
-          <p class="li-heart__text">בדיקת הלב היא אחד הרכיבים המורכבים והחשובים ביותר בסקירה המאוחרת. לב העובר פועם בקצב מהיר, ומבנהו הזעיר מחייב ניסיון וציוד מתקדם.</p>
-          <ul class="li-heart__list" aria-label="רכיבי בדיקת הלב" ><li class="li-heart__item" data-grid-item-index="0">
-              <span class="li-heart__bullet" aria-hidden="true" style="color: rgb(0, 0, 0) !important;">✓</span>
-              <span><strong>תצוגת 4 חדרים</strong> — בדיקת גודל ומיקום שני חדרי הלב ושני הפרוזדורים</span>
-            </li><li class="li-heart__item" data-grid-item-index="1">
-              <span class="li-heart__bullet" aria-hidden="true" style="color: rgb(0, 0, 0) !important;">✓</span>
-              <span><strong>מסתמים ומחיצות</strong> — בדיקת שלמות המחיצות בין חדרי הלב ותפקוד המסתמים</span>
-            </li><li class="li-heart__item" data-grid-item-index="2">
-              <span class="li-heart__bullet" aria-hidden="true" style="color: rgb(0, 0, 0) !important;">✓</span>
-              <span><strong>מוצא כלי דם</strong> — עורק הריאה ואבי העורקים, כיוון ומיקום יציאתם</span>
-            </li><li class="li-heart__item" data-grid-item-index="3">
-              <span class="li-heart__bullet" aria-hidden="true" style="color: rgb(0, 0, 0) !important;">✓</span>
-              <span><strong>קשת אבי עורקים</strong> — בדיקת קשת אבי העורקים ורצף הכלים היוצאים ממנה</span>
-            </li><li class="li-heart__item" data-grid-item-index="4">
-              <span class="li-heart__bullet" aria-hidden="true" style="color: rgb(0, 0, 0) !important;">✓</span>
-              <span><strong>דופלר צבעוני</strong> — הדמיית זרימת הדם בלב לאיתור בעיות תפקודיות</span>
-            </li></ul>
-          <div class="li-heart__note">
-            <p><span class="li-heart__note-icon" aria-hidden="true" style="color: rgb(61, 43, 36) !important;">ℹ️</span>
-            </p><p >מומי לב מולדים מהווים כ-1% מהלידות וניתן לאתר רבים מהם בסקירה מאוחרת מקיפה.&nbsp;</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== FAQ ===== -->
-  <div class="li-faq" id="li-faq">
-    <div class="li-container li-container--narrow">
-      <div class="li-section-header">
-        <h2 class="li-section-title">שאלות נפוצות</h2>
-        <p class="li-section-desc">תשובות לשאלות הנפוצות ביותר על הסקירה המאוחרת</p>
-      </div>
-
-      <div class="li-faq__list zappy-preserve-css-grid" role="list" style="display: grid; --zappy-grid-cols: repeat(3, minmax(0, 1fr)); grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true" data-original-item-width="247" data-original-gap="16px">
-
-        
-
-        <div class="li-faq-item" role="listitem" data-grid-item-index="0">
-          <button class="li-faq-item__btn" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778240810128-utdvoj2np" data-native-element="true">
-            <span class="li-faq-item__question" style="cursor: pointer;">כמה זמן נמשכת הסקירה?</span>
-            <span class="li-faq-item__chevron" aria-hidden="true" style="transform: rotate(180deg); transition: transform 0.3s;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </span>
-          </button>
-          <div class="li-faq-item__answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" style="max-height: 0px; overflow: hidden; opacity: 0; transition: max-height 0.35s, opacity 0.25s, padding 0.25s; padding-top: 0px; padding-bottom: 0px;">
-            <div class="li-faq-item__answer-inner" >
-              סקירה מאוחרת מלאה נמשכת בדרך כלל כשעה. משך הבדיקה תלוי במיקום העובר, בכמות מי השפיר ובמורכבות הממצאים. אם העובר אינו במיקום נוח לבדיקת כל המבנים, ייתכן שיידרש זמן נוסף או ביקור חוזר. ד"ר חר"ך מקפיד לא לסיים את הבדיקה עד שכל המבנים נראו בצורה מיטבית.
-            </div>
-          </div>
-        </div>
-
-        <div class="li-faq-item" role="listitem" data-grid-item-index="1">
-          <button class="li-faq-item__btn" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778240810128-b845kgh3a" data-native-element="true">
-            <span class="li-faq-item__question" style="cursor: pointer;" aria-expanded="false">מה אם לא רואים כל המבנים?</span>
-            <span class="li-faq-item__chevron" aria-hidden="true" style="transform: rotate(180deg); transition: transform 0.3s;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </span>
-          </button>
-          <div class="li-faq-item__answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" style="max-height: 0px; overflow: hidden; opacity: 0; transition: max-height 0.35s, opacity 0.25s, padding 0.25s; padding-top: 0px; padding-bottom: 0px;">
-            <div class="li-faq-item__answer-inner">
-              לעיתים, בשל מיקום העובר, מבנה הבטן או כמות מי השפיר, לא ניתן לראות את כל המבנים בבדיקה אחת. במקרה כזה ד"ר חר"ך יתעד אילו מבנים לא נראו ויקבע מועד לבדיקה משלימה ללא תוספת תשלום. לא מסיימים את הסקירה עם ממצאים חסרים מבלי לדאוג לבדיקה נוספת.
-            </div>
-          </div>
-        </div>
-
-        <div class="li-faq-item active" role="listitem" data-grid-item-index="2">
-          <button class="li-faq-item__btn" aria-expanded="true" aria-controls="faq-answer-4" id="faq-btn-4" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778240810128-1xjjdsicy" data-native-element="true">
-            <span class="li-faq-item__question" style="cursor: pointer;">האם צריך הכנה מיוחדת לסקירה?</span>
-            <span class="li-faq-item__chevron" aria-hidden="true" style="transform: rotate(180deg); transition: transform 0.3s;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </span>
-          </button>
-          <div class="li-faq-item__answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" style="max-height: 106px; overflow: hidden; opacity: 1; transition: max-height 0.35s, opacity 0.25s, padding 0.25s;">
-            <div class="li-faq-item__answer-inner">
-              הסקירה המאוחרת אינה דורשת הכנה מיוחדת. אין צורך להגיע עם שלפוחית מלאה. מומלץ לאכול ארוחה קלה כשעה לפני הבדיקה — לעיתים פעילות העובר לאחר אכילה מסייעת לקבל תמונות טובות יותר. כדאי להגיע עם בגדים נוחים ולהביא את ממצאי הבדיקות הקודמות ואת ספר ההריון.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== CTA ===== -->
-  <div class="li-cta" id="li-cta">
-    <div class="li-container">
-      <div class="li-cta__inner">
-        <div class="li-cta__content">
-          <h2 class="li-cta__title">קבעו את הסקירה המאוחרת שלכם</h2>
-          <p class="li-cta__desc">ד"ר רון חר"ך | מרפאת Life Inside ברעננה | ציוד אולטרסאונד מהדור החדש</p>
-          <div class="li-cta__actions" >
-            <a href="https://wa.me/972553111246" class="li-btn li-btn--white" aria-label="שלחו הודעה בוואטסאפ" target="_blank" rel="noopener noreferrer" data-element-id="btn-1778240810128-6wl8uuam7" style="color: rgb(61, 43, 36) !important; outline: none;" data-element-type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#25D366" style="flex-shrink:0;">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
-              </svg>
-              וואטסאפ לקביעת תור
-            </a>
 </div>
-          
+
+<!-- ===== CARDS ===== -->
+<div style="background: var(--bg-light); padding: 0 0 72px;">
+  <div class="li-container">
+    <div class="li-section-header">
+      <h2 class="li-section-title">מה נבדק בסקירה?</h2>
+      <p class="li-section-desc">הסקירה המאוחרת בוחנת את כלל מערכות גוף העובר בצורה שיטתית ומקיפה</p>
+    </div>
+    <div class="li-cards-grid zappy-preserve-css-grid" id="zappy-auto-grid-1778240810179-3mdb84">
+      <article class="li-card" aria-label="ראש ומוח" data-grid-item-index="0">
+        <div class="li-card__icon" aria-hidden="true">🧠</div>
+        <h3 class="li-card__title">ראש ומוח</h3>
+        <p class="li-card__text">גולגולת, מוח, חדרי המוח, צרבלום, עמוד שדרה צווארי — בדיקה מדוקדקת של מבנה המוח והגולגולת לאיתור חריגות מבניות.</p>
+      </article>
+      <article class="li-card" aria-label="פנים" data-grid-item-index="1">
+        <div class="li-card__icon" aria-hidden="true">👁️</div>
+        <h3 class="li-card__title">פנים</h3>
+        <p class="li-card__text">עיניים, אף, שפה, חך, לחיות ואוזניים — בדיקת מבנה הפנים לאיתור שפה שסועה ומומים נוספים.</p>
+      </article>
+      <article class="li-card" aria-label="לב" data-grid-item-index="2">
+        <div class="li-card__icon" aria-hidden="true">❤️</div>
+        <h3 class="li-card__title">לב</h3>
+        <p class="li-card__text">4 חדרים, שסתומים, מוצא כלי דם, קשת אבי עורקים — בדיקה אקוקרדיוגרפית מקיפה של מבנה לב העובר.</p>
+      </article>
+      <article class="li-card" aria-label="בטן ואיברים" data-grid-item-index="3">
+        <div class="li-card__icon" aria-hidden="true">🫀</div>
+        <h3 class="li-card__title">בטן ואיברים</h3>
+        <p class="li-card__text">קיבה, מעיים, כבד, טחול, כליות, שלפוחית שתן ודופן הבטן — בדיקת האיברים הפנימיים ותפקודם.</p>
+      </article>
+      <article class="li-card" aria-label="עמוד שדרה וגפיים" data-grid-item-index="4">
+        <div class="li-card__icon" aria-hidden="true">🦴</div>
+        <h3 class="li-card__title">עמוד שדרה וגפיים</h3>
+        <p class="li-card__text">ספירת חוליות, ידיים, רגליים ואצבעות — בדיקת שלמות עמוד השדרה וספירת גפיים ואצבעות.</p>
+      </article>
+      <article class="li-card" aria-label="שלייה ומי שפיר" data-grid-item-index="5">
+        <div class="li-card__icon" aria-hidden="true">🌿</div>
+        <h3 class="li-card__title">שלייה ומי שפיר</h3>
+        <p class="li-card__text">מיקום ומבנה השלייה, כמות מי שפיר וחבל טבור — הערכת סביבת הגדילה ואספקת הדם לעובר.</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FAQ ===== -->
+<div class="li-faq" id="li-faq">
+  <div class="li-container li-container--narrow">
+    <div class="li-section-header">
+      <h2 class="li-section-title">שאלות נפוצות</h2>
+      <p class="li-section-desc">תשובות לשאלות הנפוצות ביותר על הסקירה המאוחרת</p>
+    </div>
+    <div class="li-faq__list" role="list">
+
+      <div class="li-faq-item" role="listitem" data-grid-item-index="0">
+        <button class="li-faq-item__question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-late-1" data-element-id="btn-1778240810128-utdvoj2np">
+          <span>כמה זמן נמשכת הסקירה?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-late-1">
+          <div class="li-faq-item__answer-inner">
+            סקירה מאוחרת מלאה נמשכת בדרך כלל כשעה. משך הבדיקה תלוי במיקום העובר, בכמות מי השפיר ובמורכבות הממצאים. ד"ר חר"ך מקפיד לא לסיים את הבדיקה עד שכל המבנים נראו בצורה מיטבית.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item" role="listitem" data-grid-item-index="1">
+        <button class="li-faq-item__question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-late-2" data-element-id="btn-1778240810128-b845kgh3a">
+          <span>מה אם לא רואים כל המבנים?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-late-2">
+          <div class="li-faq-item__answer-inner">
+            לעיתים, בשל מיקום העובר, מבנה הבטן או כמות מי השפיר, לא ניתן לראות את כל המבנים בבדיקה אחת. במקרה כזה ד"ר חר"ך יתעד אילו מבנים לא נראו ויקבע מועד לבדיקה משלימה ללא תוספת תשלום.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item" role="listitem" data-grid-item-index="2">
+        <button class="li-faq-item__question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-late-3" data-element-id="btn-1778240810128-1xjjdsicy">
+          <span>האם צריך הכנה מיוחדת לסקירה?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-late-3">
+          <div class="li-faq-item__answer-inner">
+            הסקירה המאוחרת אינה דורשת הכנה מיוחדת. אין צורך להגיע עם שלפוחית מלאה. מומלץ לאכול ארוחה קלה כשעה לפני הבדיקה — לעיתים פעילות העובר לאחר אכילה מסייעת לקבל תמונות טובות יותר. כדאי להגיע עם בגדים נוחים ולהביא את ממצאי הבדיקות הקודמות ואת ספר ההריון.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div class="li-cta-box-section" id="li-cta">
+  <div class="li-container">
+    <div class="li-cta__box">
+      <div class="li-cta__content">
+        <h2 class="li-cta__title-dark">קבעו את הסקירה המאוחרת שלכם</h2>
+        <p class="li-cta__desc-dark">צרו קשר עם מרפאת Life Inside ברעננה לקביעת תור עם ד"ר רון חר"ך. אנחנו כאן לענות על כל שאלה ולהעניק לכם שקט נפשי לאורך ההריון.</p>
+        <div class="li-cta__actions">
+          <a href="https://wa.me/972553111246" class="li-cta-btn-dark" aria-label="שלחו הודעת וואטסאפ לקביעת תור" target="_blank" rel="noopener noreferrer" data-element-id="btn-1778240810128-6wl8uuam7">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            וואטסאפ לקביעת תור
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 </section>
 
