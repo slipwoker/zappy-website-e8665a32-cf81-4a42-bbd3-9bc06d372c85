@@ -13857,6 +13857,13 @@ nav.navbar .sub-menu li a {
   }
 }
 
+
+#li-third-scan-page .li-adv-item__icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  flex: 0 0 auto;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

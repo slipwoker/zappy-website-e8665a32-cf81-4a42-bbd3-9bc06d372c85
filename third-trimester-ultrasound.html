@@ -1519,10 +1519,10 @@
   <main>
       
 
-<section class="li-late-scan" dir="rtl" lang="he" id="li-third-scan-page">
+<section class="li-early-scan-page" dir="rtl" lang="he" id="li-third-scan-page">
 
 <style>
-  .li3-page-wrapper .li3-hero-fullbg {
+  .li-hero-fullbg {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -1531,7 +1531,7 @@
     justify-content: center;
     overflow: hidden;
   }
-  .li3-page-wrapper .li3-hero-fullbg__bg {
+  .li-hero-fullbg__bg {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -1541,13 +1541,13 @@
     background-position: center;
     z-index: 0;
   }
-  .li3-page-wrapper .li3-hero-fullbg__overlay {
+  .li-hero-fullbg__overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(61,43,36,0.85) 0%, rgba(201,123,99,0.40) 60%, rgba(61,43,36,0.65) 100%);
     z-index: 1;
   }
-  .li3-page-wrapper .li3-hero-fullbg__content {
+  .li-hero-fullbg__content {
     position: relative;
     z-index: 10;
     text-align: center;
@@ -1555,7 +1555,7 @@
     max-width: 820px;
     margin: 0 auto;
   }
-  .li3-page-wrapper .li3-hero-fullbg__badge {
+  .li-hero-fullbg__badge {
     display: inline-block;
     background: rgba(201,123,99,0.25);
     border: 1px solid rgba(201,123,99,0.6);
@@ -1567,7 +1567,7 @@
     margin-bottom: 28px;
     backdrop-filter: blur(6px);
   }
-  .li3-page-wrapper .li3-hero-fullbg__h1 {
+  .li-hero-fullbg__h1 {
     font-size: clamp(3.2rem, 9vw, 6.5rem);
     font-weight: 800;
     color: #FDF6F2;
@@ -1575,7 +1575,7 @@
     margin: 0 0 28px;
     text-shadow: 0 4px 24px rgba(0,0,0,0.35);
   }
-  .li3-page-wrapper .li3-hero-fullbg__cta {
+  .li-hero-fullbg__cta {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1590,11 +1590,11 @@
     transition: all 0.25s ease;
     letter-spacing: 0.04em;
   }
-  .li3-page-wrapper .li3-hero-fullbg__cta:hover {
+  .li-hero-fullbg__cta:hover {
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 18px 36px rgba(201,123,99,0.38);
   }
-  .li3-page-wrapper .li3-hero-fullbg__scroll {
+  .li-hero-fullbg__scroll {
     position: absolute;
     bottom: 36px;
     left: 50%;
@@ -1605,508 +1605,178 @@
     align-items: center;
     gap: 6px;
   }
-  .li3-page-wrapper .li3-hero-fullbg__scroll span {
+  .li-hero-fullbg__scroll span {
     display: block;
     width: 2px;
     height: 28px;
     background: linear-gradient(to bottom, rgba(253,246,242,0.7), transparent);
     border-radius: 2px;
-    animation: li3ScrollPulse 1.6s ease-in-out infinite;
+    animation: liScrollPulse3 1.6s ease-in-out infinite;
   }
-  @keyframes li3ScrollPulse {
+  @keyframes liScrollPulse3 {
     0%, 100% { opacity: 0.4; transform: scaleY(1); }
     50% { opacity: 1; transform: scaleY(1.18); }
   }
-  /* About section */
-  .li3-page-wrapper .li3-about-section {
-    background: var(--bg-light);
-    padding: 72px 0;
-  }
-  .li3-page-wrapper .li3-about-title {
-    text-align: right;
-    margin-bottom: 24px;
-  }
-  .li3-page-wrapper .li3-about-body {
-    color: #3d2b24;
-    font-size: 1.05rem;
-    line-height: 1.9;
-    text-align: right;
-  }
-  .li3-page-wrapper .li3-about-body h3 {
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin: 0 0 16px;
-  }
-  /* Dark section – what is checked */
-  .li3-page-wrapper .li3-checks-dark {
-    padding: 72px 0;
-    background: linear-gradient(135deg,#3d2b24 0%,#5a4036 100%);
-    color: #fff;
-    overflow: hidden;
-  }
-  .li3-page-wrapper .li3-checks-dark__inner {
-    width: min(1120px,100%);
-    margin-inline: auto;
-    padding-inline: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: center;
-  }
-  .li3-page-wrapper .li3-checks-dark__content {
-    text-align: right;
-  }
-  .li3-page-wrapper .li3-checks-dark__label {
-    display: inline-block;
-    font-size: 0.82rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #f1c8b8;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .li3-page-wrapper .li3-checks-dark__title {
-    font-size: clamp(1.6rem,3vw,2.4rem);
-    font-weight: 800;
-    color: #fff;
-    margin: 0 0 16px;
-  }
-  .li3-page-wrapper .li3-checks-dark__text {
-    color: rgba(255,255,255,0.78);
-    font-size: 1.02rem;
-    line-height: 1.8;
-    margin: 0 0 24px;
-  }
-  .li3-page-wrapper .li3-checks-dark__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .li3-page-wrapper .li3-checks-dark__item {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  .li3-page-wrapper .li3-checks-dark__bullet {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #c97b63;
-    flex-shrink: 0;
-    margin-top: 8px;
-  }
-  .li3-page-wrapper .li3-checks-dark__image-wrap {
-    position: relative;
-    border-radius: 24px;
-    overflow: hidden;
-  }
-  .li3-page-wrapper .li3-checks-dark__img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 24px;
-    object-fit: cover;
-  }
-  /* CTA box */
-  .li3-page-wrapper .li3-cta-box-section {
-    padding: 72px 0;
-    text-align: center;
-  }
-  .li3-page-wrapper .li3-cta__box {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 42px 28px;
-    text-align: center;
-    border-radius: 28px;
-    background: #fff;
-    box-shadow: 0 20px 50px rgba(61,43,36,0.08);
-  }
-  .li3-page-wrapper .li3-cta__title-dark {
-    font-size: clamp(1.6rem,3vw,2.4rem);
-    font-weight: 800;
-    margin: 0 0 16px;
-    color: #3d2b24;
-  }
-  .li3-page-wrapper .li3-cta__desc-dark {
-    font-size: 1.02rem;
-    line-height: 1.8;
-    margin: 0 0 28px;
-    color: #3d2b24;
-    opacity: 0.82;
-  }
-  .li3-page-wrapper .li3-cta-btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 46px;
-    border-radius: 12px;
-    padding: 12px 32px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
-    background: #c97b63;
-    color: #fff;
-    border: 2px solid #c97b63;
-    box-shadow: 0 12px 24px rgba(201,123,99,0.24);
-    transition: all 0.2s ease;
-    font-family: inherit;
-  }
-  .li3-page-wrapper .li3-cta-btn-primary:hover {
-    box-shadow: 0 16px 32px rgba(201,123,99,0.35);
-    transform: translateY(-2px);
-  }
-  .li3-page-wrapper .li3-cta-btn-outline {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 46px;
-    border-radius: 12px;
-    padding: 12px 32px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
-    border: 2px solid #c97b63;
-    color: #3d2b24;
-    background: transparent;
-    transition: all 0.2s ease;
-    font-family: inherit;
-  }
-  .li3-page-wrapper .li3-cta-btn-outline:hover {
-    background: #c97b63;
-    color: #fff;
-    transform: translateY(-2px);
-  }
-  /* new faq using existing li3- classes */
-  .li3-page-wrapper .li3-faq-new {
-    padding: 72px 0;
-  }
-  .li3-page-wrapper .li3-section-header-new {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-  .li3-page-wrapper .li3-section-title-new {
-    font-size: clamp(1.8rem,3vw,2.6rem);
-    font-weight: 800;
-    color: #3d2b24;
-    line-height: 1.15;
-    text-align: center;
-    margin: 0 0 16px;
-  }
-  .li3-page-wrapper .li3-section-desc-new {
-    text-align: center;
-    color: #6d5f59;
-    font-size: 1.02rem;
-    line-height: 1.75;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  @media (max-width: 900px) {
-    .li3-page-wrapper .li3-checks-dark__inner { grid-template-columns: 1fr !important; }
-  }
   @media (max-width: 768px) {
-    .li3-page-wrapper .li3-hero-fullbg__content { padding: 120px 20px 90px; }
-    .li3-page-wrapper .li3-hero-fullbg__h1 { font-size: 2.8rem; }
+    .li-hero-fullbg__content { padding: 120px 20px 90px; }
+    .li-hero-fullbg__h1 { font-size: 2.8rem; }
   }
 </style>
 
-  <!-- ===== HERO ===== -->
-  <div class="li3-hero">
-    <div class="li3-hero__inner">
-      <div class="li3-hero__text">
-        <p style="color: rgb(253, 246, 242) !important;"><span class="li3-hero__badge" style="color: rgb(0, 0, 0) !important;">מרפאת ד"ר רון חר"ך · Life Inside</span>
-        </p><h1 class="li3-hero__title" style="color: rgb(253, 246, 242) !important;">סקירה שלישית להערכת התפתחות העובר</h1>
-        <p class="li3-hero__subtitle" style="color: rgb(253, 246, 242) !important;">מבט נוסף בשליש השלישי של ההריון</p>
-        <p class="li3-hero__desc" >
+<!-- ===== HERO ===== -->
+<div class="li-hero-fullbg">
+  <div class="li-hero-fullbg__bg"></div>
+  <div class="li-hero-fullbg__overlay"></div>
+  <div class="li-hero-fullbg__content">
+    <div class="li-hero-fullbg__badge">בדיקת אולטרסאונד | שבועות 28–34</div>
+    <h1 class="li-hero-fullbg__h1">סקירה שלישית להערכת התפתחות העובר</h1>
+    <p style="text-align: center; display: flex; justify-content: center; align-items: flex-start; width: 100%;">
+      <a href="https://wa.me/972553111246" class="li-hero-fullbg__cta" target="_blank" rel="noopener noreferrer">לקביעת תור ←</a>
+    </p>
+  </div>
+  <div class="li-hero-fullbg__scroll"><span></span></div>
+</div>
 
-
-
-
-
-קירה שלישית היא בדיקת אולטרה־סאונד מתקדמת המתבצעת בדרך כלל בשליש השלישי להריון, לרוב סביב שבועות 30-34. מטרת הבדיקה היא להעריך את התפתחות העובר בשלב מתקדם יותר של ההריון, לאחר שהאיברים גדלו והבשילו, ולזהות ממצאים שלא תמיד ניתן היה לראות בשלבים מוקדמים יותר.
-במהלך הבדיקה נבחנים מבנה העובר, גדילתו, כמות מי השפיר, מיקום השליה, תנועות העובר ולעיתים גם זרימות הדם בדופלר, בהתאם לצורך הקליני. תשומת לב מיוחדת ניתנת למערכות שיכולות להשתנות או להתבטא מאוחר יותר בהריון, כגון המוח, הכליות, מערכת העיכול, הלב והשלד.
-הסקירה השלישית אינה מחליפה את הסקירות הקודמות, אלא מהווה שכבת ביטחון נוספת - בדיקה שמאפשרת הסתכלות מחודשת ומדויקת על העובר בשלב שבו חלק מהממצאים עשויים להיות ברורים יותר.
-במרפאה הבדיקה מתבצעת בגישה יסודית, רגועה ואישית, תוך שימוש במכשור אולטרה־סאונד מתקדם המאפשר הדמיה איכותית וברורה, ומתן הסבר מפורט לאורך הבדיקה ולאחריה.
-למי מתאימה סקירה שלישית?
-הבדיקה מתאימה לנשים המעוניינות בהערכה נוספת ומעמיקה בשליש השלישי, וכן במצבים שבהם יש צורך במעקב אחר ממצא קודם, הערכת גדילה, חשד לשינוי בכמות מי השפיר, הריון בסיכון, או רצון לקבל תמונה עדכנית ומקיפה יותר לקראת המשך ההריון והלידה.
-למה לבצע סקירה שלישית?
-כי גם לאחר סקירה מוקדמת ומאוחרת תקינות, יש מערכות וממצאים מסוימים שעשויים להתפתח או להתבטא רק בהמשך ההריון. סקירה שלישית מאפשרת להסתכל שוב - בזמן הנכון, בעין מקצועית, ובטכנולוגיה מתקדמת - כדי להעניק להורים מידע נוסף וביטחון לקראת השלבים האחרונים של ההריון.
-
-
-
-</p>
-        <div class="li3-hero__actions">
-          <a href="#li3-cta" class="li3-btn li3-btn--primary" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1778241063233-5plbhgrle" data-native-element="true">קביעת תור</a>
-          <a href="#li3-what" class="li3-btn li3-btn--outline" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1778241063233-ea0c3ovr8" data-native-element="true">מה נבדק?</a>
-        </div>
-        <div class="li3-hero__meta">
-          <span class="li3-hero__meta-item" style="color: rgb(61, 43, 36) !important;"><svg class="li3-icon" viewBox="0 0 20 20" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063239-xy6vvanli" data-icon-type="svg"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5" fill="none"></circle><path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"></path></svg>שבועות 28–34</span>
-          <span class="li3-hero__meta-item" style="color: rgb(61, 43, 36) !important;"><svg class="li3-icon" viewBox="0 0 20 20" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-643d6c168" data-icon-type="svg"><path d="M10 2a6 6 0 0 1 6 6c0 4-6 10-6 10S4 12 4 8a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5" fill="none"></path><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.5" fill="none"></circle></svg>מרפאה מתקדמת</span>
-          <span class="li3-hero__meta-item" style="color: rgb(61, 43, 36) !important;"><svg class="li3-icon" viewBox="0 0 20 20" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-b5piswxhn" data-icon-type="svg"><path d="M17 9.5A7 7 0 1 1 3 9.5a7 7 0 0 1 14 0z" stroke="currentColor" stroke-width="1.5" fill="none"></path><path d="M7 9.5l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>בדיקה מקיפה</span>
-        </div>
-      </div>
-      <div class="li3-hero__image-wrap">
-        <img src="/assets/image-section-feature-1-1778962354559-tmht3v.webp?v=1778962356870" alt="אולטרסאונד סקירה שלישית - עובר בשליש השלישי" class="li3-hero__img" data-placeholder="section-hero-1" data-context="Close-up of a professional ultrasound screen showing a third-trimester fetus in warm clinic lighting, medical professional operating the equipment, soft warm tones" data-element-type="image" data-element-id="img-1778241063242-eclw1lv1w" style="object-position: 50% 50% !important; object-fit: contain; width: auto; height: auto; max-width: 600px; display: block; border-radius: 8px; margin-top: 20px; margin-right: auto !important; margin-bottom: 20px; margin-left: auto !important" data-zappy-object-position="50% 50%" data-zappy-zoom="1">
-        <div class="li3-hero__img-badge">אולטרסאונד מתקדם</div>
-      </div>
+<!-- ===== ABOUT SECTION ===== -->
+<div style="background: var(--bg-light); padding: 72px 0;">
+  <div class="li-container li-container--narrow">
+    <h2 class="li-section-title" style="text-align: right; margin-bottom: 24px;">מהי הסקירה השלישית?</h2>
+    <div style="color: #3d2b24; font-size: 1.05rem; line-height: 1.9; text-align: right;">
+      <h3>סקירה שלישית היא בדיקת אולטרה־סאונד מתקדמת המתבצעת בדרך כלל בשליש השלישי להריון, לרוב סביב שבועות 30-34. מטרת הבדיקה היא להעריך את התפתחות העובר בשלב מתקדם יותר של ההריון, לאחר שהאיברים גדלו והבשילו, ולזהות ממצאים שלא תמיד ניתן היה לראות בשלבים מוקדמים יותר.</h3>
+      <h3>במהלך הבדיקה נבחנים מבנה העובר, גדילתו, כמות מי השפיר, מיקום השליה, תנועות העובר ולעיתים גם זרימות הדם בדופלר, בהתאם לצורך הקליני. תשומת לב מיוחדת ניתנת למערכות שיכולות להשתנות או להתבטא מאוחר יותר בהריון, כגון המוח, הכליות, מערכת העיכול, הלב והשלד.</h3>
+      <h3>הסקירה השלישית אינה מחליפה את הסקירות הקודמות, אלא מהווה שכבת ביטחון נוספת - בדיקה שמאפשרת הסתכלות מחודשת ומדויקת על העובר בשלב שבו חלק מהממצאים עשויים להיות ברורים יותר.</h3>
+      <h3>במרפאה הבדיקה מתבצעת בגישה יסודית, רגועה ואישית, תוך שימוש במכשור אולטרה־סאונד מתקדם המאפשר הדמיה איכותית וברורה, ומתן הסבר מפורט לאורך הבדיקה ולאחריה.</h3>
     </div>
   </div>
+</div>
 
-  <!-- ===== WHAT IS CHECKED ===== -->
-  <div class="li3-what" id="li3-what">
-    <div class="li3-container">
-      <div class="li3-section-header">
-        <p><span class="li3-section-tag" style="color: rgb(61, 43, 36) !important;">הבדיקה</span>
-        </p><h2 class="li3-section-title">מה נבדק בסקירה השלישית?</h2>
-        <p class="li3-section-desc">בדיקה מקיפה הכוללת חמישה תחומים מרכזיים להערכת בריאות העובר ומוכנות ללידה</p>
-      </div>
-      <div class="li3-cards-grid zappy-preserve-css-grid" id="zappy-auto-grid-1778241063280-m2x3ow" data-zappy-auto-grid="true" data-original-item-width="365" data-original-gap="22px" style="display: grid; --zappy-grid-cols: repeat(1, minmax(0, 1fr)) 365.013px; grid-template-columns: repeat(1, minmax(0, 1fr)) 365.013px; align-items: stretch !important;" data-zappy-explicit-columns="true">
-
-        <article class="li3-card" aria-label="מדידות עובר" data-grid-item-index="0">
-          <div class="li3-card__icon-wrap li3-card__icon-wrap--1">
-            <svg class="li3-card__icon" viewBox="0 0 40 40" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-8c4wbmyr9" data-icon-type="svg">
-              <rect x="5" y="18" width="30" height="4" rx="2" fill="currentColor" opacity="0.2"></rect>
-              <path d="M5 20h30M10 14v12M20 12v16M30 14v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
-            </svg>
-          </div>
-          <h3 class="li3-card__title">מדידות עובר</h3>
-          <p class="li3-card__desc">מדידות מדויקות לאפיון גדילת העובר:</p>
-          <ul class="li3-card__list">
-            <li>היקף ראש <strong>(HC)</strong></li>
-            <li>היקף בטן <strong>(AC)</strong></li>
-            <li>אורך עצם הירך <strong>(FL)</strong></li>
-            <li>משקל משוער <strong>(EFW)</strong></li>
-          </ul>
-        </article>
-
-        <article class="li3-card" aria-label="הערכת גדילה" data-grid-item-index="1">
-          <div class="li3-card__icon-wrap li3-card__icon-wrap--2">
-            <svg class="li3-card__icon" viewBox="0 0 40 40" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-89vps8hm5" data-icon-type="svg">
-              <polyline points="5,32 12,22 20,26 28,14 35,10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"></polyline>
-              <circle cx="35" cy="10" r="3" fill="currentColor" opacity="0.7"></circle>
-            </svg>
-          </div>
-          <h3 class="li3-card__title">הערכת גדילה</h3>
-          <p class="li3-card__desc">ניתוח אחוזי גדילה ואיתור חריגות:</p>
-          <ul class="li3-card__list">
-            <li>השוואה לגרפי אחוזים</li>
-            <li>איתור עיכוב גדילה תוך-רחמי <strong>(IUGR)</strong></li>
-            <li>מעקב לאורך ציר הזמן</li>
-            <li>הערכת עודף גדילה (מקרוזומיה)</li>
-          </ul>
-        </article>
-
-        <article class="li3-card" aria-label="רווחת העובר" data-grid-item-index="2">
-          <div class="li3-card__icon-wrap li3-card__icon-wrap--3">
-            <svg class="li3-card__icon" viewBox="0 0 40 40" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-65e7nk6i7" data-icon-type="svg">
-              <path d="M20 34s-13-8-13-18a9 9 0 0 1 13-8 9 9 0 0 1 13 8c0 10-13 18-13 18z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.15"></path>
-              <path d="M20 34s-13-8-13-18a9 9 0 0 1 13-8 9 9 0 0 1 13 8c0 10-13 18-13 18z" stroke="currentColor" stroke-width="2" fill="none"></path>
-            </svg>
-          </div>
-          <h3 class="li3-card__title">רווחת העובר (BPP)</h3>
-          <p class="li3-card__desc">פרופיל ביופיזיקלי מלא של העובר:</p>
-          <ul class="li3-card__list">
-            <li>תנועות גוף</li>
-            <li>טונוס שרירי</li>
-            <li>תנועות נשימה</li>
-            <li>כמות מי שפיר</li>
-          </ul>
-        </article>
-
-        <article class="li3-card" aria-label="שלייה ומי שפיר" data-grid-item-index="3">
-          <div class="li3-card__icon-wrap li3-card__icon-wrap--4">
-            <svg class="li3-card__icon" viewBox="0 0 40 40" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-gv4djxssu" data-icon-type="svg">
-              <ellipse cx="20" cy="22" rx="13" ry="10" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.12"></ellipse>
-              <path d="M10 18 Q20 8 30 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
-              <circle cx="20" cy="22" r="4" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
-            </svg>
-          </div>
-          <h3 class="li3-card__title">שלייה ומי שפיר</h3>
-          <p class="li3-card__desc">הערכת הסביבה הרחמית:</p>
-          <ul class="li3-card__list">
-            <li>מיקום השלייה</li>
-            <li>בשלות השלייה (Grading)</li>
-            <li>אינדקס מי שפיר <strong>(AFI)</strong></li>
-            <li>איתור מי שפיר מועטים/עודפים</li>
-          </ul>
-        </article>
-
-        <article class="li3-card li3-card--wide" aria-label="דופלר" data-grid-item-index="4">
-          <div class="li3-card__icon-wrap li3-card__icon-wrap--5">
-            <svg class="li3-card__icon" viewBox="0 0 40 40" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063240-j8xegndhx" data-icon-type="svg">
-              <path d="M5 20 Q10 10 15 20 Q20 30 25 20 Q30 10 35 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
-              <circle cx="5" cy="20" r="2" fill="currentColor" opacity="0.6"></circle>
-              <circle cx="35" cy="20" r="2" fill="currentColor" opacity="0.6"></circle>
-            </svg>
-          </div>
-          <h3 class="li3-card__title">דופלר – זרימת דם</h3>
-          <p class="li3-card__desc">מדידת זרימת דם בכלי דם מרכזיים להערכת תפקוד השלייה ורווחת העובר:</p>
-          <ul class="li3-card__list li3-card__list--inline">
-            <li>עורק הטבור (Umbilical Artery)</li>
-            <li>אבי העורקים (Aorta)</li>
-            <li>עורק המוח האמצעי (MCA)</li>
-            <li>ורידי שלייה</li>
-          </ul>
-        </article>
-
-      </div>
+<!-- ===== DARK SECTION – למי מומלצת ===== -->
+<div class="li-advantages">
+  <div class="li-advantages__inner">
+    <div class="li-advantages__image">
+      <img src="/assets/image-section-feature-1-1778354003684-sq8fr5.webp" alt="רופא מומחה עם מטופלת הרה בשליש השלישי" style="width:100%;height:auto;display:block;border-radius:24px;object-fit:cover;">
     </div>
-  </div>
-
-  <!-- ===== WHO NEEDS IT ===== -->
-  <div class="li3-who">
-    <div class="li3-container">
-      <div class="li3-who__inner">
-        <div class="li3-who__image-col">
-          <img src="/assets/image-section-feature-1-1778354003684-sq8fr5.webp" alt="רופא מומחה עם מטופלת הרה בשליש השלישי" class="li3-who__img" data-placeholder="section-who-1" data-context="Warm, professional medical consultation room, caring OB-GYN doctor speaking with a pregnant woman in her third trimester, soft warm clinic lighting, reassuring atmosphere" data-element-type="image" data-element-id="img-1778241063242-rm21qi0kf" >
+    <div class="li-advantages__content">
+      <span class="li-section-label" style="color: rgba(201,123,99,0.85); text-align: right; display: block;">למי מומלצת הסקירה?</span>
+      <h2 class="li-section-title li-section-title--light" style="text-align: right;">למי מומלצת הסקירה השלישית?</h2>
+      <p style="color: rgba(255,255,255,0.78); font-size: 1.02rem; line-height: 1.8; margin: 0 0 24px;">הסקירה השלישית מומלצת במיוחד לנשים הרות עם גורמי סיכון, אך ניתן לבצע אותה לכל אישה המעוניינת בהרגעה ומידע מקיף לקראת הלידה.</p>
+      <div class="li-advantages__list">
+        <div class="li-adv-item">
+          <div class="li-adv-item__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 5v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+          </div>
+          <div>
+            <p class="li-adv-item__heading">יתר לחץ דם בהריון / רעלת הריון</p>
+            <p class="li-adv-item__text">מצבים אלו עלולים לפגוע בזרימת הדם לשלייה ולהשפיע על גדילת העובר. מעקב דופלר תכוף חיוני.</p>
+          </div>
         </div>
-        <div class="li3-who__content">
-          <p><span class="li3-section-tag li3-section-tag--light" style="color: rgb(61, 43, 36) !important;">אוכלוסיות יעד</span>
-          </p><h2 class="li3-who__title">למי מומלצת הסקירה השלישית?</h2>
-          <p class="li3-who__intro">הסקירה השלישית מומלצת במיוחד לנשים הרות עם גורמי סיכון, אך ניתן לבצע אותה לכל אישה המעוניינת בהרגעה ומידע מקיף לקראת הלידה.</p>
-          <div class="li3-who__risks">
-
-            <div class="li3-risk-item" data-grid-item-index="0">
-              <div class="li3-risk-item__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" data-element-type="icon" data-element-id="icon-1778241063240-d76dqdbz7" data-icon-type="svg"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 5v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
-              </div>
-              <div class="li3-risk-item__body">
-                <h4 class="li3-risk-item__title">יתר לחץ דם בהריון / רעלת הריון</h4>
-                <p class="li3-risk-item__text">מצבים אלו עלולים לפגוע בזרימת הדם לשלייה ולהשפיע על גדילת העובר. מעקב דופלר תכוף חיוני.</p>
-              </div>
-            </div>
-
-            <div class="li3-risk-item" data-grid-item-index="1">
-              <div class="li3-risk-item__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" data-element-type="icon" data-element-id="icon-1778241063240-kxizeh9ls" data-icon-type="svg"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-              </div>
-              <div class="li3-risk-item__body">
-                <h4 class="li3-risk-item__title">סוכרת הריון</h4>
-                <p class="li3-risk-item__text">סוכרת הריון עלולה לגרום לעובר גדול מדי (מקרוזומיה) או לפגיעה בשלייה. הסקירה מאפשרת מעקב צמוד אחר גדילה ומשקל.</p>
-              </div>
-            </div>
-
-            <div class="li3-risk-item" data-grid-item-index="2">
-              <div class="li3-risk-item__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" data-element-type="icon" data-element-id="icon-1778241063240-rp4z1iacv" data-icon-type="svg"><circle cx="9" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle><circle cx="15" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M3 20c0-3.3 2.7-6 6-6h6c3.3 0 6 2.7 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
-              </div>
-              <div class="li3-risk-item__body">
-                <h4 class="li3-risk-item__title">הריון מרובה עוברים (תאומים ומעלה)</h4>
-                <p class="li3-risk-item__text">בהריון מרובה עוברים קיים סיכון לפערי גדילה בין העוברים. הסקירה מאפשרת השוואה ומעקב בין כל עובר.</p>
-              </div>
-            </div>
-
-            <div class="li3-risk-item" data-grid-item-index="3">
-              <div class="li3-risk-item__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" data-element-type="icon" data-element-id="icon-1778241063240-gwpnezei4" data-icon-type="svg"><path d="M12 9v4l2 2M12 3a9 9 0 1 0 0 18A9 9 0 0 0 12 3z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
-              </div>
-              <div class="li3-risk-item__body">
-                <h4 class="li3-risk-item__title">חשד לעיכוב גדילה תוך-רחמי (IUGR)</h4>
-                <p class="li3-risk-item__text">כאשר קיים חשד לגדילה איטית בסקירות קודמות, הסקירה השלישית מאשרת את האבחנה ומסייעת לקבוע מדיניות טיפולית.</p>
-              </div>
-            </div>
-
+        <div class="li-adv-item">
+          <div class="li-adv-item__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+          <div>
+            <p class="li-adv-item__heading">סוכרת הריון</p>
+            <p class="li-adv-item__text">סוכרת הריון עלולה לגרום לעובר גדול מדי (מקרוזומיה) או לפגיעה בשלייה. הסקירה מאפשרת מעקב צמוד אחר גדילה ומשקל.</p>
+          </div>
+        </div>
+        <div class="li-adv-item">
+          <div class="li-adv-item__icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle><circle cx="15" cy="12" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M3 20c0-3.3 2.7-6 6-6h6c3.3 0 6 2.7 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+          </div>
+          <div>
+            <p class="li-adv-item__heading">הריון מרובה עוברים (תאומים ומעלה)</p>
+            <p class="li-adv-item__text">בהריון מרובה עוברים קיים סיכון לפערי גדילה בין העוברים. הסקירה מאפשרת השוואה ומעקב בין כל עובר.</p>
+          </div>
+        </div>
+        <div class="li-adv-item">
+          <div class="li-adv-item__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 9v4l2 2M12 3a9 9 0 1 0 0 18A9 9 0 0 0 12 3z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+          </div>
+          <div>
+            <p class="li-adv-item__heading">חשד לעיכוב גדילה תוך-רחמי (IUGR)</p>
+            <p class="li-adv-item__text">כאשר קיים חשד לגדילה איטית בסקירות קודמות, הסקירה השלישית מאשרת את האבחנה ומסייעת לקבוע מדיניות טיפולית.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- ===== FAQ ===== -->
-  <div class="li3-faq" id="li3-faq">
-    <div class="li3-container li3-container--narrow">
-      <div class="li3-section-header">
-        <p><span class="li3-section-tag" style="color: rgb(61, 43, 36) !important;">שאלות ותשובות</span>
-        </p><h2 class="li3-section-title">שאלות נפוצות על הסקירה השלישית</h2>
+<!-- ===== FAQ ===== -->
+<div class="li-faq" id="li-faq">
+  <div class="li-container li-container--narrow">
+    <span class="li-section-label">שאלות נפוצות</span>
+    <h2 class="li-section-title">שאלות נפוצות על הסקירה השלישית</h2>
+
+    <div class="li-faq__list" role="list">
+
+      <div class="li-faq-item" role="listitem">
+        <button class="li-faq-item__question faq-question" aria-expanded="false" aria-controls="li3-faq-answer-1" id="li3-faq-btn-1">
+          <span>האם כל אישה צריכה סקירה שלישית?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer faq-answer" id="li3-faq-answer-1" role="region" aria-labelledby="li3-faq-btn-1">
+          <div class="li-faq-item__answer-inner">
+            הסקירה השלישית אינה חובה לכל הנשים ההרות, אך מומלצת מאוד לנשים עם גורמי סיכון. עם זאת, נשים רבות בוחרות לבצע אותה גם ללא גורמי סיכון מיוחדים, כדי לקבל תמונה מלאה על מצב העובר לקראת הלידה ולהפיג חרדות. ד"ר חר"ך ממליץ לדון בנושא בביקור הריון שגרתי ולקבל החלטה מושכלת בהתאם לנסיבות האישיות.
+          </div>
+        </div>
       </div>
-      <div class="li3-faq__list" role="list">
 
-        <div class="li3-faq-item" role="listitem" data-grid-item-index="0">
-          <button class="li3-faq-item__question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-btn-1" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778241063233-wwqlej3jl" data-native-element="true">
-            <span>האם כל אישה צריכה סקירה שלישית?</span>
-            <svg class="li3-faq-item__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
-          </button>
-          <div class="li3-faq-item__answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1" style="max-height: 0px; overflow: hidden; opacity: 0; padding-top: 0px; padding-bottom: 0px; transition: max-height 0.35s, opacity 0.25s, padding 0.25s;">
-            <div class="li3-faq-item__answer-inner">
-              הסקירה השלישית אינה חובה לכל הנשים ההרות, אך מומלצת מאוד לנשים עם גורמי סיכון. עם זאת, נשים רבות בוחרות לבצע אותה גם ללא גורמי סיכון מיוחדים, כדי לקבל תמונה מלאה על מצב העובר לקראת הלידה ולהפיג חרדות. ד"ר חר"ך ממליץ לדון בנושא בביקור הריון שגרתי ולקבל החלטה מושכלת בהתאם לנסיבות האישיות.
-            </div>
+      <div class="li-faq-item" role="listitem">
+        <button class="li-faq-item__question faq-question" aria-expanded="false" aria-controls="li3-faq-answer-2" id="li3-faq-btn-2">
+          <span>מה זה IUGR ואיך מטפלים בו?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer faq-answer" id="li3-faq-answer-2" role="region" aria-labelledby="li3-faq-btn-2">
+          <div class="li-faq-item__answer-inner">
+            IUGR (Intrauterine Growth Restriction) – עיכוב גדילה תוך-רחמי – הוא מצב שבו העובר אינו גדל בקצב הצפוי לשבוע ההריון. הגורמים יכולים להיות תפקוד לקוי של השלייה, מחלות אם, גורמים גנטיים ועוד. הטיפול תלוי בחומרת המצב ובגיל ההריון: מעקב מוגבר עם בדיקות דופלר תכופות, מנוחה, ובמקרים חמורים – לידה מוקדמת מתוכננת. אבחון מוקדם דרך הסקירה השלישית מאפשר תגובה מהירה ושמירה על בריאות העובר.
           </div>
         </div>
-
-        <div class="li3-faq-item" role="listitem" data-grid-item-index="1">
-          <button class="li3-faq-item__question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778241063233-sx1pfqdj2" data-native-element="true">
-            <span>מה זה IUGR ואיך מטפלים בו?</span>
-            <svg class="li3-faq-item__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
-          </button>
-          <div class="li3-faq-item__answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" style="max-height: 0px; overflow: hidden; opacity: 0; padding-top: 0px; padding-bottom: 0px; transition: max-height 0.35s, opacity 0.25s, padding 0.25s;">
-            <div class="li3-faq-item__answer-inner">
-              <strong>IUGR (Intrauterine Growth Restriction)</strong> – עיכוב גדילה תוך-רחמי – הוא מצב שבו העובר אינו גדל בקצב הצפוי לשבוע ההריון. הגורמים יכולים להיות תפקוד לקוי של השלייה, מחלות אם, גורמים גנטיים ועוד. הטיפול תלוי בחומרת המצב ובגיל ההריון: מעקב מוגבר עם בדיקות דופלר תכופות, מנוחה, ובמקרים חמורים – לידה מוקדמת מתוכננת. אבחון מוקדם דרך הסקירה השלישית מאפשר תגובה מהירה ושמירה על בריאות העובר.
-            </div>
-          </div>
-        </div>
-
-        <div class="li3-faq-item" role="listitem" data-grid-item-index="2">
-          <button class="li3-faq-item__question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778241063233-deluxrmcb" data-native-element="true">
-            <span>מה בדיוק בודק הדופלר?</span>
-            <svg class="li3-faq-item__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
-          </button>
-          <div class="li3-faq-item__answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" style="max-height: 0px; overflow: hidden; opacity: 0; padding-top: 0px; padding-bottom: 0px; transition: max-height 0.35s, opacity 0.25s, padding 0.25s;">
-            <div class="li3-faq-item__answer-inner">
-              בדיקת דופלר מודדת את מהירות וכיוון זרימת הדם בכלי דם ספציפיים. בסקירה השלישית בודקים בעיקר: <strong>עורק הטבור</strong> – המשקף את תנגודת השלייה; <strong>עורק המוח האמצעי (MCA)</strong> – המעיד על מצב העובר ויכולתו לשמור על זרימת דם למוח; ולעיתים גם <strong>ורידי הכבד</strong>. ערכים חריגים בדופלר יכולים להקדים שינויים בקצב הלב ולסייע בקבלת החלטות טיפוליות מוקדמות.
-            </div>
-          </div>
-        </div>
-
-        <div class="li3-faq-item" role="listitem" data-grid-item-index="3">
-          <button class="li3-faq-item__question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4" style="cursor: pointer;" data-element-type="button" data-element-id="btn-1778241063233-j56klt7wc" data-native-element="true">
-            <span>מתי מבוצעת הבדיקה בדיוק?</span>
-            <svg class="li3-faq-item__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
-          </button>
-          <div class="li3-faq-item__answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" style="max-height: 0px; overflow: hidden; opacity: 0; padding-top: 0px; padding-bottom: 0px; transition: max-height 0.35s, opacity 0.25s, padding 0.25s;">
-            <div class="li3-faq-item__answer-inner">
-              הסקירה השלישית מבוצעת בדרך כלל בין <strong>שבוע 28 לשבוע 34</strong> להריון. המועד המועדף הוא סביב שבועות 30–32, שכן בשלב זה ניתן לקבל מדידות מהימנות של גדילת העובר ועדיין יש זמן לפעול במידת הצורך. בנשים עם גורמי סיכון, ייתכנו בדיקות מעקב נוספות בתדירות גבוהה יותר, בהתאם להמלצת הרופא.
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <div class="li-faq-item" role="listitem">
+        <button class="li-faq-item__question faq-question" aria-expanded="false" aria-controls="li3-faq-answer-3" id="li3-faq-btn-3">
+          <span>מה בדיוק בודק הדופלר?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer faq-answer" id="li3-faq-answer-3" role="region" aria-labelledby="li3-faq-btn-3">
+          <div class="li-faq-item__answer-inner">
+            בדיקת דופלר מודדת את מהירות וכיוון זרימת הדם בכלי דם ספציפיים. בסקירה השלישית בודקים בעיקר: עורק הטבור – המשקף את תנגודת השלייה; עורק המוח האמצעי (MCA) – המעיד על מצב העובר ויכולתו לשמור על זרימת דם למוח; ולעיתים גם ורידי הכבד. ערכים חריגים בדופלר יכולים להקדים שינויים בקצב הלב ולסייע בקבלת החלטות טיפוליות מוקדמות.
+          </div>
+        </div>
+      </div>
+
+      <div class="li-faq-item" role="listitem">
+        <button class="li-faq-item__question faq-question" aria-expanded="false" aria-controls="li3-faq-answer-4" id="li3-faq-btn-4">
+          <span>מתי מבוצעת הבדיקה בדיוק?</span>
+          <svg class="li-faq-item__chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="li-faq-item__answer faq-answer" id="li3-faq-answer-4" role="region" aria-labelledby="li3-faq-btn-4">
+          <div class="li-faq-item__answer-inner">
+            הסקירה השלישית מבוצעת בדרך כלל בין שבוע 28 לשבוע 34 להריון. המועד המועדף הוא סביב שבועות 30–32, שכן בשלב זה ניתן לקבל מדידות מהימנות של גדילת העובר ועדיין יש זמן לפעול במידת הצורך. בנשים עם גורמי סיכון, ייתכנו בדיקות מעקב נוספות בתדירות גבוהה יותר, בהתאם להמלצת הרופא.
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
 
-  <!-- ===== CTA ===== -->
-  <div class="li3-cta" id="li3-cta">
-    <div class="li3-container">
-      <div class="li3-cta__inner">
-        <div class="li3-cta__content">
-          <p style="color: rgb(253, 246, 242) !important;"><span class="li3-cta__eyebrow">מרפאת ד"ר רון חר"ך · Life Inside</span>
-          </p><h2 class="li3-cta__title" style="color: rgb(253, 246, 242) !important;">קבעי תור לסקירה השלישית</h2>
-          <p class="li3-cta__desc" style="color: rgb(253, 246, 242) !important;">בדיקה מקיפה ומקצועית בידי מומחה, עם תשובות לכל שאלה ושקט נפשי לקראת הלידה.</p>
-          <div class="li3-cta__features">
-            <span class="li3-cta__feat"><svg viewBox="0 0 20 20" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063241-kyh1gij3k" data-icon-type="svg"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm-1 11.5L5.5 10l1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4L9 13.5z" fill="currentColor"></path></svg>בדיקה מקיפה בציוד מתקדם</span>
-            <span class="li3-cta__feat"><svg viewBox="0 0 20 20" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063241-kee96ehzp" data-icon-type="svg"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm-1 11.5L5.5 10l1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4L9 13.5z" fill="currentColor"></path></svg>הסבר מפורט של הממצאים</span>
-            <span class="li3-cta__feat"><svg viewBox="0 0 20 20" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778241063241-f7s4e7pzd" data-icon-type="svg"><path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2zm-1 11.5L5.5 10l1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4L9 13.5z" fill="currentColor"></path></svg>דו"ח מפורט מיד לאחר הבדיקה</span>
-          </div>
-          <div class="li3-cta__actions">
-            <a href="tel:0553111246" class="li3-btn li3-btn--cta-primary" aria-label="התקשרי לקביעת תור" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1778241063233-tkik35bki" data-native-element="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"></path></svg>
-              התקשרי עכשיו
-            </a>
-            <a href="#" class="li3-btn li3-btn--cta-secondary" aria-label="קביעת תור אונליין" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1778241063233-h34v74t40" data-native-element="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"></rect><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
-              קביעת תור אונליין
-            </a>
-          </div>
-        </div>
-        <div class="li3-cta__image-col">
-          <img src="/assets/image-section-feature-1-1778354003684-sq8fr5.webp" alt="מרפאת Life Inside - ד״ר רון חר״ך" class="li3-cta__img" data-placeholder="section-cta-1" data-context="Modern, warm and professional obstetric ultrasound clinic interior, clean white and warm beige tones, advanced medical equipment, welcoming atmosphere for pregnant women" data-element-type="image" data-element-id="img-1778241063242-xhg0mc25p" >
+<!-- ===== CTA ===== -->
+<div class="li-cta" id="li-cta">
+  <div class="li-container">
+    <div class="li-cta__box">
+      <div class="li-cta__content">
+        <h2 class="li-cta__title">מוכנים לקבוע תור לסקירה השלישית?</h2>
+        <p class="li-cta__desc">בדיקה מקיפה ומקצועית בידי מומחה, עם תשובות לכל שאלה ושקט נפשי לקראת הלידה.</p>
+        <div class="li-cta__actions">
+          <a href="tel:0553111246" class="li-btn li-btn--primary" aria-label="התקשרי לקביעת תור">התקשרי עכשיו</a>
+          <a href="https://wa.me/972553111246" class="li-btn li-btn--outline-white" aria-label="לקביעת תור" target="_blank" rel="noopener noreferrer" style="color: #3d2b24;">לקביעת תור</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 </section>
 
