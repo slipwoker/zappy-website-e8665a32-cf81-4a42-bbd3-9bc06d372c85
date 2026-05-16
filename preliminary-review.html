@@ -1498,24 +1498,137 @@
 
 <section class="li-early-scan-page" dir="rtl" lang="he" id="li-early-scan-page">
 
+<style>
+  .li-hero-fullbg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .li-hero-fullbg__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/image-section-feature-1-1778354003684-sq8fr5.webp?v=1778354005612');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  .li-hero-fullbg__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(61,43,36,0.85) 0%, rgba(201,123,99,0.40) 60%, rgba(61,43,36,0.65) 100%);
+    z-index: 1;
+  }
+  .li-hero-fullbg__content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 140px 24px 100px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .li-hero-fullbg__badge {
+    display: inline-block;
+    background: rgba(201,123,99,0.25);
+    border: 1px solid rgba(201,123,99,0.6);
+    color: #FDF6F2;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    padding: 6px 20px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(6px);
+  }
+  .li-hero-fullbg__h1 {
+    font-size: clamp(3.2rem, 9vw, 6.5rem);
+    font-weight: 800;
+    color: #FDF6F2;
+    line-height: 1.05;
+    margin: 0 0 28px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  }
+  .li-hero-fullbg__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gradient-primary, linear-gradient(180deg,#C8785F 0%,#BD5F42 100%));
+    color: #FDF6F2;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px 44px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 14px 28px rgba(201,123,99,0.28);
+    transition: all 0.25s ease;
+    letter-spacing: 0.04em;
+  }
+  .li-hero-fullbg__cta:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 18px 36px rgba(201,123,99,0.38);
+  }
+  .li-hero-fullbg__scroll {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .li-hero-fullbg__scroll span {
+    display: block;
+    width: 2px;
+    height: 28px;
+    background: linear-gradient(to bottom, rgba(253,246,242,0.7), transparent);
+    border-radius: 2px;
+    animation: liScrollPulse 1.6s ease-in-out infinite;
+  }
+  @keyframes liScrollPulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.18); }
+  }
+  @media (max-width: 768px) {
+    .li-hero-fullbg__content { padding: 120px 20px 90px; }
+    .li-hero-fullbg__h1 { font-size: 2.8rem; }
+  }
+</style>
+
   <!-- ===== HERO ===== -->
-  <div class="li-hero">
-    <div class="li-hero__inner">
-      <div class="li-hero__content">
-        <p><span class="li-hero__badge" style="color: rgb(61, 43, 36) !important;">מרפאת Life Inside · ד"ר רון חר"ך · רעננה</span>
-        </p><h1 class="li-hero__title">סקירה מוקדמת</h1>
-        <h3 >סקירת מערכות מוקדמת שבועות&nbsp; 13-17&nbsp; להריון</h3>
-        <h3 >&nbsp;סקירת מערכות מוקדמת היא בדיקת אולטרסאונד חשובה ומעמיקה, המבוצעת לרוב בין שבועות 13-17 להריון. מטרת הבדיקה היא להעריך את מבנה העובר כבר בשלב מוקדם, ולבחון באופן שיטתי את איברי הגוף המתפתחים - כולל המוח, הלב, עמוד השדרה, הפנים, הגפיים, דופן הבטן, הכליות ומערכות נוספות. הבדיקה מאפשרת לזהות בשלב מוקדם ממצאים מבניים, להעריך את התפתחות העובר ביחס לגיל ההריון, ולעיתים לכוון להמשך בירור, מעקב או ייעוץ מתאים במידת הצורך. במרפאה הסקירה מתבצעת בגישה יסודית, רגישה ומקצועית, תוך שימוש במכשור אולטרסאונד מתקדם במיוחד, המאפשר הדמיה איכותית וברורה של העובר גם בשלבי ההריון המוקדמים. במהלך הבדיקה ניתן דגש על הסבר ברור, שקיפות מלאה ומענה לשאלות&nbsp; מתוך הבנה שמדובר בבדיקה משמעותית ומרגשת עבור ההורים. הבדיקה מתאימה לנשים המעוניינות בהערכה מוקדמת, מקצועית ומקיפה של מבנה העובר והתפתחותו.</h3><br>
-        <p ><a href="https://wa.me/972553111246" class="li-btn li-btn--primary" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1778185053491-ise3mb59s" data-native-element="true"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0; cursor: pointer;"><path d="M20.5 3.5A12 12 0 003.5 20.5L2 22l1.5-1.5A12 12 0 1020.5 3.5z" fill="currentColor"></path><path d="M9 8.5c.3 0 .6.1.8.4l1 2c.2.3.1.7-.1 1l-.5.6c.4.8 1.2 1.6 2 2l.6-.5c.3-.2.7-.3 1-.1l2 1c.3.2.4.5.4.8 0 1.1-.9 2-2 2-3.9 0-7-3.1-7-7 0-1.1.9-2 2-2z" fill="white"></path></svg> לקביעת תור</a>
-      </p></div>
-      <div class="li-hero__image-wrap">
-        <input type="checkbox" id="zappy-lightbox-toggle-img-1778185053500-iu9ssm7ln" class="zappy-lightbox-toggle" data-zappy-image-lightbox="true"><label class="zappy-lightbox-trigger" for="zappy-lightbox-toggle-img-1778185053500-iu9ssm7ln" data-zappy-image-lightbox="true"><div data-zappy-zoom-wrapper="true" data-element-id="img-1778185053500-iu9ssm7ln" data-element-type="image" data-zappy-zoom-wrapper-width="520px" data-zappy-zoom-wrapper-height="480px" data-zappy-zoom-wrapper-width-mode="full" data-zappy-zoom-wrapper-align="center" style="position: absolute !important; overflow: hidden !important; width: 100% !important; max-width: none !important; margin-left: 0px !important; margin-right: 0px !important; height: 100% !important; display: block !important; cursor: pointer; top: 0px !important; left: 0px !important; z-index: 1 !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-click-action="expand"><img src="/assets/image-section-feature-1-1778354003684-sq8fr5.webp?v=1778354005612" alt="סקירה מוקדמת - אולטרסאונד בשבועות 14-16 להריון" class="li-hero__image" data-placeholder="section-hero-1" data-context="Warm professional ultrasound clinic room, soft lighting, doctor performing early pregnancy ultrasound scan around 14-16 weeks, monitor showing fetal image, reassuring atmosphere" data-element-type="image" data-element-id="img-1778185053500-iu9ssm7ln" style="cursor: pointer; display: block !important; object-position: 50% 50% !important; margin: 0px !important; position: absolute !important; left: -32.602% !important; top: 0% !important; width: 100%; height: 100%; max-width: none !important; max-height: none !important; object-fit: cover" data-zappy-object-position="50% 50%" data-zappy-zoom="1" data-zappy-click-action="expand" data-zappy-original-width="520" data-zappy-original-height="480"></div></label>
+  <div class="li-hero-fullbg">
+    <div class="li-hero-fullbg__bg"></div>
+    <div class="li-hero-fullbg__overlay"></div>
+    <div class="li-hero-fullbg__content">
+      <div class="li-hero-fullbg__badge">בדיקת אולטרסאונד | שבועות 13–17</div>
+      <h1 class="li-hero-fullbg__h1" style="color: rgb(61, 43, 36) !important;"><span style="color: #fdf6f2 !important">סקירה מוקדמת</span></h1>
+      <p style="text-align:center;">
+        <a href="https://wa.me/972553111246" class="li-hero-fullbg__cta" data-element-id="btn-1778185053491-ise3mb59s" style="color: rgb(0, 0, 0) !important;">לקביעת תור ←</a>
+      </p>
+    </div>
+    <div class="li-hero-fullbg__scroll"><span></span></div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <div style="background: var(--bg-light); padding: 72px 0;">
+    <div class="li-container li-container--narrow">
+      <h2 class="li-section-title" style="text-align: right; margin-bottom: 24px;">מהי סקירת המערכות המוקדמת?</h2>
+      <div style="color: #3d2b24; font-size: 1.05rem; line-height: 1.9; text-align: right;">
+        <h3>סקירת מערכות מוקדמת היא בדיקת אולטרסאונד חשובה ומעמיקה, המבוצעת לרוב בין שבועות 13–17 להריון. מטרת הבדיקה היא להעריך את מבנה העובר כבר בשלב מוקדם, ולבחון באופן שיטתי את איברי הגוף המתפתחים — כולל המוח, הלב, עמוד השדרה, הפנים, הגפיים, דופן הבטן, הכליות ומערכות נוספות.</h3>
+        <h3>הבדיקה מאפשרת לזהות בשלב מוקדם ממצאים מבניים, להעריך את התפתחות העובר ביחס לגיל ההריון, ולעיתים לכוון להמשך בירור, מעקב או ייעוץ מתאים במידת הצורך.</h3>
+        <h3>במרפאה הסקירה מתבצעת בגישה יסודית, רגישה ומקצועית, תוך שימוש במכשור אולטרסאונד מתקדם במיוחד, המאפשר הדמיה איכותית וברורה של העובר גם בשלבי ההריון המוקדמים.</h3>
+        <h3>במהלך הבדיקה ניתן דגש על הסבר ברור, שקיפות מלאה ומענה לשאלות — מתוך הבנה שמדובר בבדיקה משמעותית ומרגשת עבור ההורים. הבדיקה מתאימה לנשים המעוניינות בהערכה מוקדמת, מקצועית ומקיפה של מבנה העובר והתפתחותו.</h3>
       </div>
     </div>
   </div>
 
-  <!-- ===== ADVANTAGES ===== -->
-  <div class="li-advantages-placeholder" style="display:none">
+  <!-- ===== CARDS ===== -->
+  <div class="li-advantages-placeholder">
     <div class="li-container">
       
       <h2 class="li-section-title">מה נבדק בסקירה מוקדמת?</h2>
