@@ -13974,6 +13974,25 @@ nav.navbar .sub-menu li a {
   font-size: 1rem !important;
   font-weight: 700 !important;
 }
+
+.li-late-scan .li-faq .li-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.li-late-scan .li-faq .li-section-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: var(--text-color);
+  margin: 0 0 12px;
+}
+
+.li-late-scan .li-faq .li-section-desc {
+  color: var(--text-secondary-color);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 0;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
