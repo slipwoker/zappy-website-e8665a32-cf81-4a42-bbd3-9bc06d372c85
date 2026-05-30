@@ -13518,6 +13518,18 @@ nav.navbar .sub-menu li a {
   min-height: 220px !important;
 }
 }
+
+#ai-section-1777034325432-qmavxzt .rev-testimonials__stars-row {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 4px !important;
+}
+
+#ai-section-1777034325432-qmavxzt .rev-testimonials__stars-row br {
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
