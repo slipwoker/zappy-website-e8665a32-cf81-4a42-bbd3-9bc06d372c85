@@ -13530,6 +13530,13 @@ nav.navbar .sub-menu li a {
 #ai-section-1777034325432-qmavxzt .rev-testimonials__stars-row br {
   display: none !important;
 }
+
+#li-third-scan-page .li-cta__actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
