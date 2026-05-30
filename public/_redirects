@@ -1,5 +1,5 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-05-30T20:03:43.196Z
+# Generated: 2026-05-30T20:12:27.792Z
 # NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
 # This file is kept for reference only
 
@@ -15,6 +15,22 @@
 /late-review  /late-review.html  200!
 /third-trimester-ultrasound  /third-trimester-ultrasound.html  200!
 /targeted-review  /targeted-review.html  200!
+
+# Language slug rewrites for SEO
+/en  /en/index.html  200!
+/en/clinic-services  /en/clinic-services.html  200!
+/en/first-pregnancy-ultrasound  /en/first-pregnancy-ultrasound.html  200!
+/en/about-dr-ron  /en/about-dr-ron.html  200!
+/en/privacy  /en/privacy.html  200!
+/en/accessibility  /en/accessibility.html  200!
+/en/terms  /en/terms.html  200!
+/en/contact  /en/contact.html  200!
+/en/rear-transparency  /en/rear-transparency.html  200!
+/en/preliminary-review  /en/preliminary-review.html  200!
+/en/late-review  /en/late-review.html  200!
+/en/third-trimester-ultrasound  /en/third-trimester-ultrasound.html  200!
+/en/targeted-review  /en/targeted-review.html  200!
+/en  /en/index.html  200!
 
 # Legal pages - redirect old .html URLs to friendly URLs
 /privacy.html  /privacy  301
