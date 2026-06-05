@@ -13546,6 +13546,28 @@ nav.navbar .sub-menu li a {
 #zappy-section-0 .hero-drron__divider-line {
   transform-origin: right !important;
 }
+
+#zappy-section-0 .hero-drron__content {
+  align-items: flex-end !important;
+  text-align: start !important;
+}
+
+#zappy-section-0 .hero-drron__content h3 {
+  text-align: start !important;
+  display: block !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+}
+
+#zappy-section-0 .hero-drron__name {
+  text-align: start !important;
+}
+
+#zappy-section-0 .hero-drron__divider-line {
+  transform-origin: right !important;
+  margin: 0 0 28px 0 !important;
+  margin-right: 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
