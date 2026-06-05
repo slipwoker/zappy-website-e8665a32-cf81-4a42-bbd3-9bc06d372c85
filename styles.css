@@ -4903,7 +4903,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-}.about-profile-section .about-profile-grid{display: grid;grid-template-columns: 1.1fr 480px;gap: 56px;align-items: flex-start;}html[dir="rtl"] .about-profile-section .about-profile-grid{direction: rtl;}
+}.about-profile-section .about-profile-grid{display: grid;grid-template-columns: 1.1fr 480px;gap: 56px;align-items: center;}html[dir="rtl"] .about-profile-section .about-profile-grid{direction: rtl;}
 
 /* ── Text Column ── */
 .about-profile-section .about-profile-text {
