@@ -12878,6 +12878,7 @@ nav.navbar .sub-menu li a {
   margin-inline-end: 0 !important;
   padding-right: 48px !important;
   padding-left: 48px !important;
+  margin-inline: auto 0px !important;
 }
 
 #zappy-section-0 .hero-drron__badge {
@@ -13567,6 +13568,24 @@ nav.navbar .sub-menu li a {
 #zappy-section-0 .hero-drron__divider-line {
   transform-origin: right !important;
   margin: 0 0 28px 0 !important;
+  margin-right: 0 !important;
+}
+
+#zappy-section-0 .hero-drron__content {
+  align-items: flex-end !important;
+  text-align: start !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  margin-inline: auto 0px !important;
+  padding-right: 48px !important;
+}
+
+#zappy-section-0 .hero-drron__cta {
+  justify-content: flex-end !important;
+}
+
+#zappy-section-0 .hero-drron__divider-line {
+  margin-left: auto !important;
   margin-right: 0 !important;
 }
 /* mobile-submenu-overflow-fix */
