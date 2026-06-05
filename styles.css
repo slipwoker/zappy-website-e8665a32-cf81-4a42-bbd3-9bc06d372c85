@@ -12901,6 +12901,7 @@ nav.navbar .sub-menu li a {
 #zappy-section-0 .hero-drron__divider-line {
   margin-inline-start: auto !important;
   margin-inline-end: 0 !important;
+  transform-origin: right center !important;
 }
 
 #zappy-section-0 .hero-drron__content {
