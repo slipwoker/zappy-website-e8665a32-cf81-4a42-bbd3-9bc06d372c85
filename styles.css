@@ -13588,6 +13588,12 @@ nav.navbar .sub-menu li a {
   margin-left: auto !important;
   margin-right: 0 !important;
 }
+
+#zappy-section-0 .hero-drron__content {
+  margin-left: auto !important;
+  margin-right: 48px !important;
+  margin-inline: auto 48px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
