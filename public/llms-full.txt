@@ -2491,7 +2491,7 @@ Description: רוצים לקבוע סקירת מערכות פרטית ברעננ
 
 
 
-קראתי ואני מסכים/ה ל   תנאי השימוש     ול   מדיניות הפרטיות
+קראתי ואני מסכים/ה ל    תנאי השימוש      ול    מדיניות הפרטיות
 
 
 
@@ -2864,6 +2864,9 @@ URL: https://drcharach.co.il/late-review
 
 
 
+
+
+Your browser does not support the video tag.
 
 
 
