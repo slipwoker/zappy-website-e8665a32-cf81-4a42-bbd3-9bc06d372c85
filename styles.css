@@ -13690,6 +13690,39 @@ nav.navbar .sub-menu li a {
   grid-template-columns: 1fr;
 }
 }
+
+@media (max-width: 768px) {
+#zappy-section-0 .hero-drron__content {
+  align-items: center !important;
+  text-align: center !important;
+  padding: 0 20px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-inline: auto !important;
+}
+
+#zappy-section-0 .hero-drron__content h3 {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#zappy-section-0 .hero-drron__name {
+  text-align: center !important;
+}
+
+#zappy-section-0 .hero-drron__specialty,
+  #zappy-section-0 .hero-drron__tagline,
+  #zappy-section-0 .hero-drron__tagline-end {
+  text-align: center !important;
+}
+
+#zappy-section-0 .hero-drron__cta {
+  justify-content: center !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
