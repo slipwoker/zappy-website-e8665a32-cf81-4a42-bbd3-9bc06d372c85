@@ -2138,7 +2138,7 @@ html[dir="ltr"] .lang-switcher {
   </div>
 </section>
 
-<section class="contact-form-section" data-layout-spec="צור קשר-form" dir="rtl">
+<section class="contact-form-section" data-layout-spec="צור קשר-form" dir="rtl" id="contact-form-section" style="direction: rtl;">
   <div class="contact-form-section__container">
     <div class="contact-form-section__panel">
       <div class="contact-form-section__header">
@@ -2165,11 +2165,11 @@ html[dir="ltr"] .lang-switcher {
         <div class="privacy-consent">
           <label class="privacy-consent-label">
             <input type="checkbox" name="privacy_consent" class="privacy-consent-checkbox" required="">
-            <span><span>קראתי ואני מסכים/ה ל</span><a href="/en/terms" target="_blank">Terms of Use</a> <span>ול</span><a href="/en/privacy" target="_blank">Privacy Policy</a></span>
+            <span><span><span><br>            קראתי ואני מסכים/ה ל</span></span><a href="/en/terms" target="_blank" style="color: rgb(61, 43, 36) !important;">Terms of Use</a> <span><span> ול</span></span><a href="/en/privacy" target="_blank" style="color: rgb(61, 43, 36) !important;">Privacy Policy</a></span>
           </label>
         </div>
-        <div class="contact-form-section__submit-wrap">
-          <button type="submit" class="contact-form-section__submit btn-primary">Send Inquiry</button>
+        <div class="contact-form-section__submit-wrap" style="text-align: center !important; display: flex !important; justify-content: center !important; align-items: flex-start !important; width: 100% !important;">
+          <button type="submit" class="contact-form-section__submit btn btn-primary" style="color: rgb(0, 0, 0) !important; border-color: var(--primary-color, var(--primary, #8B0000)) !important; background-color: var(--primary-color, var(--primary, #8B0000)) !important; background-image: none !important;" data-element-type="button" data-element-id="btn-1780916013749-byi70m9fy" data-native-element="true" data-text-color="rgb(0, 0, 0)">Send Inquiry</button>
         </div>
         <p class="contact-form-section__reassurance">Your details are kept with us in complete confidentiality. We'll get back to you within one business day.</p>
       </form>
@@ -2240,6 +2240,8 @@ html[dir="ltr"] .lang-switcher {
   <script src="/script.js"></script>
 
     <div data-integration="accessibility:toolbar"></div>
+
+
 
 
 
