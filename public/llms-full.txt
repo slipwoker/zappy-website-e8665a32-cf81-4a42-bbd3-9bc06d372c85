@@ -553,6 +553,9 @@ mako | בריאות
 
 
 
+Your browser does not support the video tag.
+
+
 
 
 
@@ -620,7 +623,7 @@ mako | בריאות
 - 055-3111246
 - בית מנצור 1, הנופר 2, רעננה, ישראל
 מרפאת Life Inside
-בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1778141330741-wneb0wwms" data-zappy-footer-image="true" data-i18n-alt="home_alt_144" />
+בית מנצור 1, רעננה ';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1778141330741-wneb0wwms" data-zappy-footer-image="true" data-i18n-alt="home_alt_144">
 © 2026 Life Inside. כל הזכויות שמורות.
 מדיניות פרטיות   תנאי שימוש   נגישות   נוצר באמצעות Zappy
 
@@ -2496,7 +2499,7 @@ Description: רוצים לקבוע סקירת מערכות פרטית ברעננ
 
 
 
-קראתי ואני מסכים/ה ל   תנאי השימוש     ול   מדיניות הפרטיות
+קראתי ואני מסכים/ה ל    תנאי השימוש      ול    מדיניות הפרטיות
 
 
 
