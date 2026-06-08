@@ -13723,6 +13723,21 @@ nav.navbar .sub-menu li a {
   justify-content: center !important;
 }
 }
+
+@media (max-width: 768px) {
+#zappy-section-0 .hero-drron__content h1,
+  #zappy-section-0 .hero-drron__content h2,
+  #zappy-section-0 .hero-drron__content h3,
+  #zappy-section-0 .hero-drron__content p {
+  text-align: center !important;
+}
+
+#zappy-section-0 .hero-drron__specialty,
+  #zappy-section-0 .hero-drron__tagline,
+  #zappy-section-0 .hero-drron__tagline-end {
+  text-align: center !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
