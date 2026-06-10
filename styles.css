@@ -14953,6 +14953,13 @@ html[dir="ltr"] .service-detail.service-reverse .service-detail-content { order:
   --nav-text: var(--text-light, #ffffff) !important;
 }
 
+/* ENSURE: navbar-logo-isolation */
+.navbar .logo,
+.nav-brand .logo,
+.logo-link .logo {
+  margin: 0 !important;
+}
+
 
 /* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX */
 /* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX_V3 */
