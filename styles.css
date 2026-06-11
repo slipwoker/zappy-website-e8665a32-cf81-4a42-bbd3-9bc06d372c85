@@ -13774,6 +13774,27 @@ nav.navbar .sub-menu li a {
   transform-origin: right !important;
 }
 }
+
+@media (max-width: 768px) {
+.nav-container {
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+
+.mobile-toggle{left: auto !important;right: 20px !important;}
+
+.phone-header-btn{left: 20px !important;right: auto !important;}
+
+html[dir="ltr"] .mobile-toggle {
+  left: 20px !important;
+  right: auto !important;
+}
+
+html[dir="ltr"] .phone-header-btn {
+  left: auto !important;
+  right: 20px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
