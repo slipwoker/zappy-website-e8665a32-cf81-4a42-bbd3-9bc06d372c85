@@ -13795,6 +13795,64 @@ html[dir="ltr"] .phone-header-btn {
   right: 20px !important;
 }
 }
+
+@media (max-width: 768px) {
+.footer-top {
+  flex-direction: column !important;
+  gap: 28px !important;
+  text-align: center;
+}
+
+.footer-col {
+  width: 100% !important;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social {
+  justify-content: center;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact li {
+  justify-content: center;
+}
+
+.footer-bottom {
+  flex-direction: column !important;
+  gap: 12px !important;
+  text-align: center;
+}
+
+.footer-legal {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-inner > div:has(iframe) {
+  flex-direction: column !important;
+  height: auto !important;
+  gap: 12px !important;
+}
+
+.footer-inner > div:has(iframe) > div {
+  height: 200px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
