@@ -3131,9 +3131,9 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   }
 
   .index-credentials-section .index-credentials-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
 
   .index-credentials-section .index-credentials-image-col {
     
@@ -3389,9 +3389,9 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   }
 
   .index-philosophy-section .index-philosophy-container {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
 
   .index-philosophy-section .index-philosophy-heading {
     font-size: 1.75rem;
