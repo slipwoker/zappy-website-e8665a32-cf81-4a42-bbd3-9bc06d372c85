@@ -13957,6 +13957,13 @@ html[dir="ltr"] .phone-header-btn {
 #li-late-scan .li-hero-fullbg__badge h3 {
   color: var(--background-color) !important;
 }
+
+#li-third-scan-page .li-hero-fullbg__content {
+  background: rgba(61, 43, 36, 0.55);
+  border-radius: 16px;
+  padding: 40px 36px;
+  backdrop-filter: blur(8px);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
