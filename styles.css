@@ -13964,6 +13964,27 @@ html[dir="ltr"] .phone-header-btn {
   padding: 40px 36px;
   backdrop-filter: blur(8px);
 }
+
+#li-third-scan-page .li-container--narrow h2,
+#li-third-scan-page .li-container--narrow h3,
+#li-third-scan-page .li-container--narrow div[style*="color: var(--text-color)"],
+#li-third-scan-page .li-container--narrow div[style*="color:var(--text-color)"],
+#li-third-scan-page .li-container--narrow > div {
+  color: #ffffff !important;
+}
+
+#li-third-scan-page > div:nth-child(3) {
+  background: var(--text-color) !important;
+}
+
+#li-third-scan-page .li-container--narrow h2,
+#li-third-scan-page .li-container--narrow h3 {
+  color: var(--background-color) !important;
+}
+
+#li-third-scan-page .li-container--narrow > div {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
