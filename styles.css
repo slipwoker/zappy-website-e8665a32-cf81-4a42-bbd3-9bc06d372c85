@@ -5148,9 +5148,9 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   }
 
   .about-profile-section .about-profile-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
 
   /* Portrait comes FIRST on mobile (above text) */
   .about-profile-section .about-profile-portrait-col {
@@ -13999,6 +13999,12 @@ html[dir="ltr"] .phone-header-btn {
 .li-hero-fullbg__badge, .li-hero-fullbg__badge h3, .li-hero-fullbg__badge h1, .li-hero-fullbg__badge h2, .li-hero-fullbg__badge h4, .li-hero-fullbg__badge h5, .li-hero-fullbg__badge h6, .li-hero-fullbg__badge p, .li-hero-fullbg__badge span { color: #FDF6F2 !important; }
 /* Batch: Force badge h3 text to white on every page */
 .li-hero-fullbg__badge h3 { color: #FDF6F2 !important; }
+
+@media (max-width: 768px) {
+.about-profile-section .about-profile-grid {
+  gap: 18px;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
