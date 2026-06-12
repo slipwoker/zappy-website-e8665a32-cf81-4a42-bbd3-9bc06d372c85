@@ -14011,6 +14011,27 @@ html[dir="ltr"] .phone-header-btn {
 }
 
 
+
+.site-footer .footer-social .fab {
+  font-size: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+}
+
+.site-footer .footer-social a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: rgba(253, 246, 242, 0.1) !important;
+  transition: background 0.2s ease !important;
+}
+
+.site-footer .footer-social a:hover {
+  background: rgba(253, 246, 242, 0.2) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
