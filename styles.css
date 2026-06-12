@@ -13953,6 +13953,10 @@ html[dir="ltr"] .phone-header-btn {
   padding: 0 8px !important;
 }
 }
+
+#li-late-scan .li-hero-fullbg__badge h3 {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
