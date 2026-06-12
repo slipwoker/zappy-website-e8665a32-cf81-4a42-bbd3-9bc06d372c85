@@ -14002,6 +14002,10 @@ html[dir="ltr"] .phone-header-btn {
 #li-third-scan-page .li-hero-fullbg__badge h3 {
   color: var(--background-color) !important;
 }
+/* Batch: Force all hero badge text to white across all pages */
+.li-hero-fullbg__badge, .li-hero-fullbg__badge h3, .li-hero-fullbg__badge h1, .li-hero-fullbg__badge h2, .li-hero-fullbg__badge h4, .li-hero-fullbg__badge h5, .li-hero-fullbg__badge h6, .li-hero-fullbg__badge p, .li-hero-fullbg__badge span { color: #FDF6F2 !important; }
+/* Batch: Force badge h3 text to white on every page */
+.li-hero-fullbg__badge h3 { color: #FDF6F2 !important; }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
