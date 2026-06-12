@@ -13853,6 +13853,106 @@ html[dir="ltr"] .phone-header-btn {
   height: 200px !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-credentials-section .index-credentials-container {
+  grid-template-columns: 1fr !important;
+  gap: 28px !important;
+}
+
+.index-credentials-section {
+  padding: 48px 16px 116px !important;
+}
+
+.index-credentials-section .index-credentials-portrait-wrap {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.index-credentials-section [data-zappy-zoom-wrapper][data-element-id="img-1777029785103-cd596ncay"] {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 3/4 !important;
+}
+
+.index-credentials-section .index-credentials-cards {
+  gap: 14px !important;
+}
+
+.index-credentials-section .index-credentials-card {
+  padding: 18px !important;
+}
+
+.index-credentials-section .index-credentials-heading {
+  font-size: 1.5rem !important;
+}
+
+.index-credentials-section h1 {
+  font-size: 1.6rem !important;
+}
+
+.index-credentials-section h3 {
+  font-size: 0.95rem !important;
+}
+}
+
+@media (max-width: 768px) {
+.index-philosophy-section .index-philosophy-container {
+  grid-template-columns: 1fr !important;
+  gap: 32px !important;
+}
+
+.index-philosophy-section {
+  padding: 48px 16px 100px !important;
+}
+
+.index-philosophy-section .index-philosophy-panel {
+  padding: 20px 12px !important;
+}
+
+.index-philosophy-section .index-philosophy-card {
+  padding: 18px 14px !important;
+}
+
+.index-philosophy-section .index-philosophy-heading {
+  font-size: 1.6rem !important;
+}
+
+.index-philosophy-section h1 {
+  font-size: 1.5rem !important;
+}
+
+.index-philosophy-section h3 {
+  font-size: 0.9rem !important;
+}
+}
+
+@media (max-width: 768px) {
+.index-journey-section .journey-grid {
+  grid-template-columns: 1fr !important;
+  gap: 20px !important;
+}
+
+.index-journey-section .journey-card {
+  max-width: 100% !important;
+}
+
+.index-journey-section .journey-card-image-wrap {
+  width: 100% !important;
+}
+
+.index-journey-section .journey-title {
+  font-size: 1.6rem !important;
+}
+
+.index-journey-section .journey-intro {
+  font-size: 0.9rem !important;
+}
+
+.index-journey-section .journey-container {
+  padding: 0 8px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
