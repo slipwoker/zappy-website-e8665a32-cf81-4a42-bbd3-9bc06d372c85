@@ -14005,6 +14005,21 @@ html[dir="ltr"] .phone-header-btn {
   gap: 18px;
 }
 }
+
+@media (max-width: 768px) {
+.about-profile-section .about-profile-grid {
+  gap: 12px !important;
+}
+
+.about-profile-section .about-profile-text {
+  gap: 8px !important;
+}
+
+.about-profile-section .portrait-frame {
+  height: auto !important;
+  max-height: 420px !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
