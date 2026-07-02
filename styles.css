@@ -14841,6 +14841,20 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
   height: auto !important;
   overflow: visible !important;
 }
+
+@media (max-width: 768px) {
+#zappy-section-1 .journey-card-image-wrap img {
+  object-fit: contain !important;
+  position: static !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  top: auto !important;
+  left: auto !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
