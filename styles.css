@@ -14736,6 +14736,24 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
     font-size: 0.85rem;
   }
 }
+
+@media (max-width: 768px) {
+.index-journey-section .journey-card-image-wrap {
+  width: 100% !important;
+  max-height: 220px !important;
+  overflow: hidden !important;
+  border-radius: var(--radius-card) var(--radius-card) 0 0 !important;
+}
+
+.index-journey-section .journey-card-image-wrap > a,
+  .index-journey-section .journey-card-image-wrap > div,
+  .index-journey-section .journey-card-image-wrap > a > div,
+  .index-journey-section .journey-card-image-wrap [data-zappy-zoom-wrapper] {
+  max-height: 220px !important;
+  overflow: hidden !important;
+  border-radius: var(--radius-card) var(--radius-card) 0 0 !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
