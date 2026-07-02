@@ -14032,6 +14032,30 @@ html[dir="ltr"] .phone-header-btn {
 .site-footer .footer-social a:hover {
   background: rgba(253, 246, 242, 0.2) !important;
 }
+
+.index-credentials-section .index-credentials-portrait-wrap {
+  height: 700px;
+  max-width: 660px;
+  margin-right: auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+.index-credentials-section .index-credentials-portrait-wrap {
+  height: 400px;
+  max-width: 100%;
+}
+}
+/* zappy-self-heal */
+.index-credentials-section .index-credentials-portrait-wrap { height: 700px !important; }
+.index-credentials-section .index-credentials-portrait-wrap { max-width: 660px !important; }
+.index-credentials-section .index-credentials-portrait-wrap { position: relative !important; }
+
+/* zappy-self-heal */
+html body .index-credentials-section .index-credentials-portrait-wrap { height: 700px !important; }
+html body .index-credentials-section .index-credentials-portrait-wrap { max-width: 660px !important; }
+html body .index-credentials-section .index-credentials-portrait-wrap { position: relative !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
