@@ -14778,6 +14778,19 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
   object-position: 50% 50% !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-journey-section .journey-card-image-wrap [data-zappy-zoom-wrapper="true"] {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.index-journey-section .journey-card-image-wrap [data-zappy-zoom-wrapper="true"] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
