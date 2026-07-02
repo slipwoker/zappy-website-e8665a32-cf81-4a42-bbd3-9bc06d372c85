@@ -2723,8 +2723,8 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   border-radius: 16px 16px 0 0;
   transition: transform 0.4s ease;
   aspect-ratio: 16 / 9 !important;
-  height: auto;
-  overflow: visible;
+  height: auto !important;
+  overflow: visible !important;
 }
 
 .index-journey-section .journey-card--featured .journey-card-image-wrap img {
@@ -14334,8 +14334,8 @@ html body .index-credentials-section .index-credentials-portrait-wrap {
   object-fit: cover !important;
   aspect-ratio: 16 / 9 !important;
   border-radius: 16px 16px 0 0;
-  height: auto;
-  overflow: visible;
+  height: auto !important;
+  overflow: visible !important;
 }
 
 @media (max-width: 768px) {
@@ -14834,6 +14834,12 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
 .index-journey-section .journey-card--short .journey-card-image-wrap {
   aspect-ratio: 520 / 260 !important;
 }
+}
+
+#zappy-section-1 .journey-card-image-wrap [data-zappy-zoom-wrapper="true"],
+#zappy-section-1 .journey-card-image-wrap > div {
+  height: auto !important;
+  overflow: visible !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
