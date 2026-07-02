@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -161,26 +159,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -1631,7 +1634,7 @@ html[dir="rtl"] body {
 </head>
 <body>
 
-  <nav class="navbar"> <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-element-type="button" data-element-id="btn-1776866322410-druj85opj" data-native-element="true" data-i18n-aria-label="home_aria_label_145"> <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path> </svg> <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;"> <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path> </svg> </button> <button class="phone-header-btn" data-phone="0553111246" aria-label="Call" data-element-type="button" data-element-id="btn-1776866322410-mduslyw4b" data-native-element="true" data-i18n-aria-label="home_aria_label_146"> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"> <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path> </svg> </button> <div class="nav-container"> <div class="nav-right-group"><div class="nav-brand"> <a href="/" class="logo-link" style="display:flex; flex-direction:column; align-items:center; gap:2px; text-decoration:none;"> <img src="/assets/life-inside-logo-1781274591413-apqj8c.webp?v=1781274591641-82aamd" alt="Life Inside" class="logo" data-image-type="logo"  data-i18n-alt="home_alt_133"> <span style="font-size: 23.4px; color: #C97B63; font-family: inherit; white-space: nowrap; line-height: 1; text-align: center; display: block; width: 100%; margin: 0 auto;" data-i18n="home_h1_1">ד"ר רון חר"ך</span> </a> </div><ul class="nav-menu" id="navMenu"><li><a href="/" data-i18n="home_nav_123">בית</a></li><li><a href="/clinic-services" class="has-submenu-link" style="pointer-events:none;cursor:default;" data-i18n="home_nav_124">שירותי המרפאה</a><ul class="sub-menu"><li><a href="/first-pregnancy-ultrasound" class="" data-i18n="home_nav_125">בדיקת דופק ראשונה בהריון</a></li><li><a href="/rear-transparency" class="nav-link" data-i18n="home_nav_126">שקיפות עורפית</a></li><li><a href="/preliminary-review" class="nav-link" data-i18n="home_nav_127">סקירה מוקדמת</a></li><li><a href="/late-review" class="nav-link" data-i18n="home_nav_128">סקירה מאוחרת</a></li><li><a href="/third-trimester-ultrasound" class="nav-link" data-i18n="home_nav_129">סקירה שלישית להערכת התפתחות העובר</a></li><li><a href="/targeted-review" class="nav-link" data-i18n="home_nav_130">סקירה מכוונת</a></li></ul></li><li><a href="/about-dr-ron" data-i18n="home_nav_131">אודות ד״ר רון חר"ך</a></li><li><a href="/contact" data-i18n="home_nav_132">צור קשר</a></li></ul></div>  
+  <nav class="navbar"> <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" data-element-type="button" data-element-id="btn-1776866322410-druj85opj" data-native-element="true" data-i18n-aria-label="home_aria_label_145"> <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path> </svg> <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;"> <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path> </svg> </button> <button class="phone-header-btn" data-phone="0553111246" aria-label="Call" data-element-type="button" data-element-id="btn-1776866322410-mduslyw4b" data-native-element="true" data-i18n-aria-label="home_aria_label_146"> <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"> <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path> </svg> </button> <div class="nav-container"> <div class="nav-right-group"><div class="nav-brand"> <a href="/" class="logo-link" style="display:flex; flex-direction:column; align-items:center; gap:2px; text-decoration:none;"> <img src="/assets/life-inside-logo-1781274591413-apqj8c.webp?v=1781274591641-82aamd" alt="Life Inside" class="logo" data-image-type="logo" style="" data-i18n-alt="home_alt_133"> <span style="font-size: 23.4px; color: #C97B63; font-family: inherit; white-space: nowrap; line-height: 1; text-align: center; display: block; width: 100%; margin: 0 auto;" data-i18n="home_h1_1">ד"ר רון חר"ך</span> </a> </div><ul class="nav-menu" id="navMenu"><li><a href="/" data-i18n="home_nav_123">בית</a></li><li><a href="/about-dr-ron" data-i18n="home_nav_131">אודות ד״ר רון חר"ך</a></li><li><a href="/contact" data-i18n="home_nav_132">צור קשר</a></li></ul></div>  
 
 <script data-no-icon-edit="true">(function(){function f(){var b=document.querySelector('.lang-switcher-current');if(!b)return;var n=b.closest('nav')||b.closest('header')||b.closest('.navbar');if(!n)return;var a=n.querySelector('.nav-menu a,.nav-links a');if(!a)a=n.querySelector('a:not(.lang-option):not(.lang-switcher-current):not([class*="logo"])');if(a){var c=getComputedStyle(a).color;if(c&&c!=='rgb(0, 0, 0)'&&c!=='rgba(0, 0, 0, 0)'){b.style.color=c;return;}}var s=getComputedStyle(n).backgroundColor;if(s&&s!=='rgba(0, 0, 0, 0)'&&s!=='transparent'){var m=s.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);if(m){var l=(0.299*parseInt(m[1])+0.587*parseInt(m[2])+0.114*parseInt(m[3]))/255;b.style.color=l>0.5?'#1a1a1a':'#F3FAFF';}}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{setTimeout(f,0);}})()</script></div> </nav>
 <script>
@@ -2044,24 +2047,24 @@ html[dir="rtl"] body {
 <h2 class="about-profile-title" data-i18n="about_dr_ron_h2_2">מומחה ברפואת עובר
 ואולטרסאונד מיילדותי<br></h2>
 
-<p data-i18n="new_p_275" >ד"ר רון חר"ך נשוי ואב לשניים
+<p data-i18n="new_p_275" style="">ד"ר רון חר"ך נשוי ואב לשניים
 רופא בכיר ומנהל המרפאה לנוירולוגיה של העובר במרכז הרפואי רבין - בילינסון.
  בעל ניסיון מקצועי עשיר, השכלה רחבה ומחויבות למצוינות רפואית<br><br></p>
 
-<h3 data-i18n="new_h3_276" >רקע והשכלה</h3>
-<p data-i18n="new_p_278" >ד"ר חר"ך הוא בוגר בהצטיינות של בית הספר לרפואה ע"ש ג'וייס וארווין גולדמן באוניברסיטת בן גוריון, ובעל תואר שני בניהול מערכות בריאות מבית הספר למנהל עסקים באוניברסיטת בן גוריון. בשנת 2018 סיים את התמחותו במיילדות וגינקולוגיה בבית החולים סורוקה בהצטיינות יתרה, ולאחר מכן העמיק את מומחיותו באולטרסאונד מיילדותי וגינקולוגי כרופא בכיר בבית החולים הדסה בירושלים.</p>
+<h3 data-i18n="new_h3_276" style="">רקע והשכלה</h3>
+<p data-i18n="new_p_278" style="">ד"ר חר"ך הוא בוגר בהצטיינות של בית הספר לרפואה ע"ש ג'וייס וארווין גולדמן באוניברסיטת בן גוריון, ובעל תואר שני בניהול מערכות בריאות מבית הספר למנהל עסקים באוניברסיטת בן גוריון. בשנת 2018 סיים את התמחותו במיילדות וגינקולוגיה בבית החולים סורוקה בהצטיינות יתרה, ולאחר מכן העמיק את מומחיותו באולטרסאונד מיילדותי וגינקולוגי כרופא בכיר בבית החולים הדסה בירושלים.</p>
 
-<h3 data-i18n="new_h3_277" >תת-התמחות בינלאומית</h3>
-<p data-i18n="new_p_279" >בשנים 2021-2023 ביצע ד"ר חר"ך תת-התמחות קלינית בתחום רפואת העובר והאולטרסאונד המיילדותי במרכז BCNatal Fetal Medicine research center&nbsp; בברצלונה, אחד המרכזים המובילים בעולם בתחום רפואת העובר. תקופה זו אפשרה לו לרכוש כלים וטכניקות מתקדמות שמציבות אותו בקדמת החדשנות הרפואית.</p>
+<h3 data-i18n="new_h3_277" style="">תת-התמחות בינלאומית</h3>
+<p data-i18n="new_p_279" style="">בשנים 2021-2023 ביצע ד"ר חר"ך תת-התמחות קלינית בתחום רפואת העובר והאולטרסאונד המיילדותי במרכז BCNatal Fetal Medicine research center&nbsp; בברצלונה, אחד המרכזים המובילים בעולם בתחום רפואת העובר. תקופה זו אפשרה לו לרכוש כלים וטכניקות מתקדמות שמציבות אותו בקדמת החדשנות הרפואית.</p>
 
 <h3 data-i18n="new_h3_287">תחומי מומחיות</h3>
-<p  data-i18n="new_p_290">עם חזרתו לישראל, ד"ר חר"ך התמנה לרופא בכיר ביחידה לדימות במיילדות, גינקולוגיה ורפואת העובר במרכז הרפואי רבין - בילינסון, שם הוא מוביל את תחום הנוירולוגיה של העובר ומנהל את המרפאה הייעודית לטיפול במקרים מורכבים הקשורים למוח העובר. תחומי עיסוקו כוללים בין היתר&nbsp;&nbsp;
+<p style="" data-i18n="new_p_290">עם חזרתו לישראל, ד"ר חר"ך התמנה לרופא בכיר ביחידה לדימות במיילדות, גינקולוגיה ורפואת העובר במרכז הרפואי רבין - בילינסון, שם הוא מוביל את תחום הנוירולוגיה של העובר ומנהל את המרפאה הייעודית לטיפול במקרים מורכבים הקשורים למוח העובר. תחומי עיסוקו כוללים בין היתר&nbsp;&nbsp;
 - טיפול בהריונות בסיכון גבוה&nbsp;
 - אבחון טרום לידתי&nbsp;&nbsp;
 - מחקר בנושא מומים עובריים, עם דגש על מוח העובר&nbsp;
 - סקירות מכוונות למוח העובר&nbsp;<br></p>
 
-<p data-i18n="new_p_289" >ד"ר חר"ך משלב בעבודתו הקלינית והמחקרית את המומחיות הטכנית לצד גישה אנושית ואישית למטופלות. הוא שואף לספק את הטיפול המדויק והמתקדם ביותר, תוך שמירה על קשר הדוק ומכיל עם המטופלות.
+<p data-i18n="new_p_289" style="">ד"ר חר"ך משלב בעבודתו הקלינית והמחקרית את המומחיות הטכנית לצד גישה אנושית ואישית למטופלות. הוא שואף לספק את הטיפול המדויק והמתקדם ביותר, תוך שמירה על קשר הדוק ומכיל עם המטופלות.
 עם חזון רפואי וחתירה מתמדת למצוינות, ד"ר חר"ך מעניק מענה מקיף ומעמיק לכל אישה בהריון.<br></p>
 
 
@@ -2088,8 +2091,8 @@ html[dir="rtl"] body {
 <section class="about-education-section" data-layout-spec="אודות ד״ר רון הארק-education" dir="rtl" id="about-education-section" style="direction: rtl;">
   <div class="about-education-container">
     <div class="about-education-header">
-      <p data-i18n="about_dr_ron_p_15">השכלה והכשרה</p><h2 class="about-education-title"  data-i18n="about_dr_ron_h2_3">רקע אקדמי ומקצועי</h2>
-      <p class="about-education-subtitle"  data-i18n="about_dr_ron_p_16">מסלול של מצוינות — מהאקדמיה אל קדמת הרפואה העוברית</p>
+      <p data-i18n="about_dr_ron_p_15">השכלה והכשרה</p><h2 class="about-education-title" style="" data-i18n="about_dr_ron_h2_3">רקע אקדמי ומקצועי</h2>
+      <p class="about-education-subtitle" style="" data-i18n="about_dr_ron_p_16">מסלול של מצוינות — מהאקדמיה אל קדמת הרפואה העוברית</p>
     </div>
 
     <div class="about-education-timeline"><div class="about-education-line" aria-hidden="true"></div>
@@ -2178,8 +2181,8 @@ html[dir="rtl"] body {
           </div>
           <div class="about-education-card-content">
             <h3 data-i18n="new_h3_284">רופא בכיר — מנהל המרפאה לנוירולוגיה של העובר</h3>
-            <p class="about-education-institution" data-i18n="new_p_285" >המרכז הרפואי רבין-בילינסון, פתח תקווה</p>
-            <p data-i18n="new_p_286" >
+            <p class="about-education-institution" data-i18n="new_p_285" style="">המרכז הרפואי רבין-בילינסון, פתח תקווה</p>
+            <p data-i18n="new_p_286" style="">
 
 רופא בכיר ביחידה לדימות במיילדות, גינקולוגיה ורפואת העובר במרכז הרפואי רבין - בילינסון&nbsp; ומנהל המרפאה לנוירולוגיה של העובר במרכז הרפואי בילינסון</p>
           </div>
@@ -2200,7 +2203,7 @@ html[dir="rtl"] body {
       <div class="about-cta-inner">
         <p data-i18n="about_dr_ron_p_27"><span class="about-cta-eyebrow">מרפאת Life Inside ברעננה</span>
         </p><h2 class="about-cta-heading" data-i18n="about_dr_ron_h2_4">מוכנים להתחיל את הדרך יחד?</h2>
-        <p class="about-cta-text"  data-i18n="about_dr_ron_p_28">ד״ר רון חר"ך וצוות המרפאה ישמחו ללוות אתכם לאורך כל ההריון — מהבדיקות הראשונות ועד הלידה. פנו אלינו לקבלת ייעוץ אישי ומקצועי בסקירת מערכות פרטית ברעננה.</p>
+        <p class="about-cta-text" style="" data-i18n="about_dr_ron_p_28">ד״ר רון חר"ך וצוות המרפאה ישמחו ללוות אתכם לאורך כל ההריון — מהבדיקות הראשונות ועד הלידה. פנו אלינו לקבלת ייעוץ אישי ומקצועי בסקירת מערכות פרטית ברעננה.</p>
         <div class="about-cta-actions">
           <a href="https://wa.me/972553111246" class="about-cta-btn-primary" data-element-type="button" data-element-id="btn-1777633624578-djq6t229j" data-native-element="true" style="outline: none; border-color: var(--primary-color, var(--primary, #8B0000)) !important; color: rgb(255, 255, 255) !important; background-color: var(--primary-color, var(--primary, #8B0000)) !important; background-image: none !important;" target="_blank" rel="noopener noreferrer" data-i18n="about_dr_ron_link_42">קביעת תור עכשיו</a>
           
@@ -2211,7 +2214,7 @@ html[dir="rtl"] body {
 </section>
   </main>
   
-  <footer class="site-footer" dir="rtl"> <div class="footer-inner"> <div class="footer-top"> <!-- Column 1: Company Info --> <div class="footer-col footer-brand"> <div data-zappy-zoom-wrapper="true" data-element-id="img-1776974483874-dgwignotk" data-element-type="image" data-zappy-zoom-wrapper-width="224px" data-zappy-zoom-wrapper-height="70px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 224px !important; max-width: 100% !important; margin-left: auto !important; margin-right: 0px !important; height: 70px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-zoom-wrapper-align="right"><img src="/assets/life-inside-logo-1777645382900-oo5nes.webp?v=1777645383114-cildo9" alt="Life Inside" class="logo" data-element-type="image" data-element-id="img-1776974483874-dgwignotk" data-zappy-footer-image="true" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-original-width="106.9907455444336" data-zappy-original-height="55.9953727722168" data-zappy-object-position="50% 50%" data-zappy-mobile-object-position="50% 47%" data-zappy-mobile-zoom="0.5" data-i18n-alt="home_alt_143"></div> <p class="footer-tagline"  data-i18n="home_p_58">ד"ר רון חר"ך | החיים שלפני החיים</p> <div class="footer-social"> <a href="https://facebook.com/profile.php?id=61583458506656" aria-label="Facebook" target="_blank" data-i18n-aria-label="home_aria_label_167"><i class="fab fa-facebook-f"></i></a> <a href="https://instagram.com/dr_roncharach" aria-label="Instagram" data-zappy-original-link="true" data-zappy-orig-href="https://instagram.com/dr_roncharach" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="home_aria_label_168"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1776974483872-hxisipcrm" data-icon-type="fontawesome" style="font-size: 20px !important; color: rgb(253, 246, 242); cursor: pointer;" data-zappy-click-action="link"></i></a> <a href="https://wa.me/972553111246" aria-label="WhatsApp" data-zappy-original-link="true" data-zappy-orig-href="https://wa.me/+972553111246" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="home_aria_label_169"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1776974483872-1cgxipwf6" data-icon-type="fontawesome" style="color: rgb(255, 255, 255); cursor: pointer; font-size: 20px !important;" data-zappy-click-action="link"></i></a> </div> </div> <!-- Column 2: Quick Links --> <div class="footer-col"> <h3 class="footer-heading" data-i18n="home_h3_22">ניווט מהיר</h3> <ul class="footer-links"> <li><a href="/clinic-services" data-i18n="home_link_89">שירותי המרפאה</a></li> <li><a href="/about-dr-ron" data-i18n="home_link_90">אודות ד״ר רון חר"ך</a></li> <li><a href="/contact" data-i18n="home_link_91">צור קשר</a></li> </ul> </div> <!-- Column 3: Contact Info --> <div class="footer-col"> <h3 class="footer-heading" data-i18n="home_h3_23">יצירת קשר</h3> <ul class="footer-contact" ><li> <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776974483872-uke5tee4q" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><span class="contact-text" data-i18n="home_span_78"><a href="/cdn-cgi/l/email-protection" data-i18n="home_link_92">dr.roncharach@gmail.com</a><a href="/cdn-cgi/l/email-protection#154e7760667c7b7066664a7078747c7948" ></a></span> </li><li> <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776974483872-4wbjjlu6i" data-icon-type="fontawesome" style="cursor: pointer;"></i></span> <span class="contact-text">055-3111246</span> </li><li><a href="/" style="display: flex; align-items: flex-start; gap: inherit;" data-i18n="home_link_93"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span> <span class="contact-text">בית מנצור 1, הנופר 2, רעננה, ישראל</span></a></li></ul> </div> <!-- Column 4: Decorative / Tagline --> <div class="footer-col footer-extra"> </div> </div> <!-- Map + Clinic Image side by side --> <div style="width: 100%; margin: 24px 0 0 0; display: flex; gap: 16px; height: 350px; border-radius: 12px; overflow: hidden;"> <div style="flex: 1; border-radius: 12px; overflow: hidden; height: 100%;"> <img src="/assets/beit-manzur-clinic-1777924506368-5rtxfg.webp?v=1777924508848" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#f9ede7,#f3e7da)'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#7c655e;font-size:0.95rem;text-align:center;padding:20px;\'>מרפאת Life Inside<br>בית מנצור 1, רעננה</div>';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1778141330741-wneb0wwms" data-zappy-footer-image="true" data-i18n-alt="home_alt_144"> </div> <div style="flex: 1; border-radius: 12px; overflow: hidden; height: 100%;"> <iframe src="https://maps.google.com/maps?q=%D7%91%D7%99%D7%AA+%D7%9E%D7%A0%D7%A6%D7%95%D7%A8+1+%D7%A8%D7%A2%D7%A0%D7%A0%D7%94&amp;output=embed&amp;z=17" style="width: 100%; height: 100%; border: none; display: block;" allowfullscreen="" loading="lazy"></iframe> </div> </div> <div class="footer-divider"></div> <!-- Bottom Bar --> <div class="footer-bottom"> <p class="footer-copyright" data-i18n="home_p_59">© 2026 Life Inside. כל הזכויות שמורות.</p> <div class="footer-legal"> <a href="/privacy" data-i18n="home_link_94">מדיניות פרטיות</a> <a href="/terms" data-i18n="home_link_95">תנאי שימוש</a> <a href="/accessibility" data-i18n="home_link_96">נגישות</a> <a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_97">נוצר באמצעות Zappy</a> </div> </div> </div> </footer>
+  <footer class="site-footer" dir="rtl"> <div class="footer-inner"> <div class="footer-top"> <!-- Column 1: Company Info --> <div class="footer-col footer-brand"> <div data-zappy-zoom-wrapper="true" data-element-id="img-1776974483874-dgwignotk" data-element-type="image" data-zappy-zoom-wrapper-width="224px" data-zappy-zoom-wrapper-height="70px" data-zappy-zoom-wrapper-width-mode="px" style="position: relative !important; overflow: hidden !important; width: 224px !important; max-width: 100% !important; margin-left: auto !important; margin-right: 0px !important; height: 70px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-zoom-wrapper-align="right"><img src="/assets/life-inside-logo-1777645382900-oo5nes.webp?v=1777645383114-cildo9" alt="Life Inside" class="logo" data-element-type="image" data-element-id="img-1776974483874-dgwignotk" data-zappy-footer-image="true" style="display: block !important; object-position: 50% 50% !important; object-fit: fill !important; margin: 0px !important; position: absolute !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-original-width="106.9907455444336" data-zappy-original-height="55.9953727722168" data-zappy-object-position="50% 50%" data-zappy-mobile-object-position="50% 47%" data-zappy-mobile-zoom="0.5" data-i18n-alt="home_alt_143"></div> <p class="footer-tagline" style="" data-i18n="home_p_58">ד"ר רון חר"ך | החיים שלפני החיים</p> <div class="footer-social"> <a href="https://facebook.com/profile.php?id=61583458506656" aria-label="Facebook" target="_blank" data-i18n-aria-label="home_aria_label_167"><i class="fab fa-facebook-f"></i></a> <a href="https://instagram.com/dr_roncharach" aria-label="Instagram" data-zappy-original-link="true" data-zappy-orig-href="https://instagram.com/dr_roncharach" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="home_aria_label_168"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1776974483872-hxisipcrm" data-icon-type="fontawesome" style="font-size: 20px !important; color: rgb(253, 246, 242); cursor: pointer;" data-zappy-click-action="link"></i></a> <a href="https://wa.me/972553111246" aria-label="WhatsApp" data-zappy-original-link="true" data-zappy-orig-href="https://wa.me/+972553111246" data-zappy-orig-target="" data-zappy-orig-rel="" data-zappy-click-action="link" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="home_aria_label_169"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1776974483872-1cgxipwf6" data-icon-type="fontawesome" style="color: rgb(255, 255, 255); cursor: pointer; font-size: 20px !important;" data-zappy-click-action="link"></i></a> </div> </div> <!-- Column 2: Quick Links --> <div class="footer-col"> <h3 class="footer-heading" data-i18n="home_h3_22">ניווט מהיר</h3> <ul class="footer-links"> <li><a href="/clinic-services" data-i18n="home_link_89">שירותי המרפאה</a></li> <li><a href="/about-dr-ron" data-i18n="home_link_90">אודות ד״ר רון חר"ך</a></li> <li><a href="/contact" data-i18n="home_link_91">צור קשר</a></li> </ul> </div> <!-- Column 3: Contact Info --> <div class="footer-col"> <h3 class="footer-heading" data-i18n="home_h3_23">יצירת קשר</h3> <ul class="footer-contact" style=""><li> <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1776974483872-uke5tee4q" data-icon-type="fontawesome" style="cursor: pointer;"></i></span><span class="contact-text" data-i18n="home_span_78"><a href="/cdn-cgi/l/email-protection" data-i18n="home_link_92">dr.roncharach@gmail.com</a><a href="/cdn-cgi/l/email-protection#154e7760667c7b7066664a7078747c7948" style=""></a></span> </li><li> <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1776974483872-4wbjjlu6i" data-icon-type="fontawesome" style="cursor: pointer;"></i></span> <span class="contact-text">055-3111246</span> </li><li><a href="/" style="display: flex; align-items: flex-start; gap: inherit;" data-i18n="home_link_93"><span class="contact-icon"><i class="fas fa-map-marker-alt" style="cursor: pointer;"></i></span> <span class="contact-text">בית מנצור 1, הנופר 2, רעננה, ישראל</span></a></li></ul> </div> <!-- Column 4: Decorative / Tagline --> <div class="footer-col footer-extra"> </div> </div> <!-- Map + Clinic Image side by side --> <div style="width: 100%; margin: 24px 0 0 0; display: flex; gap: 16px; height: 350px; border-radius: 12px; overflow: hidden;"> <div style="flex: 1; border-radius: 12px; overflow: hidden; height: 100%;"> <img src="/assets/beit-manzur-clinic-1777924506368-5rtxfg.webp?v=1777924508848" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#f9ede7,#f3e7da)'; this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#7c655e;font-size:0.95rem;text-align:center;padding:20px;\'>מרפאת Life Inside<br>בית מנצור 1, רעננה</div>';" alt="מרפאת Life Inside – בית מנצור רעננה" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" data-element-type="image" data-element-id="img-1778141330741-wneb0wwms" data-zappy-footer-image="true" data-i18n-alt="home_alt_144"> </div> <div style="flex: 1; border-radius: 12px; overflow: hidden; height: 100%;"> <iframe src="https://maps.google.com/maps?q=%D7%91%D7%99%D7%AA+%D7%9E%D7%A0%D7%A6%D7%95%D7%A8+1+%D7%A8%D7%A2%D7%A0%D7%A0%D7%94&amp;output=embed&amp;z=17" style="width: 100%; height: 100%; border: none; display: block;" allowfullscreen="" loading="lazy"></iframe> </div> </div> <div class="footer-divider"></div> <!-- Bottom Bar --> <div class="footer-bottom"> <p class="footer-copyright" data-i18n="home_p_59">© 2026 Life Inside. כל הזכויות שמורות.</p> <div class="footer-legal"> <a href="/privacy" data-i18n="home_link_94">מדיניות פרטיות</a> <a href="/terms" data-i18n="home_link_95">תנאי שימוש</a> <a href="/accessibility" data-i18n="home_link_96">נגישות</a> <a href="https://zappy5.com" target="_blank" class="zappy-attribution" data-i18n="home_link_97">נוצר באמצעות Zappy</a> </div> </div> </div> </footer>
   
   <a href="https://wa.me/+972553111246" class="whatsapp-float" aria-label="WhatsApp" data-i18n-aria-label="about_dr_ron_aria_label_78">
     <i class="fab fa-whatsapp"></i>
@@ -5872,16 +5875,32 @@ html[dir="rtl"] body {
         }
       }
 
-      // Carry over inline formatting from the source element when the translation
-      // is plain text. E.g., source: <font color="#fff">Hebrew</font>,
-      // translation: "English" → wrap as <font color="#fff">English</font>.
+      // Carry over a single inline colour/format wrapper from the source element
+      // when the translation is plain text. The inline-editor colour picker wraps
+      // the selected text in <span style="color:#hex !important"> (legacy edits
+      // used <font color>). Without re-applying that wrapper, the
+      // textContent/innerHTML swap below destroys it and the user's picked text
+      // colour silently reverts to the CSS default on every load / language
+      // switch (the edit IS saved in the HTML — it's just re-rendered away here).
+      var wrappedFormatting = false;
       var fontChild = el.querySelector('font[color], font[face], font[size]');
-      if (fontChild && !inlineFormatPattern.test(translation)) {
-        var fontTag = '<font';
-        for (var ai = 0; ai < fontChild.attributes.length; ai++) {
-          fontTag += ' ' + fontChild.attributes[ai].name + '="' + fontChild.attributes[ai].value.replace(/"/g, '&quot;') + '"';
+      var styleWrapper = fontChild;
+      if (!styleWrapper && el.children.length === 1) {
+        var onlyChild = el.children[0];
+        if (onlyChild && onlyChild.tagName === 'SPAN' &&
+            /(^|;)\s*(color|background|background-color)\s*:/i.test(onlyChild.getAttribute('style') || '') &&
+            onlyChild.textContent.trim() === (el.textContent || '').trim()) {
+          styleWrapper = onlyChild;
         }
-        translation = fontTag + '>' + translation + '</font>';
+      }
+      if (styleWrapper && !inlineFormatPattern.test(translation) && !structuralTagPattern.test(translation)) {
+        var wrapperTag = styleWrapper.tagName.toLowerCase();
+        var openTag = '<' + wrapperTag;
+        for (var ai = 0; ai < styleWrapper.attributes.length; ai++) {
+          openTag += ' ' + styleWrapper.attributes[ai].name + '="' + styleWrapper.attributes[ai].value.replace(/"/g, '&quot;') + '"';
+        }
+        translation = openTag + '>' + translation + '</' + wrapperTag + '>';
+        wrappedFormatting = true;
       }
 
       var hasNewlines = translation.indexOf(newlineChar) !== -1;
@@ -5889,7 +5908,7 @@ html[dir="rtl"] body {
       var hasEntities = /&[a-zA-Z]+;|&#\d+;|&#x[0-9a-fA-F]+;/.test(translation);
       var elementHasBr = /<br\s*\/?>/i.test(el.innerHTML);
 
-      if (hasNewlines || hasInlineFormat || hasEntities || elementHasBr) {
+      if (hasNewlines || hasInlineFormat || hasEntities || elementHasBr || wrappedFormatting) {
         el.innerHTML = translation.split(newlineChar).join('<br>');
       } else {
         el.textContent = translation;
@@ -6921,5 +6940,5 @@ html[dir="rtl"] body {
       else setTimeout(init,50);
     })();
     </script>
-</body>
-</html>
+
+</body></html>
