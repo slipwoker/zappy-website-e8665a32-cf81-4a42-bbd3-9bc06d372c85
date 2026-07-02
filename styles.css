@@ -2723,7 +2723,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   display: block;
   border-radius: 16px 16px 0 0;
   transition: transform 0.4s ease;
-  aspect-ratio: 520 / 300;
+  aspect-ratio: 16 / 9 !important;
   overflow: hidden;
 }
 
@@ -3303,7 +3303,8 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   margin-bottom: 20px;
   border-radius: 16px 16px 0 0;
   overflow: hidden;
-  height: 180px;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
 }
 
 .index-philosophy-section .index-philosophy-card-img {
@@ -14332,7 +14333,7 @@ html body .index-credentials-section .index-credentials-portrait-wrap {
 .index-journey-section .journey-card-image-wrap img {
   height: auto !important;
   object-fit: cover !important;
-  aspect-ratio: 520 / 300;
+  aspect-ratio: 16 / 9 !important;
   overflow: hidden;
   border-radius: 16px 16px 0 0;
 }
