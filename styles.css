@@ -14311,6 +14311,48 @@ html body .index-credentials-section .index-credentials-portrait-wrap {
   position: relative !important;
   width: 100% !important;
 }
+
+.index-journey-section .journey-card-image-wrap {
+  height: auto !important;
+  min-height: 220px !important;
+}
+
+.index-journey-section .journey-card--tall .journey-card-image-wrap [data-zappy-zoom-wrapper],
+.index-journey-section .journey-card--short .journey-card-image-wrap [data-zappy-zoom-wrapper],
+.index-journey-section .journey-card--featured .journey-card-image-wrap [data-zappy-zoom-wrapper] {
+  height: 220px !important;
+}
+
+.index-journey-section .journey-card--featured .journey-card-image-wrap [data-zappy-zoom-wrapper] {
+  height: 260px !important;
+}
+
+.index-journey-section .journey-card-image-wrap img {
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 768px) {
+.index-journey-section .journey-card--tall .journey-card-image-wrap [data-zappy-zoom-wrapper],
+  .index-journey-section .journey-card--short .journey-card-image-wrap [data-zappy-zoom-wrapper] {
+  height: 200px !important;
+}
+
+.index-journey-section .journey-card--featured .journey-card-image-wrap [data-zappy-zoom-wrapper] {
+  height: 220px !important;
+}
+
+.index-journey-section .journey-card-image-wrap {
+  min-height: 200px !important;
+}
+}
+/* zappy-self-heal */
+.index-journey-section .journey-card-image-wrap { height: auto !important; }
+.index-journey-section .journey-card-image-wrap { min-height: 220px !important; }
+
+/* zappy-self-heal */
+html body .index-journey-section .journey-card-image-wrap { height: auto !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
