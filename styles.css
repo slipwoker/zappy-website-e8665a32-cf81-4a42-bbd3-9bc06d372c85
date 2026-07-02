@@ -14754,6 +14754,30 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
   border-radius: var(--radius-card) var(--radius-card) 0 0 !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-journey-section .journey-card-image-wrap {
+  width: 100% !important;
+  height: 220px !important;
+  max-height: 220px !important;
+  overflow: hidden !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+.index-journey-section .journey-card-image-wrap > a,
+  .index-journey-section .journey-card-image-wrap > div,
+  .index-journey-section .journey-card-image-wrap > a > div {
+  width: 100% !important;
+  height: 220px !important;
+  max-height: 220px !important;
+  overflow: hidden !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+.index-journey-section .journey-card-image-wrap img {
+  object-position: 50% 50% !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
