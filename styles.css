@@ -2718,13 +2718,13 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
 
 .index-journey-section .journey-card-image-wrap img {
   width: 100%;
-  height: auto !important;
   object-fit: cover;
   display: block;
   border-radius: 16px 16px 0 0;
   transition: transform 0.4s ease;
   aspect-ratio: 16 / 9 !important;
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
 }
 
 .index-journey-section .journey-card--featured .journey-card-image-wrap img {
@@ -14331,11 +14331,11 @@ html body .index-credentials-section .index-credentials-portrait-wrap {
 }
 
 .index-journey-section .journey-card-image-wrap img {
-  height: auto !important;
   object-fit: cover !important;
   aspect-ratio: 16 / 9 !important;
-  overflow: hidden;
   border-radius: 16px 16px 0 0;
+  height: auto;
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
