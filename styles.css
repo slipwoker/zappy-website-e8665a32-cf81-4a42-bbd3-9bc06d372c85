@@ -14819,6 +14819,21 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
   border-radius: 16px 16px 0 0 !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-journey-section .journey-card-image-wrap {
+  height: auto !important;
+  aspect-ratio: 520 / 300 !important;
+}
+
+.index-journey-section .journey-card--featured .journey-card-image-wrap {
+  aspect-ratio: 16 / 9 !important;
+}
+
+.index-journey-section .journey-card--short .journey-card-image-wrap {
+  aspect-ratio: 520 / 260 !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
