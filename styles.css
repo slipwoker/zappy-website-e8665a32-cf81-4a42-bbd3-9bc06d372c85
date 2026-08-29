@@ -14855,6 +14855,16 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
   left: auto !important;
 }
 }
+
+.site-footer .footer-social a svg, .site-footer .footer-social svg {
+  fill: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
+  color: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
+}
+
+.site-footer .contact-icon svg {
+  stroke: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
+  color: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
