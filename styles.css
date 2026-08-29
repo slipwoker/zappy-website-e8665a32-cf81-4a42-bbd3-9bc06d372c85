@@ -14865,17 +14865,6 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
   stroke: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
   color: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
 }
-
-.services-diagnostics-section .services-diagnostics-card-image-wrap {
-  height: 420px !important;
-}
-
-.services-diagnostics-section .services-diagnostics-card-image-wrap img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
