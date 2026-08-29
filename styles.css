@@ -3662,12 +3662,13 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   }
 
 .index-cta-section .index-cta-heading {
-    font-size: 1.6rem;
-  }
+  font-size: 1.75rem;
+}
 
 .index-cta-section .index-cta-desc {
-    font-size: 16px;
-  }
+  font-size: 18px;
+  line-height: 1.7;
+}
 
 .index-cta-section .index-cta-buttons {
     flex-direction: column;
