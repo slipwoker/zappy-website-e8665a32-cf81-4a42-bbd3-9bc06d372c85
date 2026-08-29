@@ -3579,7 +3579,7 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   position: relative;
   align-self: stretch;
   min-height: 320px;
-  overflow: hidden;
+  overflow: visible;
   border-inline-start: 1px solid var(--border-dark);
 }
 
@@ -3642,12 +3642,13 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   }
 
 .index-cta-section .index-cta-image-tile {
-    flex: 0 0 220px;
-    width: 100%;
-    min-height: 220px;
-    border-inline-start: none;
-    border-top: 1px solid var(--border-dark);
-  }
+  flex: 0 0 auto;
+  width: 100%;
+  min-height: 0;
+  border-inline-start: none;
+  border-top: 1px solid var(--border-dark);
+  height: auto;
+}
 }
 
 @media (max-width: 768px) {
@@ -3682,8 +3683,9 @@ html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li{flex-di
   }
 
 .index-cta-section .index-cta-image-tile {
-    min-height: 180px;
-  }
+  min-height: 0;
+  height: auto;
+}
 }.services-intro-section{background-color: #3D2B24;background-image: none;color: var(--text-light);padding: 120px 24px 96px;position: relative;overflow: visible;font-family: 'Rubik', sans-serif;}html[dir="rtl"] .services-intro-section{direction: rtl;}
 
 .services-intro-section .services-intro-container {
@@ -14864,6 +14866,23 @@ html body .index-journey-section .journey-card-image-wrap { height: auto !import
 .site-footer .contact-icon svg {
   stroke: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
   color: var(--background-color, var(--background, var(--bg-light, #FDF6F2))) !important;
+}
+
+@media (max-width: 900px) {
+#index-cta-section .index-cta-image-tile > div[data-zappy-zoom-wrapper="true"] {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+}
+
+#index-cta-section .index-cta-image-tile > div[data-zappy-zoom-wrapper="true"] img {
+  position: relative !important;
+  height: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
