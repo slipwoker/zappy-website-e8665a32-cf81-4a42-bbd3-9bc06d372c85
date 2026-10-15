@@ -20,6 +20,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il" />
   </url>
   <url>
+    <loc>https://drcharach.co.il/clinic-services</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/clinic-services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/clinic-services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/clinic-services" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/clinic-services</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/clinic-services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/clinic-services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/clinic-services" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/first-pregnancy-ultrasound</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/first-pregnancy-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/first-pregnancy-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/first-pregnancy-ultrasound" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/first-pregnancy-ultrasound</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/first-pregnancy-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/first-pregnancy-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/first-pregnancy-ultrasound" />
+  </url>
+  <url>
     <loc>https://drcharach.co.il/about-dr-ron</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -54,6 +90,96 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/contact" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/rear-transparency</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/rear-transparency" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/rear-transparency" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/rear-transparency" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/rear-transparency</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/rear-transparency" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/rear-transparency" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/rear-transparency" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/preliminary-review</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/preliminary-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/preliminary-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/preliminary-review" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/preliminary-review</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/preliminary-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/preliminary-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/preliminary-review" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/late-review</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/late-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/late-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/late-review" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/late-review</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/late-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/late-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/late-review" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/third-trimester-ultrasound</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/third-trimester-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/third-trimester-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/third-trimester-ultrasound" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/third-trimester-ultrasound</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/third-trimester-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/third-trimester-ultrasound" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/third-trimester-ultrasound" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/targeted-review</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/targeted-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/targeted-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/targeted-review" />
+  </url>
+  <url>
+    <loc>https://drcharach.co.il/en/targeted-review</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="he" href="https://drcharach.co.il/targeted-review" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drcharach.co.il/en/targeted-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drcharach.co.il/targeted-review" />
   </url>
   <url>
     <loc>https://drcharach.co.il/privacy</loc>
